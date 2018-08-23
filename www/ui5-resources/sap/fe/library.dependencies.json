@@ -1,0 +1,645 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/fe/AppComponent.js",
+      "description" : "----------------------------------------------------------------------------------",
+      "size" : 12155,
+      "compressedSize" : 4772,
+      "required" : ["jquery.sap.global.js", "sap/fe/controller/NavigationController.js", "sap/fe/core/BusyHelper.js", "sap/fe/core/TemplateUtils.js", "sap/fe/core/internal/testableHelper.js", "sap/fe/model/DraftModel.js", "sap/fe/model/NamedBindingModel.js", "sap/fe/viewFactory.js", "sap/m/NavContainer.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/UIComponent.js", "sap/ui/model/resource/ResourceModel.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/Form.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 968,
+      "compressedSize" : 740,
+      "required" : ["jquery.sap.global.js", "sap/fe/core/AnnotationHelper.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/core/XMLComposite.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/MicroChart.js",
+      "size" : 16126,
+      "compressedSize" : 6895,
+      "required" : ["jquery.sap.global.js", "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.controller.js", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.controller.js", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.controller.js", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.controller.js", "sap/fe/controls/_MicroChart/stackedBarMicroChart/StackedBarMicroChart.controller.js", "sap/m/ValueColor.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/mdc/XMLComposite.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/ViewSwitchContainer.js",
+      "size" : 2170,
+      "compressedSize" : 958,
+      "required" : ["jquery.sap.global.js", "sap/fe/core/AnnotationHelper.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/core/XMLComposite.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controller/ActionController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 3462,
+      "compressedSize" : 1439,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controller/NavigationController.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1805,
+      "compressedSize" : 911,
+      "required" : ["jquery.sap.global.js", "sap/m/Link.js", "sap/m/MessageBox.js", "sap/m/MessagePage.js", "sap/m/MessageToast.js", "sap/ui/base/Object.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_Form/Form.control.xml",
+      "size" : 1610,
+      "required" : ["sap/m/HBox.js", "sap/ui/core/XMLComposite.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/ui/mdc/Field.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/MicroChart.control.xml",
+      "size" : 2264,
+      "required" : ["sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.fragment.xml", "sap/m/Text.js", "sap/ui/core/Fragment.js", "sap/ui/core/XMLComposite.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/MicroChart.controller.js",
+      "size" : 400,
+      "compressedSize" : 259,
+      "required" : ["sap/ui/base/Object.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.controller.js",
+      "size" : 409,
+      "compressedSize" : 243,
+      "required" : ["sap/fe/controls/_MicroChart/MicroChart.controller.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.fragment.xml",
+      "size" : 824,
+      "required" : ["sap/suite/ui/microchart/BulletMicroChart.js", "sap/suite/ui/microchart/BulletMicroChartData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.controller.js",
+      "size" : 406,
+      "compressedSize" : 241,
+      "required" : ["sap/fe/controls/_MicroChart/MicroChart.controller.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.fragment.xml",
+      "size" : 955,
+      "required" : ["sap/suite/ui/microchart/DeltaMicroChart.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.controller.js",
+      "size" : 426,
+      "compressedSize" : 251,
+      "required" : ["sap/fe/controls/_MicroChart/MicroChart.controller.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.fragment.xml",
+      "size" : 747,
+      "required" : ["sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChartItem.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.controller.js",
+      "size" : 410,
+      "compressedSize" : 243,
+      "required" : ["sap/fe/controls/_MicroChart/MicroChart.controller.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.fragment.xml",
+      "size" : 1017,
+      "required" : ["sap/suite/ui/microchart/RadialMicroChart.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.controller.js",
+      "size" : 426,
+      "compressedSize" : 251,
+      "required" : ["sap/fe/controls/_MicroChart/MicroChart.controller.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.fragment.xml",
+      "size" : 760,
+      "required" : ["sap/suite/ui/microchart/StackedBarMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChartBar.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ViewSwitchContainer/ViewSwitchContainer.control.xml",
+      "size" : 640,
+      "required" : ["sap/fe/controls/_ViewSwitchContainer/Visualizations.fragment.xml", "sap/fe/experimental/ViewSwitchContainer.js", "sap/ui/core/Fragment.js", "sap/ui/core/XMLComposite.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/controls/_ViewSwitchContainer/Visualizations.fragment.xml",
+      "size" : 2576,
+      "required" : ["sap/fe/Form.js", "sap/fe/experimental/ViewSwitchContainerItem.js", "sap/ui/core/Fragment.js", "sap/ui/mdc/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/AnnotationHelper.js",
+      "description" : "This class contains annotation helpers that might be used from several templates or controls",
+      "size" : 6319,
+      "compressedSize" : 2914,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/BusyHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 7608,
+      "compressedSize" : 1120,
+      "required" : ["jquery.sap.global.js", "sap/fe/core/internal/testableHelper.js", "sap/ui/base/Object.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/CommonUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 430,
+      "compressedSize" : 292,
+      "required" : ["sap/ui/core/mvc/View.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/MessageUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 9774,
+      "compressedSize" : 5775,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Label.js", "sap/m/MessageItem.js", "sap/m/MessageToast.js", "sap/m/MessageView.js", "sap/m/NavContainer.js", "sap/m/Page.js", "sap/m/Text.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/ui/base/Object.js", "sap/ui/core/Title.js", "sap/ui/core/message/Message.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/model/message/MessageModel.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/TemplateUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4281,
+      "compressedSize" : 2110,
+      "required" : ["jquery.sap.global.js", "sap/fe/controller/ActionController.js", "sap/fe/controller/NavigationController.js", "sap/fe/core/CommonUtils.js", "sap/fe/core/MessageUtils.js", "sap/ui/base/Object.js", "sap/ui/core/routing/HashChanger.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/core/internal/testableHelper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 11089,
+      "compressedSize" : 1862,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/experimental/ViewSwitchContainer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 4091,
+      "compressedSize" : 2064,
+      "required" : ["sap/m/Label.js", "sap/m/OverflowToolbar.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Table.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/Control.js", "sap/ui/mdc/Field.js", "sap/ui/mdc/Table.js", "sap/ui/table/Table.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/experimental/ViewSwitchContainerItem.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1010,
+      "compressedSize" : 658,
+      "required" : ["sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/library-h2-preload.js",
+      "size" : 10328,
+      "required" : ["jquery.sap.global.js", "sap/f/Avatar.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/fe/controls/_MicroChart/stackedBarMicroChart/StackedBarMicroChart.controller.js", "sap/m/ActionSheet.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/FlexBox.js", "sap/m/HBox.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/MessageBox.js", "sap/m/MessageItem.js", "sap/m/MessagePage.js", "sap/m/MessageToast.js", "sap/m/MessageView.js", "sap/m/NavContainer.js", "sap/m/OverflowToolbar.js", "sap/m/Page.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/ValueColor.js", "sap/suite/ui/microchart/BulletMicroChart.js", "sap/suite/ui/microchart/BulletMicroChartData.js", "sap/suite/ui/microchart/DeltaMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChartItem.js", "sap/suite/ui/microchart/RadialMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChartBar.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/Control.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Title.js", "sap/ui/core/UIComponent.js", "sap/ui/core/XMLComposite.js", "sap/ui/core/library.js", "sap/ui/core/message/Message.js", "sap/ui/core/mvc/Controller.js", "sap/ui/core/mvc/View.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/core/routing/HashChanger.js", "sap/ui/core/util/XMLPreprocessor.js", "sap/ui/fl/variants/VariantManagement.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/mdc/Field.js", "sap/ui/mdc/FilterBar.js", "sap/ui/mdc/Table.js", "sap/ui/mdc/XMLComposite.js", "sap/ui/mdc/base/Field.js", "sap/ui/model/ChangeReason.js", "sap/ui/model/Filter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/message/MessageModel.js", "sap/ui/model/odata/v4/Context.js", "sap/ui/model/odata/v4/ODataListBinding.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/table/Table.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js", "sap/uxap/BlockBase.js", "sap/uxap/ObjectPageDynamicHeaderTitle.js", "sap/uxap/ObjectPageLayout.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/fe/library.js", "sap/fe/manifest.json", "sap/fe/AppComponent.js", "sap/fe/Form.js", "sap/fe/MicroChart.js", "sap/fe/ViewSwitchContainer.js", "sap/fe/controller/ActionController.js", "sap/fe/controller/NavigationController.js", "sap/fe/controls/_Form/Form.control.xml", "sap/fe/controls/_MicroChart/MicroChart.control.xml", "sap/fe/controls/_MicroChart/MicroChart.controller.js", "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.controller.js", "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.controller.js", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.controller.js", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.controller.js", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.controller.js", "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.fragment.xml", "sap/fe/controls/_ViewSwitchContainer/ViewSwitchContainer.control.xml", "sap/fe/controls/_ViewSwitchContainer/Visualizations.fragment.xml", "sap/fe/core/AnnotationHelper.js", "sap/fe/core/BusyHelper.js", "sap/fe/core/CommonUtils.js", "sap/fe/core/MessageUtils.js", "sap/fe/core/TemplateUtils.js", "sap/fe/core/internal/testableHelper.js", "sap/fe/experimental/ViewSwitchContainer.js", "sap/fe/experimental/ViewSwitchContainerItem.js", "sap/fe/model/DraftModel.js", "sap/fe/model/NamedBindingModel.js", "sap/fe/templates/ListReport.view.xml", "sap/fe/templates/ListReport/ListReportController.controller.js", "sap/fe/templates/ListReport/ShareSheet.fragment.xml", "sap/fe/templates/ObjectPage.view.xml", "sap/fe/templates/ObjectPage/AnnotationHelper.js", "sap/fe/templates/ObjectPage/ObjectPageController.controller.js", "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js", "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml", "sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml", "sap/fe/viewFactory.js"]
+    },
+    {
+      "name" : "sap/fe/library-preload.js",
+      "size" : 97188,
+      "required" : ["jquery.sap.global.js", "sap/f/Avatar.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/fe/controls/_MicroChart/stackedBarMicroChart/StackedBarMicroChart.controller.js", "sap/m/ActionSheet.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/FlexBox.js", "sap/m/HBox.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/MessageBox.js", "sap/m/MessageItem.js", "sap/m/MessagePage.js", "sap/m/MessageToast.js", "sap/m/MessageView.js", "sap/m/NavContainer.js", "sap/m/OverflowToolbar.js", "sap/m/Page.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/ValueColor.js", "sap/suite/ui/microchart/BulletMicroChart.js", "sap/suite/ui/microchart/BulletMicroChartData.js", "sap/suite/ui/microchart/DeltaMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChartItem.js", "sap/suite/ui/microchart/RadialMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChartBar.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/Control.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Title.js", "sap/ui/core/UIComponent.js", "sap/ui/core/XMLComposite.js", "sap/ui/core/library.js", "sap/ui/core/message/Message.js", "sap/ui/core/mvc/Controller.js", "sap/ui/core/mvc/View.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/core/routing/HashChanger.js", "sap/ui/core/util/XMLPreprocessor.js", "sap/ui/fl/variants/VariantManagement.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/mdc/Field.js", "sap/ui/mdc/FilterBar.js", "sap/ui/mdc/Table.js", "sap/ui/mdc/XMLComposite.js", "sap/ui/mdc/base/Field.js", "sap/ui/model/ChangeReason.js", "sap/ui/model/Filter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/message/MessageModel.js", "sap/ui/model/odata/v4/Context.js", "sap/ui/model/odata/v4/ODataListBinding.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/table/Table.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js", "sap/uxap/BlockBase.js", "sap/uxap/ObjectPageDynamicHeaderTitle.js", "sap/uxap/ObjectPageLayout.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/fe/AppComponent.js", "sap/fe/Form.js", "sap/fe/MicroChart.js", "sap/fe/ViewSwitchContainer.js", "sap/fe/controller/ActionController.js", "sap/fe/controller/NavigationController.js", "sap/fe/controls/_Form/Form.control.xml", "sap/fe/controls/_MicroChart/MicroChart.control.xml", "sap/fe/controls/_MicroChart/MicroChart.controller.js", "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.controller.js", "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.controller.js", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.controller.js", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.controller.js", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.controller.js", "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.fragment.xml", "sap/fe/controls/_ViewSwitchContainer/ViewSwitchContainer.control.xml", "sap/fe/controls/_ViewSwitchContainer/Visualizations.fragment.xml", "sap/fe/core/AnnotationHelper.js", "sap/fe/core/BusyHelper.js", "sap/fe/core/CommonUtils.js", "sap/fe/core/MessageUtils.js", "sap/fe/core/TemplateUtils.js", "sap/fe/core/internal/testableHelper.js", "sap/fe/experimental/ViewSwitchContainer.js", "sap/fe/experimental/ViewSwitchContainerItem.js", "sap/fe/library.js", "sap/fe/manifest.json", "sap/fe/model/DraftModel.js", "sap/fe/model/NamedBindingModel.js", "sap/fe/templates/ListReport.view.xml", "sap/fe/templates/ListReport/ListReportController.controller.js", "sap/fe/templates/ListReport/ShareSheet.fragment.xml", "sap/fe/templates/ObjectPage.view.xml", "sap/fe/templates/ObjectPage/AnnotationHelper.js", "sap/fe/templates/ObjectPage/ObjectPageController.controller.js", "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js", "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml", "sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml", "sap/fe/viewFactory.js"]
+    },
+    {
+      "name" : "sap/fe/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/f/Avatar.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/fe/controls/_MicroChart/stackedBarMicroChart/StackedBarMicroChart.controller.js", "sap/m/ActionSheet.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/FlexBox.js", "sap/m/HBox.js", "sap/m/Label.js", "sap/m/Link.js", "sap/m/MessageBox.js", "sap/m/MessageItem.js", "sap/m/MessagePage.js", "sap/m/MessageToast.js", "sap/m/MessageView.js", "sap/m/NavContainer.js", "sap/m/OverflowToolbar.js", "sap/m/Page.js", "sap/m/ProgressIndicator.js", "sap/m/RatingIndicator.js", "sap/m/SegmentedButton.js", "sap/m/SegmentedButtonItem.js", "sap/m/Table.js", "sap/m/Text.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/ValueColor.js", "sap/suite/ui/microchart/BulletMicroChart.js", "sap/suite/ui/microchart/BulletMicroChartData.js", "sap/suite/ui/microchart/DeltaMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChartItem.js", "sap/suite/ui/microchart/RadialMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChartBar.js", "sap/ui/Device.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/Object.js", "sap/ui/core/ComponentContainer.js", "sap/ui/core/Control.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/ui/core/Title.js", "sap/ui/core/UIComponent.js", "sap/ui/core/XMLComposite.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/message/Message.js", "sap/ui/core/mvc/Controller.js", "sap/ui/core/mvc/View.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/core/routing/HashChanger.js", "sap/ui/core/util/XMLPreprocessor.js", "sap/ui/fl/variants/VariantManagement.js", "sap/ui/layout/form/Form.js", "sap/ui/layout/form/FormContainer.js", "sap/ui/layout/form/FormElement.js", "sap/ui/layout/form/ResponsiveGridLayout.js", "sap/ui/layout/form/SimpleForm.js", "sap/ui/mdc/Field.js", "sap/ui/mdc/FilterBar.js", "sap/ui/mdc/Table.js", "sap/ui/mdc/XMLComposite.js", "sap/ui/mdc/base/Field.js", "sap/ui/model/ChangeReason.js", "sap/ui/model/Filter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/message/MessageModel.js", "sap/ui/model/odata/v4/Context.js", "sap/ui/model/odata/v4/ODataListBinding.js", "sap/ui/model/resource/ResourceModel.js", "sap/ui/table/Table.js", "sap/ushell/library-preload.json", "sap/ushell/ui/footerbar/AddBookmarkButton.js", "sap/uxap/BlockBase.js", "sap/uxap/ObjectPageDynamicHeaderTitle.js", "sap/uxap/ObjectPageLayout.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/fe/AppComponent.js", "sap/fe/Form.js", "sap/fe/MicroChart.js", "sap/fe/ViewSwitchContainer.js", "sap/fe/controller/ActionController.js", "sap/fe/controller/NavigationController.js", "sap/fe/controls/_Form/Form.control.xml", "sap/fe/controls/_MicroChart/MicroChart.control.xml", "sap/fe/controls/_MicroChart/MicroChart.controller.js", "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.controller.js", "sap/fe/controls/_MicroChart/bulletMicroChart/BulletMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.controller.js", "sap/fe/controls/_MicroChart/deltaMicroChart/DeltaMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.controller.js", "sap/fe/controls/_MicroChart/harveyBallMicroChart/HarveyBallMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.controller.js", "sap/fe/controls/_MicroChart/radialMicroChart/RadialMicroChart.fragment.xml", "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.controller.js", "sap/fe/controls/_MicroChart/stackedBarMicroChart/stackedBarMicroChart.fragment.xml", "sap/fe/controls/_ViewSwitchContainer/ViewSwitchContainer.control.xml", "sap/fe/controls/_ViewSwitchContainer/Visualizations.fragment.xml", "sap/fe/core/AnnotationHelper.js", "sap/fe/core/BusyHelper.js", "sap/fe/core/CommonUtils.js", "sap/fe/core/MessageUtils.js", "sap/fe/core/TemplateUtils.js", "sap/fe/core/internal/testableHelper.js", "sap/fe/experimental/ViewSwitchContainer.js", "sap/fe/experimental/ViewSwitchContainerItem.js", "sap/fe/library.js", "sap/fe/manifest.json", "sap/fe/model/DraftModel.js", "sap/fe/model/NamedBindingModel.js", "sap/fe/templates/ListReport.view.xml", "sap/fe/templates/ListReport/ListReportController.controller.js", "sap/fe/templates/ListReport/ShareSheet.fragment.xml", "sap/fe/templates/ObjectPage.view.xml", "sap/fe/templates/ObjectPage/AnnotationHelper.js", "sap/fe/templates/ObjectPage/ObjectPageController.controller.js", "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js", "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml", "sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml", "sap/fe/viewFactory.js"]
+    },
+    {
+      "name" : "sap/fe/library.js",
+      "description" : "Initialization Code and shared classes of library sap.fe",
+      "size" : 2124,
+      "compressedSize" : 1027,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/XMLComposite.js", "sap/ui/core/library.js", "sap/ui/core/util/XMLPreprocessor.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/manifest.json",
+      "size" : 1080,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle.properties",
+      "size" : 4440,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ar.properties",
+      "size" : 6544,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_bg.properties",
+      "size" : 7588,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ca.properties",
+      "size" : 4618,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_cs.properties",
+      "size" : 4653,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_da.properties",
+      "size" : 4429,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_de.properties",
+      "size" : 4535,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_el.properties",
+      "size" : 7258,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_en.properties",
+      "size" : 4381,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_en_US_sappsd.properties",
+      "size" : 8748,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_en_US_saptrc.properties",
+      "size" : 5232,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_es.properties",
+      "size" : 4610,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_et.properties",
+      "size" : 4457,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_fi.properties",
+      "size" : 4562,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_fr.properties",
+      "size" : 4597,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_hi.properties",
+      "size" : 6991,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_hr.properties",
+      "size" : 4492,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_hu.properties",
+      "size" : 4827,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_it.properties",
+      "size" : 4482,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_iw.properties",
+      "size" : 6463,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ja.properties",
+      "size" : 5453,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_kk.properties",
+      "size" : 7413,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ko.properties",
+      "size" : 5179,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_lt.properties",
+      "size" : 4710,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_lv.properties",
+      "size" : 4715,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ms.properties",
+      "size" : 4400,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_nl.properties",
+      "size" : 4435,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_no.properties",
+      "size" : 4424,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_pl.properties",
+      "size" : 4665,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_pt.properties",
+      "size" : 4675,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ro.properties",
+      "size" : 4573,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_ru.properties",
+      "size" : 7470,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sh.properties",
+      "size" : 4452,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sk.properties",
+      "size" : 4673,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sl.properties",
+      "size" : 4493,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_sv.properties",
+      "size" : 4493,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_th.properties",
+      "size" : 7255,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_tr.properties",
+      "size" : 4760,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_uk.properties",
+      "size" : 7574,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_vi.properties",
+      "size" : 5521,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_zh_CN.properties",
+      "size" : 4815,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/messagebundle_zh_TW.properties",
+      "size" : 4834,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/model/DraftModel.js",
+      "description" : "Provides class sap.fe.model.DraftModel",
+      "size" : 23283,
+      "compressedSize" : 6238,
+      "required" : ["sap/fe/core/internal/testableHelper.js", "sap/ui/base/ManagedObject.js", "sap/ui/model/ChangeReason.js", "sap/ui/model/Filter.js", "sap/ui/model/json/JSONModel.js", "sap/ui/model/odata/v4/Context.js", "sap/ui/model/odata/v4/ODataListBinding.js", "sap/ui/model/resource/ResourceModel.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/model/NamedBindingModel.js",
+      "description" : "Provides class sap.fe.model.DraftModel",
+      "size" : 3766,
+      "compressedSize" : 1309,
+      "required" : ["sap/fe/core/internal/testableHelper.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport.view.xml",
+      "size" : 3179,
+      "required" : ["sap/f/DynamicPage.js", "sap/f/DynamicPageHeader.js", "sap/f/DynamicPageTitle.js", "sap/fe/templates/ListReport/ListReportController.controller.js", "sap/m/Button.js", "sap/m/Text.js", "sap/m/Title.js", "sap/ui/core/mvc/XMLView.js", "sap/ui/fl/variants/VariantManagement.js", "sap/ui/mdc/FilterBar.js", "sap/ui/mdc/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/ListReportController.controller.js",
+      "description" : "global hasher",
+      "size" : 9838,
+      "compressedSize" : 3425,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/Controller.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ListReport/ShareSheet.fragment.xml",
+      "size" : 806,
+      "required" : ["sap/m/ActionSheet.js", "sap/m/Button.js", "sap/ui/core/Fragment.js", "sap/ushell/ui/footerbar/AddBookmarkButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage.view.xml",
+      "size" : 3238,
+      "required" : ["sap/f/Avatar.js", "sap/fe/templates/ObjectPage/ObjectPageController.controller.js", "sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml", "sap/m/FlexBox.js", "sap/m/Text.js", "sap/m/Title.js", "sap/ui/core/Fragment.js", "sap/ui/core/mvc/XMLView.js", "sap/uxap/ObjectPageDynamicHeaderTitle.js", "sap/uxap/ObjectPageLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/AnnotationHelper.js",
+      "description" : "This class contains annotation helpers that might be used from several templates or controls",
+      "size" : 12353,
+      "compressedSize" : 6217,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/ObjectPageController.controller.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n        (c) Copyright 2009-2017 SAP SE. All rights reserved",
+      "size" : 1612,
+      "compressedSize" : 961,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/Controller.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js",
+      "size" : 489,
+      "compressedSize" : 353,
+      "required" : ["sap/uxap/BlockBase.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml",
+      "size" : 183,
+      "required" : ["sap/ui/core/mvc/XMLView.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml",
+      "size" : 2517,
+      "required" : ["sap/fe/ViewSwitchContainer.js", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml",
+      "size" : 1325,
+      "required" : ["sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml",
+      "size" : 1052,
+      "required" : ["sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml", "sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml", "sap/m/VBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml",
+      "size" : 998,
+      "required" : ["sap/m/Title.js", "sap/ui/core/Fragment.js", "sap/ui/mdc/base/Field.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml",
+      "size" : 2003,
+      "required" : ["sap/fe/MicroChart.js", "sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml", "sap/m/HBox.js", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml",
+      "size" : 921,
+      "required" : ["sap/f/Avatar.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml",
+      "size" : 2055,
+      "required" : ["sap/m/Label.js", "sap/m/ProgressIndicator.js", "sap/m/Title.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml",
+      "size" : 2240,
+      "required" : ["sap/m/Label.js", "sap/m/RatingIndicator.js", "sap/m/Title.js", "sap/m/VBox.js", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml",
+      "size" : 977,
+      "required" : ["sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml",
+      "size" : 2363,
+      "required" : ["sap/fe/Form.js", "sap/m/HBox.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml",
+      "size" : 893,
+      "required" : ["sap/ui/core/Fragment.js", "sap/ui/mdc/Table.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml",
+      "size" : 2362,
+      "required" : ["sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml", "sap/ui/core/CustomData.js", "sap/ui/core/Fragment.js", "sap/uxap/ObjectPageSection.js", "sap/uxap/ObjectPageSubSection.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/fe/viewFactory.js",
+      "description" : "Provides control sap.ui.core.mvc.View.",
+      "size" : 16616,
+      "compressedSize" : 7132,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/mvc/View.js", "sap/ui/model/json/JSONModel.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    }
+  ]
+}

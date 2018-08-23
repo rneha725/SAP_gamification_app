@@ -1,0 +1,699 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.chart">
+  <module name="sap/chart/AutoScaleMode.js" size="929" compressedSize="218">
+    <description>Provides enumeration for sap.chart.AutoScaleMode</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/Chart.js" size="132044" compressedSize="56842">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/AutoScaleMode.js"/>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/ScaleBehavior.js"/>
+      <module name="sap/chart/SeriesColorTracker.js"/>
+      <module name="sap/chart/TimeUnitType.js"/>
+      <module name="sap/chart/coloring/Colorings.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/HierarchyDimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="sap/chart/library.js"/>
+      <module name="sap/chart/pagination/PagingController.js"/>
+      <module name="sap/chart/utils/ChartTypeAdapterUtils.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/chart/utils/DataSourceUtils.js"/>
+      <module name="sap/chart/utils/DateFormatUtil.js"/>
+      <module name="sap/chart/utils/MeasureSemanticsUtils.js"/>
+      <module name="sap/chart/utils/RoleFitter.js"/>
+      <module name="sap/chart/utils/SelectionAPIUtils.js"/>
+      <module name="sap/chart/utils/ValueAxisScaleUtils.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/BusyIndicatorUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/analytics/ODataModelAdapter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js"/>
+      <module name="sap/viz/ui5/controls/common/BaseControl.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/Dataset.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="sap/viz/ui5/format/ChartFormatter.js"/>
+      <module name="sap/viz/ui5/utils/CommonUtil.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/ChartLog.js" size="459" compressedSize="352">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/ChartType.js" size="4165" compressedSize="1152">
+    <description>Provides enumeration sap.chart.ChartType</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/ColoringType.js" size="30973" compressedSize="242">
+    <description>Provides enumeration sap.chart.ColoringType</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/ScaleBehavior.js" size="729" compressedSize="220">
+    <description>Provides enumeration for sap.chart.ScaleBehavior</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/SeriesColorTracker.js" size="3766" compressedSize="1468">
+    <description>Keep track of series colors on different *pages*.</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/TimeUnitType.js" size="1428" compressedSize="342">
+    <description>Provides enumeration sap.chart.TimeUnitType</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/ColorPalette.js" size="5447" compressedSize="4621">
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/ColoringUtils.js" size="7115" compressedSize="3927">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/Colorings.js" size="3271" compressedSize="1794">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/criticality/Criticality.js"/>
+      <module name="sap/chart/coloring/emphasis/Emphasis.js"/>
+      <module name="sap/chart/coloring/gradation/Gradation.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/CriticalityType.js" size="792" compressedSize="252">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/criticality/Criticality.js" size="8507" compressedSize="3608">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/coloring/criticality/DimensionValues.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureValues.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/criticality/DimensionValues.js" size="4282" compressedSize="2197">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/criticality/measureValues/MeasureUtils.js" size="14267" compressedSize="7382">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/criticality/measureValues/MeasureValues.js" size="8647" compressedSize="3753">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureUtils.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js" size="11585" compressedSize="5299">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/emphasis/DimensionValues.js" size="2196" compressedSize="1108">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/criticality/DimensionValues.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/emphasis/Emphasis.js" size="2334" compressedSize="1151">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/emphasis/DimensionValues.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/gradation/DelineatedDimensionValues.js" size="3725" compressedSize="1902">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/gradation/DelineatedMeasures.js" size="3897" compressedSize="2145">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/gradation/Gradation.js" size="5618" compressedSize="2507">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedDimensionValues.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedMeasures.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js" size="12619" compressedSize="6924">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js" size="4369" compressedSize="2021">
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/data/Dimension.js" size="3379" compressedSize="1116">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/data/HierarchyDimension.js" size="1545" compressedSize="546">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/data/Measure.js" size="4589" compressedSize="1287">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/data/MeasureSemantics.js" size="809" compressedSize="234">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/data/TimeDimension.js" size="1865" compressedSize="676">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/i18n/i18n.properties" size="2534">
+  </module>
+  <module name="sap/chart/i18n/i18n_ar.properties" size="8256">
+  </module>
+  <module name="sap/chart/i18n/i18n_bg.properties" size="10091">
+  </module>
+  <module name="sap/chart/i18n/i18n_ca.properties" size="3258">
+  </module>
+  <module name="sap/chart/i18n/i18n_cs.properties" size="3442">
+  </module>
+  <module name="sap/chart/i18n/i18n_da.properties" size="2886">
+  </module>
+  <module name="sap/chart/i18n/i18n_de.properties" size="2951">
+  </module>
+  <module name="sap/chart/i18n/i18n_el.properties" size="9857">
+  </module>
+  <module name="sap/chart/i18n/i18n_en.properties" size="2534">
+  </module>
+  <module name="sap/chart/i18n/i18n_en_US_sappsd.properties" size="10646">
+  </module>
+  <module name="sap/chart/i18n/i18n_es.properties" size="3285">
+  </module>
+  <module name="sap/chart/i18n/i18n_et.properties" size="2531">
+  </module>
+  <module name="sap/chart/i18n/i18n_fi.properties" size="2834">
+  </module>
+  <module name="sap/chart/i18n/i18n_fr.properties" size="3444">
+  </module>
+  <module name="sap/chart/i18n/i18n_he.properties" size="6902">
+  </module>
+  <module name="sap/chart/i18n/i18n_hi.properties" size="8039">
+  </module>
+  <module name="sap/chart/i18n/i18n_hr.properties" size="3063">
+  </module>
+  <module name="sap/chart/i18n/i18n_hu.properties" size="3213">
+  </module>
+  <module name="sap/chart/i18n/i18n_it.properties" size="2725">
+  </module>
+  <module name="sap/chart/i18n/i18n_iw.properties" size="6741">
+  </module>
+  <module name="sap/chart/i18n/i18n_ja.properties" size="4651">
+  </module>
+  <module name="sap/chart/i18n/i18n_kk.properties" size="10331">
+  </module>
+  <module name="sap/chart/i18n/i18n_ko.properties" size="4280">
+  </module>
+  <module name="sap/chart/i18n/i18n_lt.properties" size="3475">
+  </module>
+  <module name="sap/chart/i18n/i18n_lv.properties" size="3218">
+  </module>
+  <module name="sap/chart/i18n/i18n_ms.properties" size="2638">
+  </module>
+  <module name="sap/chart/i18n/i18n_nl.properties" size="2763">
+  </module>
+  <module name="sap/chart/i18n/i18n_no.properties" size="2832">
+  </module>
+  <module name="sap/chart/i18n/i18n_pl.properties" size="3102">
+  </module>
+  <module name="sap/chart/i18n/i18n_pt.properties" size="3207">
+  </module>
+  <module name="sap/chart/i18n/i18n_ro.properties" size="3346">
+  </module>
+  <module name="sap/chart/i18n/i18n_ru.properties" size="11649">
+  </module>
+  <module name="sap/chart/i18n/i18n_sh.properties" size="3073">
+  </module>
+  <module name="sap/chart/i18n/i18n_sk.properties" size="3330">
+  </module>
+  <module name="sap/chart/i18n/i18n_sl.properties" size="3283">
+  </module>
+  <module name="sap/chart/i18n/i18n_sv.properties" size="2727">
+  </module>
+  <module name="sap/chart/i18n/i18n_th.properties" size="9076">
+  </module>
+  <module name="sap/chart/i18n/i18n_tr.properties" size="3368">
+  </module>
+  <module name="sap/chart/i18n/i18n_uk.properties" size="9938">
+  </module>
+  <module name="sap/chart/i18n/i18n_vi.properties" size="5771">
+  </module>
+  <module name="sap/chart/i18n/i18n_zh_CN.properties" size="3327">
+  </module>
+  <module name="sap/chart/i18n/i18n_zh_TW.properties" size="3550">
+  </module>
+  <module name="sap/chart/library-h2-preload.js" size="11186">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/BusyIndicatorUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/analytics/ODataModelAdapter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js"/>
+      <module name="sap/viz/ui5/controls/common/BaseControl.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/AnalysisObject.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/Dataset.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="sap/viz/ui5/format/ChartFormatter.js"/>
+      <module name="sap/viz/ui5/utils/CommonUtil.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/chart/library.js"/>
+      <module name="sap/chart/manifest.json"/>
+      <module name="sap/chart/AutoScaleMode.js"/>
+      <module name="sap/chart/Chart.js"/>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/ChartType.js"/>
+      <module name="sap/chart/ColoringType.js"/>
+      <module name="sap/chart/ScaleBehavior.js"/>
+      <module name="sap/chart/SeriesColorTracker.js"/>
+      <module name="sap/chart/TimeUnitType.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/Colorings.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/coloring/criticality/Criticality.js"/>
+      <module name="sap/chart/coloring/criticality/DimensionValues.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureUtils.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureValues.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js"/>
+      <module name="sap/chart/coloring/emphasis/DimensionValues.js"/>
+      <module name="sap/chart/coloring/emphasis/Emphasis.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedDimensionValues.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedMeasures.js"/>
+      <module name="sap/chart/coloring/gradation/Gradation.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/HierarchyDimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="sap/chart/pagination/PagingController.js"/>
+      <module name="sap/chart/utils/ChartTypeAdapterUtils.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/chart/utils/DataSourceUtils.js"/>
+      <module name="sap/chart/utils/DateFormatUtil.js"/>
+      <module name="sap/chart/utils/MeasureSemanticsUtils.js"/>
+      <module name="sap/chart/utils/RoleFitter.js"/>
+      <module name="sap/chart/utils/RoleMapper.js"/>
+      <module name="sap/chart/utils/SelectionAPIUtils.js"/>
+      <module name="sap/chart/utils/ValueAxisScaleUtils.js"/>
+    </includes>
+  </module>
+  <module name="sap/chart/library-preload.js" size="163374">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/BusyIndicatorUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/analytics/ODataModelAdapter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js"/>
+      <module name="sap/viz/ui5/controls/common/BaseControl.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/AnalysisObject.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/Dataset.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="sap/viz/ui5/format/ChartFormatter.js"/>
+      <module name="sap/viz/ui5/utils/CommonUtil.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/chart/AutoScaleMode.js"/>
+      <module name="sap/chart/Chart.js"/>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/ChartType.js"/>
+      <module name="sap/chart/ColoringType.js"/>
+      <module name="sap/chart/ScaleBehavior.js"/>
+      <module name="sap/chart/SeriesColorTracker.js"/>
+      <module name="sap/chart/TimeUnitType.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/Colorings.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/coloring/criticality/Criticality.js"/>
+      <module name="sap/chart/coloring/criticality/DimensionValues.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureUtils.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureValues.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js"/>
+      <module name="sap/chart/coloring/emphasis/DimensionValues.js"/>
+      <module name="sap/chart/coloring/emphasis/Emphasis.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedDimensionValues.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedMeasures.js"/>
+      <module name="sap/chart/coloring/gradation/Gradation.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/HierarchyDimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="sap/chart/library.js"/>
+      <module name="sap/chart/manifest.json"/>
+      <module name="sap/chart/pagination/PagingController.js"/>
+      <module name="sap/chart/utils/ChartTypeAdapterUtils.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/chart/utils/DataSourceUtils.js"/>
+      <module name="sap/chart/utils/DateFormatUtil.js"/>
+      <module name="sap/chart/utils/MeasureSemanticsUtils.js"/>
+      <module name="sap/chart/utils/RoleFitter.js"/>
+      <module name="sap/chart/utils/RoleMapper.js"/>
+      <module name="sap/chart/utils/SelectionAPIUtils.js"/>
+      <module name="sap/chart/utils/ValueAxisScaleUtils.js"/>
+    </includes>
+  </module>
+  <module name="sap/chart/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/BusyIndicatorUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/LocaleData.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/analytics/ODataModelAdapter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/viz/library-preload.json"/>
+      <module name="sap/viz/library.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js"/>
+      <module name="sap/viz/ui5/controls/common/BaseControl.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/AnalysisObject.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/Dataset.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="sap/viz/ui5/format/ChartFormatter.js"/>
+      <module name="sap/viz/ui5/utils/CommonUtil.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/chart/AutoScaleMode.js"/>
+      <module name="sap/chart/Chart.js"/>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/ChartType.js"/>
+      <module name="sap/chart/ColoringType.js"/>
+      <module name="sap/chart/ScaleBehavior.js"/>
+      <module name="sap/chart/SeriesColorTracker.js"/>
+      <module name="sap/chart/TimeUnitType.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/Colorings.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/coloring/criticality/Criticality.js"/>
+      <module name="sap/chart/coloring/criticality/DimensionValues.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureUtils.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/MeasureValues.js"/>
+      <module name="sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js"/>
+      <module name="sap/chart/coloring/emphasis/DimensionValues.js"/>
+      <module name="sap/chart/coloring/emphasis/Emphasis.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedDimensionValues.js"/>
+      <module name="sap/chart/coloring/gradation/DelineatedMeasures.js"/>
+      <module name="sap/chart/coloring/gradation/Gradation.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js"/>
+      <module name="sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/HierarchyDimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="sap/chart/library.js"/>
+      <module name="sap/chart/manifest.json"/>
+      <module name="sap/chart/pagination/PagingController.js"/>
+      <module name="sap/chart/utils/ChartTypeAdapterUtils.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/chart/utils/DataSourceUtils.js"/>
+      <module name="sap/chart/utils/DateFormatUtil.js"/>
+      <module name="sap/chart/utils/MeasureSemanticsUtils.js"/>
+      <module name="sap/chart/utils/RoleFitter.js"/>
+      <module name="sap/chart/utils/RoleMapper.js"/>
+      <module name="sap/chart/utils/SelectionAPIUtils.js"/>
+      <module name="sap/chart/utils/ValueAxisScaleUtils.js"/>
+    </includes>
+  </module>
+  <module name="sap/chart/library.js" size="11178" compressedSize="3266">
+    <description>Initialization Code and shared classes of library sap.chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/chart/AutoScaleMode.js"/>
+      <module name="sap/chart/ChartType.js"/>
+      <module name="sap/chart/ColoringType.js"/>
+      <module name="sap/chart/ScaleBehavior.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="sap/chart/utils/ChartTypeAdapterUtils.js"/>
+      <module name="sap/chart/utils/RoleFitter.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="sap/viz/ui5/format/ChartFormatter.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/manifest.json" size="1109">
+  </module>
+  <module name="sap/chart/pagination/PagingController.js" size="10938" compressedSize="6024">
+    <description>helper for paging mode.</description>
+    <requires>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/ChartTypeAdapterUtils.js" size="937" compressedSize="457">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/ChartUtils.js" size="3951" compressedSize="2544">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/ChartType.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/DataSourceUtils.js" size="11072" compressedSize="5721">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/TimeUnitType.js"/>
+      <module name="sap/chart/data/Dimension.js"/>
+      <module name="sap/chart/data/HierarchyDimension.js"/>
+      <module name="sap/chart/data/Measure.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/DateFormatUtil.js" size="816" compressedSize="439">
+    <description>Parse and Format Date String depending on sap.ui.core.format.DateFormat</description>
+    <requires>
+      <module name="sap/chart/TimeUnitType.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/MeasureSemanticsUtils.js" size="18136" compressedSize="8480">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/ColoringType.js"/>
+      <module name="sap/chart/coloring/ColorPalette.js"/>
+      <module name="sap/chart/coloring/ColoringUtils.js"/>
+      <module name="sap/chart/coloring/CriticalityType.js"/>
+      <module name="sap/chart/coloring/criticality/Criticality.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/RoleFitter.js" size="22533" compressedSize="11649">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/TimeUnitType.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/chart/utils/DateFormatUtil.js"/>
+      <module name="sap/chart/utils/RoleMapper.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/AnalysisObject.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/RoleMapper.js" size="11335" compressedSize="5083">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/data/MeasureSemantics.js"/>
+      <module name="sap/chart/data/TimeDimension.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="sap/chart/utils/DateFormatUtil.js"/>
+      <module name="sap/chart/utils/MeasureSemanticsUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/SelectionAPIUtils.js" size="5501" compressedSize="2028">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/chart/utils/ValueAxisScaleUtils.js" size="5389" compressedSize="2622">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/chart/AutoScaleMode.js"/>
+      <module name="sap/chart/ChartLog.js"/>
+      <module name="sap/chart/ScaleBehavior.js"/>
+      <module name="sap/chart/utils/ChartUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+</library>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.zen.crosstab" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.zen.crosstab.Crosstab" alias="Crosstab">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.Crosstab({
+	id: "${id}", // sap.ui.core.ID
+	blocked: false, // boolean
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	busyIndicatorSize: sap.ui.core.BusyIndicatorSize.Medium, // sap.ui.core.BusyIndicatorSize, since 1.54
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	width: undefined, // sap.ui.core.CSSSize
+	height: undefined, // sap.ui.core.CSSSize
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	dragDropConfig: [], // sap.ui.core.dnd.DragDropBase, since 1.56
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<Crosstab xmlns="sap.zen.crosstab"
+	id="${id}"
+	blocked="false"
+	busy="false"
+	busyIndicatorDelay="1000"
+	busyIndicatorSize="Medium"
+	visible="true"
+	fieldGroupIds=""
+	width=""
+	height=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<dragDropConfig></dragDropConfig> <!-- sap.ui.core.dnd.DragDropBase, since 1.56 -->
+</Crosstab>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.zen.crosstab.DataCell" alias="DataCell,Cell">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.DataCell({
+	id: "${id}", // sap.ui.core.ID
+	blocked: false, // boolean
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	busyIndicatorSize: sap.ui.core.BusyIndicatorSize.Medium, // sap.ui.core.BusyIndicatorSize, since 1.54
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	text: undefined, // string
+	area: undefined, // object
+	row: undefined, // int
+	col: undefined, // int
+	tableRow: undefined, // int
+	tableCol: undefined, // int
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	dragDropConfig: [], // sap.ui.core.dnd.DragDropBase, since 1.56
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<DataCell xmlns="sap.zen.crosstab"
+	id="${id}"
+	blocked="false"
+	busy="false"
+	busyIndicatorDelay="1000"
+	busyIndicatorSize="Medium"
+	visible="true"
+	fieldGroupIds=""
+	text=""
+	area=""
+	row=""
+	col=""
+	tableRow=""
+	tableCol=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<dragDropConfig></dragDropConfig> <!-- sap.ui.core.dnd.DragDropBase, since 1.56 -->
+</DataCell>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.zen.crosstab.HeaderCell" alias="HeaderCell,Cell">
+	<jsTemplate><![CDATA[new sap.zen.crosstab.HeaderCell({
+	id: "${id}", // sap.ui.core.ID
+	blocked: false, // boolean
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	busyIndicatorSize: sap.ui.core.BusyIndicatorSize.Medium, // sap.ui.core.BusyIndicatorSize, since 1.54
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	rowSpan: undefined, // int
+	colSpan: undefined, // int
+	text: undefined, // string
+	formatter: undefined, // object
+	mergeKey: undefined, // string
+	sort: undefined, // string
+	sortAction: undefined, // string
+	area: undefined, // object
+	effectiveColSpan: undefined, // int
+	effectiveRowSpan: undefined, // int
+	row: undefined, // int
+	col: undefined, // int
+	level: undefined, // int
+	drillState: undefined, // string
+	hierarchyAction: undefined, // string
+	hierarchyTooltip: undefined, // string
+	htmlIE8RowSpan: 1, // int
+	sortTextIndex: undefined, // int
+	tableRow: undefined, // int
+	tableCol: undefined, // int
+	alignment: undefined, // string
+	memberId: undefined, // string
+	parentMemberId: undefined, // string
+	nodeAlignment: undefined, // string
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Element, since 1.19
+	dragDropConfig: [], // sap.ui.core.dnd.DragDropBase, since 1.56
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<HeaderCell xmlns="sap.zen.crosstab"
+	id="${id}"
+	blocked="false"
+	busy="false"
+	busyIndicatorDelay="1000"
+	busyIndicatorSize="Medium"
+	visible="true"
+	fieldGroupIds=""
+	rowSpan=""
+	colSpan=""
+	text=""
+	formatter=""
+	mergeKey=""
+	sort=""
+	sortAction=""
+	area=""
+	effectiveColSpan=""
+	effectiveRowSpan=""
+	row=""
+	col=""
+	level=""
+	drillState=""
+	hierarchyAction=""
+	hierarchyTooltip=""
+	htmlIE8RowSpan="1"
+	sortTextIndex=""
+	tableRow=""
+	tableCol=""
+	alignment=""
+	memberId=""
+	parentMemberId=""
+	nodeAlignment=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Element, since 1.19 -->
+		<dragDropConfig></dragDropConfig> <!-- sap.ui.core.dnd.DragDropBase, since 1.56 -->
+</HeaderCell>
+]]></xmlTemplate>
+</Template>
+</Library>

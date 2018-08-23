@@ -1,0 +1,666 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.suite.ui.microchart">
+  <module name="sap/suite/ui/microchart/AreaMicroChart.js" size="48925" compressedSize="21723">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartItem.js" size="1589" compressedSize="581">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartLabel.js" size="1326" compressedSize="441">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartPoint.js" size="2689" compressedSize="1043">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartRenderer.js" size="6661" compressedSize="4190">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/BulletMicroChart.js" size="26279" compressedSize="12930">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/BulletMicroChartData.js" size="1837" compressedSize="826">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/BulletMicroChartRenderer.js" size="11326" compressedSize="6620">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChart.js" size="24274" compressedSize="12105">
+    <description>Provides control sap.suite.ui.microchart.Example.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Size.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChartData.js" size="2115" compressedSize="921">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChartLabel.js" size="1411" compressedSize="465">
+    <description>This control displays the history of values as a line mini chart or an area mini chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChartRenderer.js" size="5720" compressedSize="3389">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ComparisonMicroChart.js" size="25068" compressedSize="12276">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Size.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js" size="2971" compressedSize="1360">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ComparisonMicroChartRenderer.js" size="8657" compressedSize="5201">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/DeltaMicroChart.js" size="16983" compressedSize="8802">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/DeltaMicroChartRenderer.js" size="8896" compressedSize="5985">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js" size="14398" compressedSize="6699">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/HarveyBallMicroChartItem.js" size="2025" compressedSize="621">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js" size="15324" compressedSize="8730">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveBarChart.js" size="37828" compressedSize="15804">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveBarChartBar.js" size="4125" compressedSize="1685">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveBarChartRenderer.js" size="11108" compressedSize="4355">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveDonutChart.js" size="29855" compressedSize="13021">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveDonutChartRenderer.js" size="21243" compressedSize="8022">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveDonutChartSegment.js" size="4423" compressedSize="1763">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveLineChart.js" size="24238" compressedSize="10664">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveLineChartPoint.js" size="4425" compressedSize="1780">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/InteractiveLineChartRenderer.js" size="11236" compressedSize="5352">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/LineMicroChart.js" size="25361" compressedSize="11934">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js" size="1881" compressedSize="544">
+    <description>Provides sap.suite.ui.microchart.LineMicroChartEmphasizedPoint control.</description>
+    <requires>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartPoint.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/LineMicroChartPoint.js" size="1263" compressedSize="364">
+    <description>Provides sap.suite.ui.microchart.LineMicroChartPoint control.</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/LineMicroChartRenderer.js" size="18516" compressedSize="7818">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/RadialMicroChart.js" size="12476" compressedSize="5343">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/RadialMicroChartRenderer.js" size="21654" compressedSize="8272">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/StackedBarMicroChart.js" size="18436" compressedSize="7345">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Size.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/StackedBarMicroChartBar.js" size="2546" compressedSize="872">
+    <description>Provides sap.suite.ui.microchart.StackedBarMicroChartBar control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/StackedBarMicroChartRenderer.js" size="10743" compressedSize="5751">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2009-2018 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/library-h2-preload.js" size="14428">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Size.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/suite/ui/microchart/manifest.json"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChartBar.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChartSegment.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChartBar.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChartRenderer.js"/>
+    </includes>
+  </module>
+  <module name="sap/suite/ui/microchart/library-preload.js" size="232082">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Size.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/suite/ui/microchart/AreaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChartBar.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChartSegment.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChartBar.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/suite/ui/microchart/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/suite/ui/microchart/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Size.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/library-preload.json"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/suite/ui/microchart/AreaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChartBar.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveBarChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveDonutChartSegment.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChart.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/InteractiveLineChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/LineMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChartBar.js"/>
+      <module name="sap/suite/ui/microchart/StackedBarMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/suite/ui/microchart/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/suite/ui/microchart/library.js" size="11719" compressedSize="5695">
+    <description>Initialization Code and shared classes of library sap.suite.ui.microchart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/manifest.json" size="2850">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle.properties" size="4185">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ar.properties" size="6171">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_bg.properties" size="8099">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ca.properties" size="4480">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_cs.properties" size="4518">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_da.properties" size="4314">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_de.properties" size="4196">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_el.properties" size="7307">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_en.properties" size="4120">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_en_US_sappsd.properties" size="8583">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_en_US_saptrc.properties" size="5184">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_es.properties" size="4524">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_et.properties" size="4292">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_fi.properties" size="4245">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_fr.properties" size="4383">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_hi.properties" size="7219">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_hr.properties" size="4419">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_hu.properties" size="4579">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_it.properties" size="4296">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_iw.properties" size="6604">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ja.properties" size="5260">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_kk.properties" size="7821">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ko.properties" size="4889">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_lt.properties" size="4574">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_lv.properties" size="4499">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ms.properties" size="4149">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_nl.properties" size="4258">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_no.properties" size="4243">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_pl.properties" size="4425">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_pt.properties" size="4509">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ro.properties" size="4469">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ru.properties" size="8105">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sh.properties" size="4397">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sk.properties" size="4661">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sl.properties" size="4399">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sv.properties" size="4261">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_th.properties" size="7159">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_tr.properties" size="4535">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_uk.properties" size="7907">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_vi.properties" size="5435">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_zh_CN.properties" size="4555">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_zh_TW.properties" size="4554">
+  </module>
+</library>

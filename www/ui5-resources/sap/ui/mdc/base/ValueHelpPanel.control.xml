@@ -1,0 +1,59 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:fl="sap.ui.fl.variants"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout">
+	<l:Splitter id="rootSplitter" height="100%" width="100%" class="sapMdcValueHelpPanel">
+		<VBox fitContainer= "true">
+			<layoutData>
+				<l:SplitterLayoutData size="auto" />
+			</layoutData>
+
+			<IconTabBar id="iconTabBar" expandable="false" upperCase="true" stretchContentHeight="true" class="sapUiNoContentPadding">
+				<layoutData>
+					<FlexItemData growFactor= "1" shrinkFactor= "0"/>
+				</layoutData>
+				<items>
+					<IconTabFilter text="{$i18n>valuehelp.SELECTFROMLIST}" key="selectFromList" visible="false">
+						<l:FixFlex>
+							<l:fixContent>
+								<Toolbar width="100%" visible="true">
+									<fl:VariantManagement id="VHPVariantManagementCtrl" modelName="VHPSearchTemplates" editable="false" visible="false" class="sapUiTinyMarginBegin"/>
+									<ToolbarSpacer/>
+									<SearchField id="SearchField" value="{path: 'FilterLayoutFlag>/sSearchFieldValue'}" width="30%" search="_handleBasicSearch"/>
+									<ToggleButton id="AdvancedFilter" pressed="true" icon="sap-icon://filter" type="Transparent" press="_handleToggleFilterVisibility"
+										class="sapMBtnTransparent"></ToggleButton>
+									<!-- <ToggleButton visible="false" icon="sap-icon://multiselect-all" type="Transparent" press="handleShowSelected"
+										class="sapMBtnTransparent"></ToggleButton> -->
+								</Toolbar>
+							</l:fixContent>
+
+							<l:flexContent>
+								<l:Splitter id="filterbarSplitter" height="100%" width="100%">
+								</l:Splitter>
+							</l:flexContent>
+						</l:FixFlex>
+					</IconTabFilter>
+
+					<IconTabFilter text="{$i18n>valuehelp.DEFINECONDITIONS}" key="defineCondition" visible="false"/>
+				</items>
+			</IconTabBar>
+		</VBox>
+
+		<VBox fitContainer= "true" width="200px" class="sapMdcTokenizerBox">
+			<layoutData>
+				<l:SplitterLayoutData size="210px" />
+			</layoutData>
+			<Tokenizer id="VHPTokenizer" class="sapMdcTokenizer"
+				tokens="{path:'cm>/conditions', filters:[{path:'isEmpty', operator:'EQ', value1:false}]}"
+				tokenUpdate="_handleTokenUpdate">
+				<Token
+					text="{parts: [{path:'cm>'}, {path:'cm>values/0'}, {path:'cm>values/1'}, {path:'cm>operator'}, {path:'cm>isEmpty'} ], formatter:'._formatTokenText'}"
+				/>
+			</Tokenizer> 
+		</VBox>
+	</l:Splitter>
+
+</core:FragmentDefinition>

@@ -1,0 +1,28 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:mdc="sap.ui.mdc" xmlns:core="sap.ui.core"
+	template:require="sap.ui.model.odata.v4.AnnotationHelper">
+
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<template:alias name=".TABLE" value="sap.ui.mdc.Table._helper">
+		<template:alias name=".FIELD" value="sap.ui.mdc.Field._helper">
+			<template:with path="metadataContexts>" helper=".TABLE.getLineItemCollection" var="lineItem">
+				<template:repeat list="{lineItem>}" var="dataField">
+					<template:with path="dataField>" var="dataField" helper=".TABLE._resolveDataField">
+						<template:if test="{= ((!${dataField>Action} &amp;&amp; !${dataField>SemanticObject}) || ${dataField>Inline}) &amp;&amp; ${dataField>@@.FIELD.isNotAlwaysHidden} }">
+							<mdc:Column
+								id="template::Column::{dataField>@@.FIELD.getStableIdPartFromDataField}"
+								label="{= ${dataField>@@.MODEL.label} || ${dataField>@com.sap.vocabularies.Common.v1.Label} }"
+								sortProperty="{= ${dataField>Value/$Path} || ${dataField>@sapui.name} }"
+								hAlign="{= (['Edm.Decimal','Edm.DateTimeOffset','Edm.Date'].indexOf(${dataField>Value/$Path/$Type}) >= 0) ? 'End' : (${dataField>Criticality/$Path}) ? 'Center' : 'Begin' }">
+								<core:Fragment fragmentName="sap.ui.mdc.internal.field.Field" type="XML"/>
+							</mdc:Column>
+						</template:if>
+					</template:with>
+				</template:repeat>
+			</template:with>
+		</template:alias>
+		</template:alias>
+	</template:alias>
+
+</core:FragmentDefinition>

@@ -1,0 +1,40 @@
+<core:View xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		   xmlns="sap.m"
+		   xmlns:core="sap.ui.core"
+		   xmlns:mdc="sap.ui.mdc"
+		   template:require="sap.ui.mdc.ValueHelpDialog"
+>
+
+	<!-- PLEASE NOTE: this is a workaround until we can create the XML composite controls outside XML views as well -->
+
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+
+		<mdc:FilterBar
+				id="template::valueListFilterBar"
+				metadataContexts="{ model: 'entitySet', path:'',  name: 'entitySet'},{ model: 'entitySet', path:'$Type', name: 'selectionFields'}"
+				listBindingNames="{model : 'valueList', path: '/$mdc/qualifier'}"
+				conditionModelName="{model : 'valueList', path: '/$mdc/qualifier'}"
+				searchOnStart="false"
+				liveUpdate="true"
+				hideBasicSearch="true"
+				enablePersonalization="false"
+		/>
+
+		<mdc:Table
+				id="template::valueListTable"
+				listBindingName="{model : 'valueList', path: '/$mdc/qualifier'}"
+				metadataContexts="{ model: 'entitySet', path:'',  name: 'entitySet'}, {model: 'valueList', path:'Parameters',  name: 'columns'}"
+				type="ResponsiveTable"
+				interactionType="Inactive"
+				demandPopin="true"
+				height="100%"
+				width="100%"
+				showToolbar="false"
+				selectionMode="{path: 'valueList>/$mdc/sSelectionMode'}"
+				selectionChange="handleSelectionChange"
+				itemPress="handleItemPress"
+		/>
+
+	</template:alias>
+
+</core:View>

@@ -1,0 +1,592 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/suite/ui/microchart/AreaMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 48925,
+      "compressedSize" : 21723,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/AreaMicroChartItem.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 1589,
+      "compressedSize" : 581,
+      "required" : ["sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/AreaMicroChartLabel.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 1326,
+      "compressedSize" : 441,
+      "required" : ["sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/AreaMicroChartPoint.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 2689,
+      "compressedSize" : 1043,
+      "required" : ["sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/AreaMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 6661,
+      "compressedSize" : 4190,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/BulletMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 26279,
+      "compressedSize" : 12930,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/BulletMicroChartData.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 1837,
+      "compressedSize" : 826,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/BulletMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 11326,
+      "compressedSize" : 6620,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/ColumnMicroChart.js",
+      "description" : "Provides control sap.suite.ui.microchart.Example.",
+      "size" : 24274,
+      "compressedSize" : 12105,
+      "required" : ["jquery.sap.global.js", "sap/m/Size.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/ColumnMicroChartData.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 2115,
+      "compressedSize" : 921,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/ColumnMicroChartLabel.js",
+      "description" : "This control displays the history of values as a line mini chart or an area mini chart.",
+      "size" : 1411,
+      "compressedSize" : 465,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 5720,
+      "compressedSize" : 3389,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/ComparisonMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 25068,
+      "compressedSize" : 12276,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/Size.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/ComparisonMicroChartData.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 2971,
+      "compressedSize" : 1360,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/ComparisonMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 8657,
+      "compressedSize" : 5201,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/DeltaMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 16983,
+      "compressedSize" : 8802,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/DeltaMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 8896,
+      "compressedSize" : 5985,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/HarveyBallMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 14398,
+      "compressedSize" : 6699,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/HarveyBallMicroChartItem.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 2025,
+      "compressedSize" : 621,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 15324,
+      "compressedSize" : 8730,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveBarChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 37828,
+      "compressedSize" : 15804,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveBarChartBar.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 4125,
+      "compressedSize" : 1685,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveBarChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 11108,
+      "compressedSize" : 4355,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveDonutChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 29855,
+      "compressedSize" : 13021,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveDonutChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 21243,
+      "compressedSize" : 8022,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/theming/Parameters.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveDonutChartSegment.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 4423,
+      "compressedSize" : 1763,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveLineChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 24238,
+      "compressedSize" : 10664,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/library.js", "sap/suite/ui/microchart/InteractiveLineChartPoint.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveLineChartPoint.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 4425,
+      "compressedSize" : 1780,
+      "required" : ["jquery.sap.global.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/InteractiveLineChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 11236,
+      "compressedSize" : 5352,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/LineMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 25361,
+      "compressedSize" : 11934,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js",
+      "description" : "Provides sap.suite.ui.microchart.LineMicroChartEmphasizedPoint control.",
+      "size" : 1881,
+      "compressedSize" : 544,
+      "required" : ["sap/m/library.js", "sap/suite/ui/microchart/LineMicroChartPoint.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/LineMicroChartPoint.js",
+      "description" : "Provides sap.suite.ui.microchart.LineMicroChartPoint control.",
+      "size" : 1263,
+      "compressedSize" : 364,
+      "required" : ["sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/LineMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 18516,
+      "compressedSize" : 7818,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/theming/Parameters.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/RadialMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 12476,
+      "compressedSize" : 5343,
+      "required" : ["jquery.sap.global.js", "sap/m/ValueColor.js", "sap/suite/ui/microchart/RadialMicroChartRenderer.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/RadialMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 21654,
+      "compressedSize" : 8272,
+      "required" : ["jquery.sap.global.js", "sap/m/ValueColor.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/StackedBarMicroChart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 18436,
+      "compressedSize" : 7345,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/Size.js", "sap/m/ValueColor.js", "sap/suite/ui/microchart/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/StackedBarMicroChartBar.js",
+      "description" : "Provides sap.suite.ui.microchart.StackedBarMicroChartBar control.",
+      "size" : 2546,
+      "compressedSize" : 872,
+      "required" : ["jquery.sap.global.js", "sap/m/ValueCSSColor.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/StackedBarMicroChartRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 10743,
+      "compressedSize" : 5751,
+      "required" : ["jquery.sap.global.js", "sap/m/ValueColor.js", "sap/suite/ui/microchart/library.js", "sap/ui/core/theming/Parameters.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/library-h2-preload.js",
+      "size" : 14428,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/Size.js", "sap/m/ValueCSSColor.js", "sap/m/ValueColor.js", "sap/m/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/TextAlign.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/suite/ui/microchart/library.js", "sap/suite/ui/microchart/manifest.json", "sap/suite/ui/microchart/AreaMicroChart.js", "sap/suite/ui/microchart/AreaMicroChartItem.js", "sap/suite/ui/microchart/AreaMicroChartLabel.js", "sap/suite/ui/microchart/AreaMicroChartPoint.js", "sap/suite/ui/microchart/AreaMicroChartRenderer.js", "sap/suite/ui/microchart/BulletMicroChart.js", "sap/suite/ui/microchart/BulletMicroChartData.js", "sap/suite/ui/microchart/BulletMicroChartRenderer.js", "sap/suite/ui/microchart/ColumnMicroChart.js", "sap/suite/ui/microchart/ColumnMicroChartData.js", "sap/suite/ui/microchart/ColumnMicroChartLabel.js", "sap/suite/ui/microchart/ColumnMicroChartRenderer.js", "sap/suite/ui/microchart/ComparisonMicroChart.js", "sap/suite/ui/microchart/ComparisonMicroChartData.js", "sap/suite/ui/microchart/ComparisonMicroChartRenderer.js", "sap/suite/ui/microchart/DeltaMicroChart.js", "sap/suite/ui/microchart/DeltaMicroChartRenderer.js", "sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChartItem.js", "sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js", "sap/suite/ui/microchart/InteractiveBarChart.js", "sap/suite/ui/microchart/InteractiveBarChartBar.js", "sap/suite/ui/microchart/InteractiveBarChartRenderer.js", "sap/suite/ui/microchart/InteractiveDonutChart.js", "sap/suite/ui/microchart/InteractiveDonutChartRenderer.js", "sap/suite/ui/microchart/InteractiveDonutChartSegment.js", "sap/suite/ui/microchart/InteractiveLineChart.js", "sap/suite/ui/microchart/InteractiveLineChartPoint.js", "sap/suite/ui/microchart/InteractiveLineChartRenderer.js", "sap/suite/ui/microchart/LineMicroChart.js", "sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js", "sap/suite/ui/microchart/LineMicroChartPoint.js", "sap/suite/ui/microchart/LineMicroChartRenderer.js", "sap/suite/ui/microchart/RadialMicroChart.js", "sap/suite/ui/microchart/RadialMicroChartRenderer.js", "sap/suite/ui/microchart/StackedBarMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChartBar.js", "sap/suite/ui/microchart/StackedBarMicroChartRenderer.js"]
+    },
+    {
+      "name" : "sap/suite/ui/microchart/library-preload.js",
+      "size" : 232082,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/Size.js", "sap/m/ValueCSSColor.js", "sap/m/ValueColor.js", "sap/m/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/TextAlign.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/suite/ui/microchart/AreaMicroChart.js", "sap/suite/ui/microchart/AreaMicroChartItem.js", "sap/suite/ui/microchart/AreaMicroChartLabel.js", "sap/suite/ui/microchart/AreaMicroChartPoint.js", "sap/suite/ui/microchart/AreaMicroChartRenderer.js", "sap/suite/ui/microchart/BulletMicroChart.js", "sap/suite/ui/microchart/BulletMicroChartData.js", "sap/suite/ui/microchart/BulletMicroChartRenderer.js", "sap/suite/ui/microchart/ColumnMicroChart.js", "sap/suite/ui/microchart/ColumnMicroChartData.js", "sap/suite/ui/microchart/ColumnMicroChartLabel.js", "sap/suite/ui/microchart/ColumnMicroChartRenderer.js", "sap/suite/ui/microchart/ComparisonMicroChart.js", "sap/suite/ui/microchart/ComparisonMicroChartData.js", "sap/suite/ui/microchart/ComparisonMicroChartRenderer.js", "sap/suite/ui/microchart/DeltaMicroChart.js", "sap/suite/ui/microchart/DeltaMicroChartRenderer.js", "sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChartItem.js", "sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js", "sap/suite/ui/microchart/InteractiveBarChart.js", "sap/suite/ui/microchart/InteractiveBarChartBar.js", "sap/suite/ui/microchart/InteractiveBarChartRenderer.js", "sap/suite/ui/microchart/InteractiveDonutChart.js", "sap/suite/ui/microchart/InteractiveDonutChartRenderer.js", "sap/suite/ui/microchart/InteractiveDonutChartSegment.js", "sap/suite/ui/microchart/InteractiveLineChart.js", "sap/suite/ui/microchart/InteractiveLineChartPoint.js", "sap/suite/ui/microchart/InteractiveLineChartRenderer.js", "sap/suite/ui/microchart/LineMicroChart.js", "sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js", "sap/suite/ui/microchart/LineMicroChartPoint.js", "sap/suite/ui/microchart/LineMicroChartRenderer.js", "sap/suite/ui/microchart/RadialMicroChart.js", "sap/suite/ui/microchart/RadialMicroChartRenderer.js", "sap/suite/ui/microchart/StackedBarMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChartBar.js", "sap/suite/ui/microchart/StackedBarMicroChartRenderer.js", "sap/suite/ui/microchart/library.js", "sap/suite/ui/microchart/manifest.json"]
+    },
+    {
+      "name" : "sap/suite/ui/microchart/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexBox.js", "sap/m/Size.js", "sap/m/ValueCSSColor.js", "sap/m/ValueColor.js", "sap/m/library-preload.json", "sap/m/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/Core.js", "sap/ui/core/Element.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/TextAlign.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/suite/ui/microchart/AreaMicroChart.js", "sap/suite/ui/microchart/AreaMicroChartItem.js", "sap/suite/ui/microchart/AreaMicroChartLabel.js", "sap/suite/ui/microchart/AreaMicroChartPoint.js", "sap/suite/ui/microchart/AreaMicroChartRenderer.js", "sap/suite/ui/microchart/BulletMicroChart.js", "sap/suite/ui/microchart/BulletMicroChartData.js", "sap/suite/ui/microchart/BulletMicroChartRenderer.js", "sap/suite/ui/microchart/ColumnMicroChart.js", "sap/suite/ui/microchart/ColumnMicroChartData.js", "sap/suite/ui/microchart/ColumnMicroChartLabel.js", "sap/suite/ui/microchart/ColumnMicroChartRenderer.js", "sap/suite/ui/microchart/ComparisonMicroChart.js", "sap/suite/ui/microchart/ComparisonMicroChartData.js", "sap/suite/ui/microchart/ComparisonMicroChartRenderer.js", "sap/suite/ui/microchart/DeltaMicroChart.js", "sap/suite/ui/microchart/DeltaMicroChartRenderer.js", "sap/suite/ui/microchart/HarveyBallMicroChart.js", "sap/suite/ui/microchart/HarveyBallMicroChartItem.js", "sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js", "sap/suite/ui/microchart/InteractiveBarChart.js", "sap/suite/ui/microchart/InteractiveBarChartBar.js", "sap/suite/ui/microchart/InteractiveBarChartRenderer.js", "sap/suite/ui/microchart/InteractiveDonutChart.js", "sap/suite/ui/microchart/InteractiveDonutChartRenderer.js", "sap/suite/ui/microchart/InteractiveDonutChartSegment.js", "sap/suite/ui/microchart/InteractiveLineChart.js", "sap/suite/ui/microchart/InteractiveLineChartPoint.js", "sap/suite/ui/microchart/InteractiveLineChartRenderer.js", "sap/suite/ui/microchart/LineMicroChart.js", "sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js", "sap/suite/ui/microchart/LineMicroChartPoint.js", "sap/suite/ui/microchart/LineMicroChartRenderer.js", "sap/suite/ui/microchart/RadialMicroChart.js", "sap/suite/ui/microchart/RadialMicroChartRenderer.js", "sap/suite/ui/microchart/StackedBarMicroChart.js", "sap/suite/ui/microchart/StackedBarMicroChartBar.js", "sap/suite/ui/microchart/StackedBarMicroChartRenderer.js", "sap/suite/ui/microchart/library.js", "sap/suite/ui/microchart/manifest.json"]
+    },
+    {
+      "name" : "sap/suite/ui/microchart/library.js",
+      "description" : "Initialization Code and shared classes of library sap.suite.ui.microchart.",
+      "size" : 11719,
+      "compressedSize" : 5695,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/ui/core/Core.js", "sap/ui/core/TextAlign.js", "sap/ui/core/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/manifest.json",
+      "size" : 2850,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle.properties",
+      "size" : 4185,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_ar.properties",
+      "size" : 6171,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_bg.properties",
+      "size" : 8099,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_ca.properties",
+      "size" : 4480,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_cs.properties",
+      "size" : 4518,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_da.properties",
+      "size" : 4314,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_de.properties",
+      "size" : 4196,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_el.properties",
+      "size" : 7307,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_en.properties",
+      "size" : 4120,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_en_US_sappsd.properties",
+      "size" : 8583,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_en_US_saptrc.properties",
+      "size" : 5184,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_es.properties",
+      "size" : 4524,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_et.properties",
+      "size" : 4292,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_fi.properties",
+      "size" : 4245,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_fr.properties",
+      "size" : 4383,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_hi.properties",
+      "size" : 7219,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_hr.properties",
+      "size" : 4419,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_hu.properties",
+      "size" : 4579,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_it.properties",
+      "size" : 4296,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_iw.properties",
+      "size" : 6604,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_ja.properties",
+      "size" : 5260,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_kk.properties",
+      "size" : 7821,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_ko.properties",
+      "size" : 4889,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_lt.properties",
+      "size" : 4574,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_lv.properties",
+      "size" : 4499,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_ms.properties",
+      "size" : 4149,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_nl.properties",
+      "size" : 4258,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_no.properties",
+      "size" : 4243,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_pl.properties",
+      "size" : 4425,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_pt.properties",
+      "size" : 4509,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_ro.properties",
+      "size" : 4469,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_ru.properties",
+      "size" : 8105,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_sh.properties",
+      "size" : 4397,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_sk.properties",
+      "size" : 4661,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_sl.properties",
+      "size" : 4399,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_sv.properties",
+      "size" : 4261,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_th.properties",
+      "size" : 7159,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_tr.properties",
+      "size" : 4535,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_uk.properties",
+      "size" : 7907,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_vi.properties",
+      "size" : 5435,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_zh_CN.properties",
+      "size" : 4555,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/suite/ui/microchart/messagebundle_zh_TW.properties",
+      "size" : 4554,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

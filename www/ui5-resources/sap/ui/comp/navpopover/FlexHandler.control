@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>navpopover/FlexHandler</name>
+    <derived/>
+    <documentation>Communicates with the layered repository (LRep) and reacts on flexibility changes.</documentation>
+    <since>1.46.0</since>
+    <properties>
+        <property name="initialSnapshot" type="sap.ui.core/object">
+            <documentation>Initial state of all available actions. After the initial state has been set it cannot be changed again.</documentation>
+        </property>
+        <property name="snapshotOfUserLayer" type="sap.ui.core/object">
+            <documentation>Changes made only for USER layer.</documentation>
+        </property>
+        <property name="snapshotOfLayersWithoutUser" type="sap.ui.core/object">
+            <documentation>Changes made for all layers except USER layer.</documentation>
+        </property>
+    </properties>
+</control>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>LineMicroChart</name>
+    <derived/>
+    <documentation>Chart that displays the history of values as segmented lines along a threshold line. The scale is optional and showing the points is also optional.</documentation>
+    <since>1.48.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="size" type="sap.m/Size" defaultValue="Auto" group="Appearance">
+            <documentation>The size of the chart. If not set, the default size is applied based on the type of the device.</documentation>
+        </property>
+        <property name="threshold" type="sap.ui.core/float" defaultValue="0" group="Appearance">
+            <documentation>Determines the chart threshold which is used for vertical normalization.
+If the threshold does not belong to the value range given by minYValue...maxYValue, the threshold is ignored.
+By setting the threshold property's value to null, the threshold is disabled and excluded from range calculations.</documentation>
+        </property>
+        <property name="minXValue" type="sap.ui.core/float" group="Appearance">
+            <documentation>If this property is set, it indicates the value the X-axis starts with.</documentation>
+        </property>
+        <property name="maxXValue" type="sap.ui.core/float" group="Appearance">
+            <documentation>If this property is set, it indicates the value the X-axis ends with.</documentation>
+        </property>
+        <property name="minYValue" type="sap.ui.core/float" group="Appearance">
+            <documentation>If this property is set, it indicates the value the Y-axis starts with.</documentation>
+        </property>
+        <property name="maxYValue" type="sap.ui.core/float" group="Appearance">
+            <documentation>If this property is set, it indicates the value the Y-axis ends with.</documentation>
+        </property>
+        <property name="leftTopLabel" type="sap.ui.core/string" group="Data">
+            <documentation>Describes the left top label of the chart.
+The label color is determined by the color property of the first LineMicroChartPoint in the points aggregation.
+The space for the label is not reserved if the label is not set.</documentation>
+        </property>
+        <property name="rightTopLabel" type="sap.ui.core/string" group="Data">
+            <documentation>Describes the right top label of the chart.
+The label color is determined by the color property of the last LineMicroChartPoint in the points aggregation.
+The space for the label is not reserved if the label is not set.</documentation>
+        </property>
+        <property name="leftBottomLabel" type="sap.ui.core/string" group="Data">
+            <documentation>Describes the left bottom label of the chart.
+The label color is set internally.
+The space for the label is not reserved if the label is not set.</documentation>
+        </property>
+        <property name="rightBottomLabel" type="sap.ui.core/string" group="Data">
+            <documentation>Describes the right bottom label of the chart.
+The label color is set automatically.
+The space for the label is not reserved if the label is not set.</documentation>
+        </property>
+        <property name="color" type="sap.ui.core/any" defaultValue="Neutral" group="Appearance">
+            <documentation>Describes the color of the chart.
+In conjunction with emphasized points, it is only used if all points have the sap.m.ValueColor.Neutral color.
+The color can be set as an {@link sap.m.ValueCSSColor} or as a plain object. It has the 'above' and 'below' properties that determine the color of the graph above and below the threshold, respectively.</documentation>
+        </property>
+        <property name="showPoints" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>Defines if the control renders the points or not.
+If emphasized points are used, there is no effect.
+If the value is true, the points in the aggregation are shown.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>The event is triggered when the chart is pressed.</documentation>
+        </event>
+    </events>
+    <aggregations default="points">
+        <aggregation name="points" type="sap.suite.ui.microchart/LineMicroChartPoint" cardinality="0..n" bindable="bindable">
+            <documentation>Aggregation that contains all data points that should be provided in an ordered way.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

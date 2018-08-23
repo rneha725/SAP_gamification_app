@@ -1,0 +1,74 @@
+<core:View xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		   xmlns:core="sap.ui.core"
+		   xmlns:uxap="sap.uxap"
+		   xmlns="sap.m"
+		   xmlns:f="sap.f"
+		   controllerName="sap.fe.templates.ObjectPage.ObjectPageController"
+		   template:require="sap.ui.model.odata.v4.AnnotationHelper sap.fe.core.AnnotationHelper">
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<template:alias name=".FE" value="sap.fe.core.AnnotationHelper">
+			<template:with path="entitySet>$Type" var="entityType">
+				<uxap:ObjectPageLayout id="objectPage" flexEnabled="true"
+									   showHeaderContent="true"
+									   showFooter="false"
+									   upperCaseAnchorBar="false"
+									   enableLazyLoading="true">
+					<uxap:headerTitle>
+						<uxap:ObjectPageDynamicHeaderTitle 
+								primaryArea="Left"
+								id="objectPageHeaderTitle"
+								binding="{path : ''}">
+
+							<uxap:expandedHeading>
+								<Title text="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/Title/Value/@@.MODEL.value}"
+									   wrapping="true" class="sapUiTinyMarginTop"/>
+							</uxap:expandedHeading>
+
+							<uxap:snappedHeading>
+								<FlexBox>
+									<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.HeaderImage"
+												   type="XML"/>
+									<Title text="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/Title/Value/@@.MODEL.value}"
+										   wrapping="true" class="sapUiTinyMarginTop"/>
+								</FlexBox>
+							</uxap:snappedHeading>
+
+							<uxap:expandedContent>
+								<Text text="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/Description/Value/@@.MODEL.value}"/>
+							</uxap:expandedContent>
+
+							<uxap:snappedContent>
+								<Text text="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/Description/Value/@@.MODEL.value}"/>
+							</uxap:snappedContent>
+
+						</uxap:ObjectPageDynamicHeaderTitle>
+					</uxap:headerTitle>
+					<uxap:headerContent>
+						<FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch" id="objectPageHeaderContent" binding="{path : ''}">
+							<template:if test="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/ImageUrl}">
+								<template:then>
+									<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop"
+											  src="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/ImageUrl@@.MODEL.value}"
+											  displayShape="Square"
+											  displaySize="XL"/>
+								</template:then>
+								<template:elseif
+										test="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/TypeImageUrl}">
+									<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop"
+											  src="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/TypeImageUrl@@.MODEL.value}"
+											  displayShape="Square"
+											  displaySize="XL"/>
+								</template:elseif>
+							</template:if>
+							<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.HeaderContent"
+										   type="XML"/>
+						</FlexBox>
+					</uxap:headerContent>
+					<uxap:sections>
+						<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.Section" type="XML"/>
+					</uxap:sections>
+				</uxap:ObjectPageLayout>
+			</template:with>
+		</template:alias>
+	</template:alias>
+</core:View>

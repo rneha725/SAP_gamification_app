@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/portal/ui5/library-h2-preload.js",
+"sourceroot":".",
+"sources":["manifest.json","library-dbg.js"],
+"names":[],
+"mappings":";;;;;wCCYA,6CACA,uCAWA,0CAGA,8BACC,IAAK,CAAE,iBACP,YAAa,CAAE,gBACf,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,aAAc,KACd,QAAS,QACV,GAOA,2DACA,yDACA,oEACA,iDACA,+CACA,sDACA,yDACA,0DACA,qDACA,8DACA,qDACA,2DACA;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[57,497,637,1669]
+}

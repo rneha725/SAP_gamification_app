@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/ushell_abap/library-h2-preload.js",
+"sourceroot":".",
+"sources":["library-dbg.js","manifest.json"],
+"names":[],
+"mappings":";;;AAIA,gBAAa,2BAAC,GACb,UAAW,CACX,aAcA,8BACC,uBACA,iBACA,qCACA,aAAc,KACd,WAAY,CACX,iBAAkB,CACjB,kBAAmB,CAClB,+EACD,CACD,CACD,CACD,GAEA,OAAO,gBAER,EAAkB;;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[0,424,482,951]
+}

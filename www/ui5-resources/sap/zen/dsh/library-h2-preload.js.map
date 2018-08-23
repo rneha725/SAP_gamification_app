@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/zen/dsh/library-h2-preload.js",
+"sourceroot":".",
+"sources":["manifest.json","library-dbg.js"],
+"names":[],
+"mappings":";;;;;qCCYA,0CACA,uCAWA,0CACA,2CACA,4CACA,oCACA,8CACA,+CAGA,8BACC,IAAK,CAAE,cACP,YAAa,CAAE,4FACf,MAAO,GACP,WAAY,GACZ,SAAU,CACT,2BACA,iBACD,EACA,SAAU,GACV,aAAc,KACd,QAAS,QACV;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[54,1035,1134,1768]
+}

@@ -1,0 +1,2424 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ovp">
+  <module name="sap/ovp/app/CardContainer.fragment.xml" size="1082">
+    <requires>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ovp/ui/EasyScanLayout.js"/>
+      <module name="sap/ui/core/ComponentContainer.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/Component.js" size="32594" compressedSize="9428">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutUtil.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/core/routing/Router.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/rta/RuntimeAuthoring.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/DashboardCardContainer.fragment.xml" size="655">
+    <requires>
+      <module name="sap/ovp/ui/DashboardLayout.js"/>
+      <module name="sap/ui/core/ComponentContainer.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/Error.view.xml" size="349">
+    <requires>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/Main.controller.js" size="160865" compressedSize="45360">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/BackgroundDesign.js"/>
+      <module name="sap/m/BusyDialog.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/ListSeparators.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/PersonalizationUtils.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="sap/ovp/ui/SmartphoneHeaderToggle.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavigationHandler.js"/>
+      <module name="sap/ui/generic/app/navigation/service/SelectionVariant.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/ODataMetadata.js"/>
+      <module name="sap/ui/model/odata/ODataUtils.js"/>
+      <module name="sap/ui/model/odata/v2/ODataModel.js"/>
+      <module name="sap/ui/thirdparty/hasher.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/Main.view.xml" size="4566">
+    <requires>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js" conditional="true"/>
+      <module name="sap/f/DynamicPageTitle.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/OverflowToolbarButton.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/Title.js" conditional="true"/>
+      <module name="sap/m/ToolbarSpacer.js" conditional="true"/>
+      <module name="sap/ovp/app/Main.controller.js"/>
+      <module name="sap/ovp/app/SmarFilterBarWithoutVariant.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/app/SmartFilterBarWithVariant.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/OVPWrapper.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js" conditional="true"/>
+      <module name="sap/ui/core/ExtensionPoint.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js" conditional="true"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="{ui&gt;/cardContainerFragment}.fragment.xml"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/SharePage.fragment.xml" size="874">
+    <requires>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/SmarFilterBarWithoutVariant.fragment.xml" size="2792">
+    <requires>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/ExtensionPoint.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/SmartFilterBarWithVariant.fragment.xml" size="3069">
+    <requires>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/ExtensionPoint.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/app/manifest.json" size="1516">
+  </module>
+  <module name="sap/ovp/cards/ActionUtils.js" size="9146" compressedSize="3075">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/comp/smartfield/JSONType.js"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/smartfield/SmartLabel.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/AnnotationHelper.js" size="141962" compressedSize="41973">
+    <description>Any function that needs to be exported(used outside this file) via namespace should be defined as a function and then added to the return statement at the end of this file</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/generic/app/navigation/service/SelectionVariant.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/AppSettingsUtils.js" size="5283" compressedSize="1948">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/CommonUtils.js" size="9767" compressedSize="2600">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/LoadingUtils.js" size="3236" compressedSize="1288">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/OVPCardAsAPIUtils.js" size="16908" compressedSize="3794">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/PayLoadUtils.js" size="45808" compressedSize="8901">
+    <description>! Copyright (c) 2009-2014 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/PersonalizationUtils.js" size="7317" compressedSize="2604">
+    <description>! Copyright (c) 2009-2014 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/SettingsUtils.js" size="64349" compressedSize="23278">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="sap/m/MessagePopoverItem.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/PayLoadUtils.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/OVPVizDataHandler.js" size="8663" compressedSize="3457">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/SmartAnnotationManager.js" size="75034" compressedSize="23464">
+    <description>@fileOverview Library to Manage rendering of Viz Charts.  Any function that needs to be exported(used outside this file) via namespace should be defined as a function and then added to the return statement at the end of this file</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/charts/Utils.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+      <module name="sap/viz/ui5/api/env/Format.js"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/Utils.js" size="23891" compressedSize="9241">
+    <description>@fileOverview Miscellaneous utility functions for legacy cards. See VizAnnotationManager.js for generic card methods. This file can be safely deleted when legacy cards deprecate.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/VizAnnotationManager.js" size="150423" compressedSize="47609">
+    <description>@fileOverview Library to Manage rendering of Viz Charts.  Any function that needs to be exported(used outside this file) via namespace should be defined as a function and then added to the return statement at the end of this file</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/charts/Utils.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+      <module name="sap/viz/ui5/api/env/Format.js"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/analytical/Component.js" size="1491" compressedSize="733">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/analytical/analyticalChart.controller.js" size="15129" compressedSize="5621">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/analytical/analyticalChart.fragment.xml" size="6556">
+    <requires>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/cards/charts/OVPVizDataHandler.js" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Element.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js" conditional="true"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/generic/Component.js" size="2070" compressedSize="1018">
+    <requires>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/generic/noData.fragment.xml" size="487">
+    <requires>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/smart/chart/Component.js" size="1601" compressedSize="763">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/charts/SmartAnnotationManager.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.controller.js" size="18419" compressedSize="6347">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/charts/SmartAnnotationManager.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.fragment.xml" size="4231">
+    <requires>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/custom/Component.js" size="1759" compressedSize="692">
+    <requires>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/error/Component.js" size="1041" compressedSize="425">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/error/Error.controller.js" size="2257" compressedSize="1108">
+    <requires>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/error/Error.fragment.xml" size="426">
+    <requires>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/Action.fragment.xml" size="2015">
+    <requires>
+      <module name="sap/m/Button.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/ui/core/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/ActionsFooter.fragment.xml" size="2430">
+    <requires>
+      <module name="sap/m/OverflowToolbar.js" conditional="true"/>
+      <module name="sap/m/ToolbarSpacer.js" conditional="true"/>
+      <module name="sap/ovp/cards/generic/Action.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/Card.controller.js" size="81337" compressedSize="24415">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/ovp/cards/ActionUtils.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/loading/State.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextDirection.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/generic/app/library.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavError.js"/>
+      <module name="sap/ui/generic/app/navigation/service/PresentationVariant.js"/>
+      <module name="sap/ui/generic/app/navigation/service/SelectionVariant.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/Card.view.xml" size="1804">
+    <requires>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/cards/generic/ContentMiddle.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/generic/ContentRight.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js" conditional="true"/>
+      <module name="sap/ui/core/HTML.js" conditional="true"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="{ovpCardProperties&gt;/controllerName}.controller.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/Component.js" size="28005" compressedSize="8024">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/LoadingUtils.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml" size="412">
+    <requires>
+      <module name="sap/m/QuickView.js"/>
+      <module name="sap/ovp/cards/generic/ContactDetailsQuickViewGroup.fragment.xml"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/ContactDetailsQuickViewGroup.fragment.xml" size="4016">
+    <requires>
+      <module name="sap/m/QuickViewGroup.js"/>
+      <module name="sap/m/QuickViewGroupElement.js"/>
+      <module name="sap/m/QuickViewPage.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/ContentMiddle.fragment.xml" size="2856">
+    <requires>
+      <module name="sap/m/Select.js" conditional="true"/>
+      <module name="sap/m/Toolbar.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/ui/Card.js"/>
+      <module name="sap/ovp/ui/CardContentContainer.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Item.js" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/contentFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/footerFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/headerFragment}.fragment.xml" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/ContentRight.fragment.xml" size="1195">
+    <requires>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/ovp/cards/generic/Header.fragment.xml"/>
+      <module name="sap/ovp/ui/Card.js"/>
+      <module name="sap/ovp/ui/CardContentContainer.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="{ovpCardProperties&gt;/contentFragment}.fragment.xml" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/CountFooter.fragment.xml" size="301">
+    <requires>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/CountHeader.fragment.xml" size="346">
+    <requires>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/Header.fragment.xml" size="4057">
+    <requires>
+      <module name="sap/m/FlexBox.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/cards/generic/SubTitle.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/generic/Title.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="{ovpCardProperties&gt;/headerExtensionFragment}.fragment.xml" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/KPIHeader.fragment.xml" size="12017">
+    <requires>
+      <module name="sap/m/FlexBox.js" conditional="true"/>
+      <module name="sap/m/FlexItemData.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ovp/ui/OVPNumericContent.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/SubTitle.fragment.xml" size="6608">
+    <requires>
+      <module name="sap/m/FlexBox.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/generic/Title.fragment.xml" size="3946">
+    <requires>
+      <module name="sap/m/FlexBox.js" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="{ovpCardProperties&gt;/countHeaderFragment}.fragment.xml" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/image/Component.js" size="993" compressedSize="427">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/image/Image.controller.js" size="736" compressedSize="295">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/image/Image.fragment.xml" size="1199">
+    <requires>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Image.js" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/AnnotationHelper.js" size="17738" compressedSize="4658">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/Component.js" size="2053" compressedSize="826">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="sap/ovp/cards/linklist/AnnotationHelper.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/LinkList.controller.js" size="48267" compressedSize="16306">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/LinkList.fragment.xml" size="1425">
+    <requires>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListCarousel.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStandard.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataCarousel.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataStandard.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/fragments/LinkListCarousel.fragment.xml" size="13494">
+    <requires>
+      <module name="sap/m/Carousel.js"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Image.js" conditional="true"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Icon.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/fragments/LinkListNavigationTargets.fragment.xml" size="506">
+    <requires>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/fragments/LinkListStandard.fragment.xml" size="17008">
+    <requires>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/FlexBox.js" conditional="true"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Icon.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataCarousel.fragment.xml" size="5765">
+    <requires>
+      <module name="sap/m/Carousel.js"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Image.js" conditional="true"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Icon.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataStandard.fragment.xml" size="13322">
+    <requires>
+      <module name="sap/m/CustomListItem.js" conditional="true"/>
+      <module name="sap/m/FlexBox.js" conditional="true"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Icon.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/Component.js" size="1570" compressedSize="719">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/CondensedBarList.fragment.xml" size="9179">
+    <requires>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml" conditional="true"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/ExtendedBarList.fragment.xml" size="13010">
+    <requires>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml" conditional="true"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/List.controller.js" size="16766" compressedSize="5466">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/List.fragment.xml" size="3360">
+    <requires>
+      <module name="sap/m/List.js" conditional="true"/>
+      <module name="sap/ovp/cards/list/CondensedBarList.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/list/ExtendedBarList.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/list/ObjectList.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/list/StandardList.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/list/StandardListImage.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/ObjectList.fragment.xml" size="9141">
+    <requires>
+      <module name="sap/m/ObjectAttribute.js"/>
+      <module name="sap/m/ObjectListItem.js"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/StandardList.fragment.xml" size="1913">
+    <requires>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/list/StandardListImage.fragment.xml" size="2819">
+    <requires>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/Component.js" size="1087" compressedSize="474">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="sap/ovp/cards/loading/State.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/Loading.controller.js" size="3501" compressedSize="1318">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/LoadingUtils.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ovp/cards/loading/State.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingBar.fragment.xml" size="1305">
+    <requires>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingContent.fragment.xml" size="4401">
+    <requires>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/cards/loading/LoadingBar.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/loading/LoadingError.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/loading/LoadingListExtended.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/loading/LoadingStack.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/loading/LoadingTable.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/loading/StackLoadingError.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/HTML.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingError.fragment.xml" size="491">
+    <requires>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingFooter.fragment.xml" size="515">
+    <requires>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingList.fragment.xml" size="1549">
+    <requires>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingListExtended.fragment.xml" size="1364">
+    <requires>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingStack.fragment.xml" size="1158">
+    <requires>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/LoadingTable.fragment.xml" size="2039">
+    <requires>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/StackLoadingError.fragment.xml" size="496">
+    <requires>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/loading/State.js" size="399" compressedSize="273">
+    <description>Provides enumeration sap.ovp.cards.loading.State</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.controller.js" size="3067" compressedSize="1462">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.fragment.xml" size="1475">
+    <requires>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/map/Analytical/Component.js" size="1240" compressedSize="580">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/map/Component.js" size="1396" compressedSize="641">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/map/GeographicalMap.controller.js" size="10840" compressedSize="4373">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/map/GeographicalMap.fragment.xml" size="4453">
+    <requires>
+      <module name="sap/m/Bar.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js" conditional="true"/>
+      <module name="sap/m/ResponsivePopover.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/cards/generic/ActionsFooter.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/quickview/Quickview.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/quickview/Component.js" size="1377" compressedSize="621">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/quickview/Quickview.controller.js" size="5522" compressedSize="1759">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/quickview/Quickview.fragment.xml" size="10430">
+    <requires>
+      <module name="sap/m/QuickViewCard.js"/>
+      <module name="sap/m/QuickViewGroup.js" conditional="true"/>
+      <module name="sap/m/QuickViewGroupElement.js" conditional="true"/>
+      <module name="sap/m/QuickViewPage.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/AppSettingsDialog.controller.js" size="1472" compressedSize="953">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AppSettingsUtils.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/AppSettingsDialog.view.xml" size="4045">
+    <requires>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/cards/rta/AppSettingsDialog.controller.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SelectIcons.controller.js" size="2664" compressedSize="1293">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SelectIcons.view.xml" size="2886">
+    <requires>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ovp/cards/rta/SelectIcons.controller.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SelectLineItem.controller.js" size="1685" compressedSize="829">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SelectLineItem.view.xml" size="1589">
+    <requires>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ovp/cards/rta/SelectLineItem.controller.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SelectLinks.controller.js" size="1669" compressedSize="811">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SelectLinks.view.xml" size="1597">
+    <requires>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ovp/cards/rta/SelectLinks.controller.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SettingsDialog.controller.js" size="82405" compressedSize="34407">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/IconTabBar.js"/>
+      <module name="sap/m/IconTabFilter.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/PayLoadUtils.js"/>
+      <module name="sap/ovp/cards/SettingsUtils.js"/>
+      <module name="sap/ovp/cards/linklist/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SettingsDialog.view.xml" size="2564">
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Carousel.js" conditional="true"/>
+      <module name="sap/m/FlexBox.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/ScrollContainer.js" conditional="true"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/cards/rta/SettingsDialog.controller.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogCardPreview.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogForm.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js" conditional="true"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SettingsDialogCardPreview.fragment.xml" size="967">
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SettingsDialogConstants.js" size="11801" compressedSize="6019">
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/SettingsDialogForm.fragment.xml" size="23413">
+    <requires>
+      <module name="sap/m/Button.js" conditional="true"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/StepInput.js" conditional="true"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Toolbar.js" conditional="true"/>
+      <module name="sap/m/ToolbarSpacer.js" conditional="true"/>
+      <module name="sap/ovp/cards/rta/StaticLinkListCardLineItemsPanel.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/rta/StaticLinkListCardLineItemsPanel.fragment.xml" size="11291">
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/stack/Component.js" size="1612" compressedSize="693">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/stack/Stack.controller.js" size="26106" compressedSize="8962">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ovp/ui/ObjectStream.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/BindingParser.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/stack/Stack.fragment.xml" size="829">
+    <requires>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/table/Component.js" size="1528" compressedSize="686">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/table/Table.controller.js" size="8587" compressedSize="3082">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/table/Table.fragment.xml" size="1270">
+    <requires>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/ovp/cards/table/TableDashBoardLayout.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/cards/table/TableEasyScanLayout.fragment.xml" conditional="true"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/table/TableDashBoardLayout.fragment.xml" size="37033">
+    <requires>
+      <module name="sap/m/Column.js" conditional="true"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml" conditional="true"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/ControlProposal.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/ObjectStatus.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/cards/table/TableEasyScanLayout.fragment.xml" size="7271">
+    <requires>
+      <module name="sap/m/Column.js" conditional="true"/>
+      <module name="sap/m/ColumnListItem.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/ovp/cards/table/TableDashBoardLayout.fragment.xml" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/ControlProposal.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/ObjectStatus.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/changeHandler/HideCardContainer.js" size="4492" compressedSize="1181">
+    <description>! Copyright (c) 2009-2014 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/changeHandler/UnhideCardContainer.js" size="5763" compressedSize="1346">
+    <description>! Copyright (c) 2009-2014 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/changeHandler/UnhideControl.js" size="548" compressedSize="238">
+    <description>! Copyright (c) 2009-2014 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/designtime/library-preload.designtime.js" size="1889">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AppSettingsUtils.js"/>
+      <module name="sap/ovp/ui/ComponentContainerDesigntimeMetadata.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ovp/ui/DashboardLayout.designtime.js"/>
+      <module name="sap/ovp/ui/EasyScanLayout.designtime.js"/>
+      <module name="sap/ovp/ui/OVPWrapper.designtime.js"/>
+    </includes>
+  </module>
+  <module name="sap/ovp/flexibility/DashboardLayout.flexibility.js" size="22245" compressedSize="6798">
+    <requires>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ovp/changeHandler/HideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideControl.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/dt/OverlayRegistry.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/flexibility/EasyScanLayout.flexibility.js" size="15440" compressedSize="4993">
+    <requires>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ovp/changeHandler/HideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideControl.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/dt/OverlayRegistry.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/library-h2-preload.js" size="25937">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js" conditional="true"/>
+      <module name="sap/f/DynamicPageTitle.js" conditional="true"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/BackgroundDesign.js"/>
+      <module name="sap/m/Bar.js" conditional="true"/>
+      <module name="sap/m/BusyDialog.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Carousel.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/IconTabBar.js"/>
+      <module name="sap/m/IconTabFilter.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/ListSeparators.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="sap/m/MessagePopoverItem.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/NumericContent.js"/>
+      <module name="sap/m/ObjectAttribute.js"/>
+      <module name="sap/m/ObjectListItem.js"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/QuickView.js"/>
+      <module name="sap/m/QuickViewCard.js"/>
+      <module name="sap/m/QuickViewGroup.js"/>
+      <module name="sap/m/QuickViewGroupElement.js"/>
+      <module name="sap/m/QuickViewPage.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/m/ResponsivePopover.js" conditional="true"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StepInput.js" conditional="true"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/BindingParser.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js" conditional="true"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/ControlProposal.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/JSONType.js"/>
+      <module name="sap/ui/comp/smartfield/ObjectStatus.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/smartfield/SmartLabel.js"/>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js" conditional="true"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/ExtensionPoint.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/TextDirection.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/core/routing/Router.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/dt/MetadataPropagationUtil.js"/>
+      <module name="sap/ui/dt/OverlayRegistry.js"/>
+      <module name="sap/ui/dt/OverlayUtil.js"/>
+      <module name="sap/ui/dt/plugin/ElementMover.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/generic/app/library.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavError.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavigationHandler.js"/>
+      <module name="sap/ui/generic/app/navigation/service/PresentationVariant.js"/>
+      <module name="sap/ui/generic/app/navigation/service/SelectionVariant.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js" conditional="true"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+      <module name="sap/ui/model/odata/ODataMetadata.js"/>
+      <module name="sap/ui/model/odata/ODataUtils.js"/>
+      <module name="sap/ui/model/odata/v2/ODataModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/rta/RuntimeAuthoring.js"/>
+      <module name="sap/ui/rta/Utils.js"/>
+      <module name="sap/ui/rta/plugin/Plugin.js"/>
+      <module name="sap/ui/rta/util/BindingsExtractor.js"/>
+      <module name="sap/ui/thirdparty/hasher.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="sap/ushell/library.js"/>
+      <module name="sap/viz/ui5/api/env/Format.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js" conditional="true"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+      <module name="{ovpCardProperties&gt;/contentFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/controllerName}.controller.js"/>
+      <module name="{ovpCardProperties&gt;/countHeaderFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/footerFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/headerExtensionFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/headerFragment}.fragment.xml" conditional="true"/>
+      <module name="{ui&gt;/cardContainerFragment}.fragment.xml"/>
+    </requires>
+    <includes>
+      <module name="sap/ovp/library.js"/>
+      <module name="sap/ovp/manifest.json"/>
+      <module name="sap/ovp/app/CardContainer.fragment.xml"/>
+      <module name="sap/ovp/app/Component.js"/>
+      <module name="sap/ovp/app/DashboardCardContainer.fragment.xml"/>
+      <module name="sap/ovp/app/Error.view.xml"/>
+      <module name="sap/ovp/app/Main.controller.js"/>
+      <module name="sap/ovp/app/Main.view.xml"/>
+      <module name="sap/ovp/app/SharePage.fragment.xml"/>
+      <module name="sap/ovp/app/SmarFilterBarWithoutVariant.fragment.xml"/>
+      <module name="sap/ovp/app/SmartFilterBarWithVariant.fragment.xml"/>
+      <module name="sap/ovp/app/manifest.json"/>
+      <module name="sap/ovp/cards/ActionUtils.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/AppSettingsUtils.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/LoadingUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/PayLoadUtils.js"/>
+      <module name="sap/ovp/cards/PersonalizationUtils.js"/>
+      <module name="sap/ovp/cards/SettingsUtils.js"/>
+      <module name="sap/ovp/cards/charts/OVPVizDataHandler.js"/>
+      <module name="sap/ovp/cards/charts/SmartAnnotationManager.js"/>
+      <module name="sap/ovp/cards/charts/Utils.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ovp/cards/charts/analytical/Component.js"/>
+      <module name="sap/ovp/cards/charts/analytical/analyticalChart.controller.js"/>
+      <module name="sap/ovp/cards/charts/analytical/analyticalChart.fragment.xml"/>
+      <module name="sap/ovp/cards/charts/generic/Component.js"/>
+      <module name="sap/ovp/cards/charts/generic/noData.fragment.xml"/>
+      <module name="sap/ovp/cards/charts/smart/chart/Component.js"/>
+      <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.controller.js"/>
+      <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.fragment.xml"/>
+      <module name="sap/ovp/cards/custom/Component.js"/>
+      <module name="sap/ovp/cards/error/Component.js"/>
+      <module name="sap/ovp/cards/error/Error.controller.js"/>
+      <module name="sap/ovp/cards/error/Error.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Action.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ActionsFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ovp/cards/generic/Card.view.xml"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContactDetailsQuickViewGroup.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContentMiddle.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContentRight.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/CountFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/CountHeader.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Header.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/KPIHeader.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/SubTitle.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Title.fragment.xml"/>
+      <module name="sap/ovp/cards/image/Component.js"/>
+      <module name="sap/ovp/cards/image/Image.controller.js"/>
+      <module name="sap/ovp/cards/image/Image.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/linklist/Component.js"/>
+      <module name="sap/ovp/cards/linklist/LinkList.controller.js"/>
+      <module name="sap/ovp/cards/linklist/LinkList.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListCarousel.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListNavigationTargets.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStandard.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataCarousel.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataStandard.fragment.xml"/>
+      <module name="sap/ovp/cards/list/Component.js"/>
+      <module name="sap/ovp/cards/list/CondensedBarList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/ExtendedBarList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/List.controller.js"/>
+      <module name="sap/ovp/cards/list/List.fragment.xml"/>
+      <module name="sap/ovp/cards/list/ObjectList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/StandardList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/StandardListImage.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/Component.js"/>
+      <module name="sap/ovp/cards/loading/Loading.controller.js"/>
+      <module name="sap/ovp/cards/loading/LoadingBar.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingContent.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingError.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingList.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingListExtended.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingStack.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingTable.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/StackLoadingError.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/State.js"/>
+      <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.controller.js"/>
+      <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.fragment.xml"/>
+      <module name="sap/ovp/cards/map/Analytical/Component.js"/>
+      <module name="sap/ovp/cards/map/Component.js"/>
+      <module name="sap/ovp/cards/map/GeographicalMap.controller.js"/>
+      <module name="sap/ovp/cards/map/GeographicalMap.fragment.xml"/>
+      <module name="sap/ovp/cards/quickview/Component.js"/>
+      <module name="sap/ovp/cards/quickview/Quickview.controller.js"/>
+      <module name="sap/ovp/cards/quickview/Quickview.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/AppSettingsDialog.controller.js"/>
+      <module name="sap/ovp/cards/rta/AppSettingsDialog.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectIcons.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectIcons.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectLineItem.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectLineItem.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectLinks.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectLinks.view.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialog.controller.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialog.view.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogCardPreview.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogForm.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/StaticLinkListCardLineItemsPanel.fragment.xml"/>
+      <module name="sap/ovp/cards/stack/Component.js"/>
+      <module name="sap/ovp/cards/stack/Stack.controller.js"/>
+      <module name="sap/ovp/cards/stack/Stack.fragment.xml"/>
+      <module name="sap/ovp/cards/table/Component.js"/>
+      <module name="sap/ovp/cards/table/Table.controller.js"/>
+      <module name="sap/ovp/cards/table/Table.fragment.xml"/>
+      <module name="sap/ovp/cards/table/TableDashBoardLayout.fragment.xml"/>
+      <module name="sap/ovp/cards/table/TableEasyScanLayout.fragment.xml"/>
+      <module name="sap/ovp/changeHandler/HideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideControl.js"/>
+      <module name="sap/ovp/flexibility/DashboardLayout.flexibility.js"/>
+      <module name="sap/ovp/flexibility/EasyScanLayout.flexibility.js"/>
+      <module name="sap/ovp/ui/Card.js"/>
+      <module name="sap/ovp/ui/CardContentContainer.js"/>
+      <module name="sap/ovp/ui/ComponentContainerDesigntimeMetadata.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ovp/ui/DashboardLayout.designtime.js"/>
+      <module name="sap/ovp/ui/DashboardLayout.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutModel.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutRearrange.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutUtil.js"/>
+      <module name="sap/ovp/ui/EasyScanLayout.designtime.js"/>
+      <module name="sap/ovp/ui/EasyScanLayout.js"/>
+      <module name="sap/ovp/ui/OVPNumericContent.js"/>
+      <module name="sap/ovp/ui/OVPWrapper.designtime.js"/>
+      <module name="sap/ovp/ui/OVPWrapper.js"/>
+      <module name="sap/ovp/ui/ObjectStream.js"/>
+      <module name="sap/ovp/ui/ObjectStreamRenderer.js"/>
+      <module name="sap/ovp/ui/SmartphoneHeaderToggle.js"/>
+      <module name="sap/ovp/ui/UIActions.js"/>
+    </includes>
+  </module>
+  <module name="sap/ovp/library-preload.js" size="701180">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js" conditional="true"/>
+      <module name="sap/f/DynamicPageTitle.js" conditional="true"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/BackgroundDesign.js"/>
+      <module name="sap/m/Bar.js" conditional="true"/>
+      <module name="sap/m/BusyDialog.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Carousel.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/IconTabBar.js"/>
+      <module name="sap/m/IconTabFilter.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/ListSeparators.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="sap/m/MessagePopoverItem.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/NumericContent.js"/>
+      <module name="sap/m/ObjectAttribute.js"/>
+      <module name="sap/m/ObjectListItem.js"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/QuickView.js"/>
+      <module name="sap/m/QuickViewCard.js"/>
+      <module name="sap/m/QuickViewGroup.js"/>
+      <module name="sap/m/QuickViewGroupElement.js"/>
+      <module name="sap/m/QuickViewPage.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/m/ResponsivePopover.js" conditional="true"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StepInput.js" conditional="true"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/BindingParser.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js" conditional="true"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/ControlProposal.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/JSONType.js"/>
+      <module name="sap/ui/comp/smartfield/ObjectStatus.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/smartfield/SmartLabel.js"/>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js" conditional="true"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/ExtensionPoint.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/TextDirection.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/core/routing/Router.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/dt/MetadataPropagationUtil.js"/>
+      <module name="sap/ui/dt/OverlayRegistry.js"/>
+      <module name="sap/ui/dt/OverlayUtil.js"/>
+      <module name="sap/ui/dt/plugin/ElementMover.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/generic/app/library.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavError.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavigationHandler.js"/>
+      <module name="sap/ui/generic/app/navigation/service/PresentationVariant.js"/>
+      <module name="sap/ui/generic/app/navigation/service/SelectionVariant.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js" conditional="true"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+      <module name="sap/ui/model/odata/ODataMetadata.js"/>
+      <module name="sap/ui/model/odata/ODataUtils.js"/>
+      <module name="sap/ui/model/odata/v2/ODataModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/rta/RuntimeAuthoring.js"/>
+      <module name="sap/ui/rta/Utils.js"/>
+      <module name="sap/ui/rta/plugin/Plugin.js"/>
+      <module name="sap/ui/rta/util/BindingsExtractor.js"/>
+      <module name="sap/ui/thirdparty/hasher.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="sap/ushell/library.js"/>
+      <module name="sap/viz/ui5/api/env/Format.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js" conditional="true"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+      <module name="{ovpCardProperties&gt;/contentFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/controllerName}.controller.js"/>
+      <module name="{ovpCardProperties&gt;/countHeaderFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/footerFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/headerExtensionFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/headerFragment}.fragment.xml" conditional="true"/>
+      <module name="{ui&gt;/cardContainerFragment}.fragment.xml"/>
+    </requires>
+    <includes>
+      <module name="sap/ovp/app/CardContainer.fragment.xml"/>
+      <module name="sap/ovp/app/Component.js"/>
+      <module name="sap/ovp/app/DashboardCardContainer.fragment.xml"/>
+      <module name="sap/ovp/app/Error.view.xml"/>
+      <module name="sap/ovp/app/Main.controller.js"/>
+      <module name="sap/ovp/app/Main.view.xml"/>
+      <module name="sap/ovp/app/SharePage.fragment.xml"/>
+      <module name="sap/ovp/app/SmarFilterBarWithoutVariant.fragment.xml"/>
+      <module name="sap/ovp/app/SmartFilterBarWithVariant.fragment.xml"/>
+      <module name="sap/ovp/app/manifest.json"/>
+      <module name="sap/ovp/cards/ActionUtils.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/AppSettingsUtils.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/LoadingUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/PayLoadUtils.js"/>
+      <module name="sap/ovp/cards/PersonalizationUtils.js"/>
+      <module name="sap/ovp/cards/SettingsUtils.js"/>
+      <module name="sap/ovp/cards/charts/OVPVizDataHandler.js"/>
+      <module name="sap/ovp/cards/charts/SmartAnnotationManager.js"/>
+      <module name="sap/ovp/cards/charts/Utils.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ovp/cards/charts/analytical/Component.js"/>
+      <module name="sap/ovp/cards/charts/analytical/analyticalChart.controller.js"/>
+      <module name="sap/ovp/cards/charts/analytical/analyticalChart.fragment.xml"/>
+      <module name="sap/ovp/cards/charts/generic/Component.js"/>
+      <module name="sap/ovp/cards/charts/generic/noData.fragment.xml"/>
+      <module name="sap/ovp/cards/charts/smart/chart/Component.js"/>
+      <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.controller.js"/>
+      <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.fragment.xml"/>
+      <module name="sap/ovp/cards/custom/Component.js"/>
+      <module name="sap/ovp/cards/error/Component.js"/>
+      <module name="sap/ovp/cards/error/Error.controller.js"/>
+      <module name="sap/ovp/cards/error/Error.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Action.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ActionsFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ovp/cards/generic/Card.view.xml"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContactDetailsQuickViewGroup.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContentMiddle.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContentRight.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/CountFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/CountHeader.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Header.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/KPIHeader.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/SubTitle.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Title.fragment.xml"/>
+      <module name="sap/ovp/cards/image/Component.js"/>
+      <module name="sap/ovp/cards/image/Image.controller.js"/>
+      <module name="sap/ovp/cards/image/Image.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/linklist/Component.js"/>
+      <module name="sap/ovp/cards/linklist/LinkList.controller.js"/>
+      <module name="sap/ovp/cards/linklist/LinkList.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListCarousel.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListNavigationTargets.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStandard.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataCarousel.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataStandard.fragment.xml"/>
+      <module name="sap/ovp/cards/list/Component.js"/>
+      <module name="sap/ovp/cards/list/CondensedBarList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/ExtendedBarList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/List.controller.js"/>
+      <module name="sap/ovp/cards/list/List.fragment.xml"/>
+      <module name="sap/ovp/cards/list/ObjectList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/StandardList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/StandardListImage.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/Component.js"/>
+      <module name="sap/ovp/cards/loading/Loading.controller.js"/>
+      <module name="sap/ovp/cards/loading/LoadingBar.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingContent.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingError.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingList.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingListExtended.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingStack.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingTable.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/StackLoadingError.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/State.js"/>
+      <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.controller.js"/>
+      <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.fragment.xml"/>
+      <module name="sap/ovp/cards/map/Analytical/Component.js"/>
+      <module name="sap/ovp/cards/map/Component.js"/>
+      <module name="sap/ovp/cards/map/GeographicalMap.controller.js"/>
+      <module name="sap/ovp/cards/map/GeographicalMap.fragment.xml"/>
+      <module name="sap/ovp/cards/quickview/Component.js"/>
+      <module name="sap/ovp/cards/quickview/Quickview.controller.js"/>
+      <module name="sap/ovp/cards/quickview/Quickview.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/AppSettingsDialog.controller.js"/>
+      <module name="sap/ovp/cards/rta/AppSettingsDialog.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectIcons.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectIcons.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectLineItem.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectLineItem.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectLinks.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectLinks.view.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialog.controller.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialog.view.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogCardPreview.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogForm.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/StaticLinkListCardLineItemsPanel.fragment.xml"/>
+      <module name="sap/ovp/cards/stack/Component.js"/>
+      <module name="sap/ovp/cards/stack/Stack.controller.js"/>
+      <module name="sap/ovp/cards/stack/Stack.fragment.xml"/>
+      <module name="sap/ovp/cards/table/Component.js"/>
+      <module name="sap/ovp/cards/table/Table.controller.js"/>
+      <module name="sap/ovp/cards/table/Table.fragment.xml"/>
+      <module name="sap/ovp/cards/table/TableDashBoardLayout.fragment.xml"/>
+      <module name="sap/ovp/cards/table/TableEasyScanLayout.fragment.xml"/>
+      <module name="sap/ovp/changeHandler/HideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideControl.js"/>
+      <module name="sap/ovp/flexibility/DashboardLayout.flexibility.js"/>
+      <module name="sap/ovp/flexibility/EasyScanLayout.flexibility.js"/>
+      <module name="sap/ovp/library.js"/>
+      <module name="sap/ovp/manifest.json"/>
+      <module name="sap/ovp/ui/Card.js"/>
+      <module name="sap/ovp/ui/CardContentContainer.js"/>
+      <module name="sap/ovp/ui/ComponentContainerDesigntimeMetadata.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ovp/ui/DashboardLayout.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutModel.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutRearrange.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutUtil.js"/>
+      <module name="sap/ovp/ui/EasyScanLayout.js"/>
+      <module name="sap/ovp/ui/OVPNumericContent.js"/>
+      <module name="sap/ovp/ui/OVPWrapper.js"/>
+      <module name="sap/ovp/ui/ObjectStream.js"/>
+      <module name="sap/ovp/ui/ObjectStreamRenderer.js"/>
+      <module name="sap/ovp/ui/SmartphoneHeaderToggle.js"/>
+      <module name="sap/ovp/ui/UIActions.js"/>
+    </includes>
+  </module>
+  <module name="sap/ovp/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js" conditional="true"/>
+      <module name="sap/f/DynamicPageTitle.js" conditional="true"/>
+      <module name="sap/f/library-preload.json"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/BackgroundDesign.js"/>
+      <module name="sap/m/Bar.js" conditional="true"/>
+      <module name="sap/m/BusyDialog.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Carousel.js"/>
+      <module name="sap/m/Column.js"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/IconTabBar.js"/>
+      <module name="sap/m/IconTabFilter.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/ListSeparators.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="sap/m/MessagePopoverItem.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/NumericContent.js"/>
+      <module name="sap/m/ObjectAttribute.js"/>
+      <module name="sap/m/ObjectListItem.js"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js" conditional="true"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/QuickView.js"/>
+      <module name="sap/m/QuickViewCard.js"/>
+      <module name="sap/m/QuickViewGroup.js"/>
+      <module name="sap/m/QuickViewGroupElement.js"/>
+      <module name="sap/m/QuickViewPage.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/m/ResponsivePopover.js" conditional="true"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StepInput.js" conditional="true"/>
+      <module name="sap/m/Switch.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library-preload.json"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/BindingParser.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/comp/library-preload.json"/>
+      <module name="sap/ui/comp/navpopover/SmartLink.js" conditional="true"/>
+      <module name="sap/ui/comp/odata/MetadataAnalyser.js"/>
+      <module name="sap/ui/comp/smartchart/SmartChart.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/ControlProposal.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/JSONType.js"/>
+      <module name="sap/ui/comp/smartfield/ObjectStatus.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfield/SmartField.js"/>
+      <module name="sap/ui/comp/smartfield/SmartLabel.js"/>
+      <module name="sap/ui/comp/smartfilterbar/ControlConfiguration.js" conditional="true"/>
+      <module name="sap/ui/comp/smartfilterbar/SmartFilterBar.js"/>
+      <module name="sap/ui/comp/smartvariants/SmartVariantManagement.js" conditional="true"/>
+      <module name="sap/ui/comp/state/UIState.js"/>
+      <module name="sap/ui/comp/valuehelpdialog/ValueHelpDialog.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/ExtensionPoint.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/TextDirection.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/core/mvc/ViewType.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/core/routing/Router.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/dt/MetadataPropagationUtil.js"/>
+      <module name="sap/ui/dt/OverlayRegistry.js"/>
+      <module name="sap/ui/dt/OverlayUtil.js"/>
+      <module name="sap/ui/dt/plugin/ElementMover.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/generic/app/library-preload.json"/>
+      <module name="sap/ui/generic/app/library.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavError.js"/>
+      <module name="sap/ui/generic/app/navigation/service/NavigationHandler.js"/>
+      <module name="sap/ui/generic/app/navigation/service/PresentationVariant.js"/>
+      <module name="sap/ui/generic/app/navigation/service/SelectionVariant.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js" conditional="true"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js"/>
+      <module name="sap/ui/layout/form/ResponsiveGridLayout.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/layout/library-preload.json"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/analytics/odata4analytics.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/CountMode.js"/>
+      <module name="sap/ui/model/odata/ODataMetadata.js"/>
+      <module name="sap/ui/model/odata/ODataUtils.js"/>
+      <module name="sap/ui/model/odata/v2/ODataModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/rta/RuntimeAuthoring.js"/>
+      <module name="sap/ui/rta/Utils.js"/>
+      <module name="sap/ui/rta/plugin/Plugin.js"/>
+      <module name="sap/ui/rta/util/BindingsExtractor.js"/>
+      <module name="sap/ui/thirdparty/hasher.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="sap/ushell/library.js"/>
+      <module name="sap/viz/ui5/api/env/Format.js"/>
+      <module name="sap/viz/ui5/controls/VizFrame.js" conditional="true"/>
+      <module name="sap/viz/ui5/controls/VizTooltip.js"/>
+      <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
+      <module name="sap/viz/ui5/data/DimensionDefinition.js"/>
+      <module name="sap/viz/ui5/data/FlattenedDataset.js"/>
+      <module name="sap/viz/ui5/data/MeasureDefinition.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+      <module name="{ovpCardProperties&gt;/contentFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/controllerName}.controller.js"/>
+      <module name="{ovpCardProperties&gt;/countHeaderFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/footerFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/headerExtensionFragment}.fragment.xml" conditional="true"/>
+      <module name="{ovpCardProperties&gt;/headerFragment}.fragment.xml" conditional="true"/>
+      <module name="{ui&gt;/cardContainerFragment}.fragment.xml"/>
+    </requires>
+    <includes>
+      <module name="sap/ovp/app/CardContainer.fragment.xml"/>
+      <module name="sap/ovp/app/Component.js"/>
+      <module name="sap/ovp/app/DashboardCardContainer.fragment.xml"/>
+      <module name="sap/ovp/app/Error.view.xml"/>
+      <module name="sap/ovp/app/Main.controller.js"/>
+      <module name="sap/ovp/app/Main.view.xml"/>
+      <module name="sap/ovp/app/SharePage.fragment.xml"/>
+      <module name="sap/ovp/app/SmarFilterBarWithoutVariant.fragment.xml"/>
+      <module name="sap/ovp/app/SmartFilterBarWithVariant.fragment.xml"/>
+      <module name="sap/ovp/app/manifest.json"/>
+      <module name="sap/ovp/cards/ActionUtils.js"/>
+      <module name="sap/ovp/cards/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/AppSettingsUtils.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/LoadingUtils.js"/>
+      <module name="sap/ovp/cards/OVPCardAsAPIUtils.js"/>
+      <module name="sap/ovp/cards/PayLoadUtils.js"/>
+      <module name="sap/ovp/cards/PersonalizationUtils.js"/>
+      <module name="sap/ovp/cards/SettingsUtils.js"/>
+      <module name="sap/ovp/cards/charts/OVPVizDataHandler.js"/>
+      <module name="sap/ovp/cards/charts/SmartAnnotationManager.js"/>
+      <module name="sap/ovp/cards/charts/Utils.js"/>
+      <module name="sap/ovp/cards/charts/VizAnnotationManager.js"/>
+      <module name="sap/ovp/cards/charts/analytical/Component.js"/>
+      <module name="sap/ovp/cards/charts/analytical/analyticalChart.controller.js"/>
+      <module name="sap/ovp/cards/charts/analytical/analyticalChart.fragment.xml"/>
+      <module name="sap/ovp/cards/charts/generic/Component.js"/>
+      <module name="sap/ovp/cards/charts/generic/noData.fragment.xml"/>
+      <module name="sap/ovp/cards/charts/smart/chart/Component.js"/>
+      <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.controller.js"/>
+      <module name="sap/ovp/cards/charts/smart/chart/analyticalChart.fragment.xml"/>
+      <module name="sap/ovp/cards/custom/Component.js"/>
+      <module name="sap/ovp/cards/error/Component.js"/>
+      <module name="sap/ovp/cards/error/Error.controller.js"/>
+      <module name="sap/ovp/cards/error/Error.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Action.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ActionsFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Card.controller.js"/>
+      <module name="sap/ovp/cards/generic/Card.view.xml"/>
+      <module name="sap/ovp/cards/generic/Component.js"/>
+      <module name="sap/ovp/cards/generic/ContactDetails.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContactDetailsQuickViewGroup.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContentMiddle.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/ContentRight.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/CountFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/CountHeader.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Header.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/KPIHeader.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/SubTitle.fragment.xml"/>
+      <module name="sap/ovp/cards/generic/Title.fragment.xml"/>
+      <module name="sap/ovp/cards/image/Component.js"/>
+      <module name="sap/ovp/cards/image/Image.controller.js"/>
+      <module name="sap/ovp/cards/image/Image.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/AnnotationHelper.js"/>
+      <module name="sap/ovp/cards/linklist/Component.js"/>
+      <module name="sap/ovp/cards/linklist/LinkList.controller.js"/>
+      <module name="sap/ovp/cards/linklist/LinkList.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListCarousel.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListNavigationTargets.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStandard.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataCarousel.fragment.xml"/>
+      <module name="sap/ovp/cards/linklist/fragments/LinkListStaticDataStandard.fragment.xml"/>
+      <module name="sap/ovp/cards/list/Component.js"/>
+      <module name="sap/ovp/cards/list/CondensedBarList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/ExtendedBarList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/List.controller.js"/>
+      <module name="sap/ovp/cards/list/List.fragment.xml"/>
+      <module name="sap/ovp/cards/list/ObjectList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/StandardList.fragment.xml"/>
+      <module name="sap/ovp/cards/list/StandardListImage.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/Component.js"/>
+      <module name="sap/ovp/cards/loading/Loading.controller.js"/>
+      <module name="sap/ovp/cards/loading/LoadingBar.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingContent.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingError.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingFooter.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingList.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingListExtended.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingStack.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/LoadingTable.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/StackLoadingError.fragment.xml"/>
+      <module name="sap/ovp/cards/loading/State.js"/>
+      <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.controller.js"/>
+      <module name="sap/ovp/cards/map/Analytical/AnalyticalMap.fragment.xml"/>
+      <module name="sap/ovp/cards/map/Analytical/Component.js"/>
+      <module name="sap/ovp/cards/map/Component.js"/>
+      <module name="sap/ovp/cards/map/GeographicalMap.controller.js"/>
+      <module name="sap/ovp/cards/map/GeographicalMap.fragment.xml"/>
+      <module name="sap/ovp/cards/quickview/Component.js"/>
+      <module name="sap/ovp/cards/quickview/Quickview.controller.js"/>
+      <module name="sap/ovp/cards/quickview/Quickview.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/AppSettingsDialog.controller.js"/>
+      <module name="sap/ovp/cards/rta/AppSettingsDialog.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectIcons.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectIcons.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectLineItem.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectLineItem.view.xml"/>
+      <module name="sap/ovp/cards/rta/SelectLinks.controller.js"/>
+      <module name="sap/ovp/cards/rta/SelectLinks.view.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialog.controller.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialog.view.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogCardPreview.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogConstants.js"/>
+      <module name="sap/ovp/cards/rta/SettingsDialogForm.fragment.xml"/>
+      <module name="sap/ovp/cards/rta/StaticLinkListCardLineItemsPanel.fragment.xml"/>
+      <module name="sap/ovp/cards/stack/Component.js"/>
+      <module name="sap/ovp/cards/stack/Stack.controller.js"/>
+      <module name="sap/ovp/cards/stack/Stack.fragment.xml"/>
+      <module name="sap/ovp/cards/table/Component.js"/>
+      <module name="sap/ovp/cards/table/Table.controller.js"/>
+      <module name="sap/ovp/cards/table/Table.fragment.xml"/>
+      <module name="sap/ovp/cards/table/TableDashBoardLayout.fragment.xml"/>
+      <module name="sap/ovp/cards/table/TableEasyScanLayout.fragment.xml"/>
+      <module name="sap/ovp/changeHandler/HideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideCardContainer.js"/>
+      <module name="sap/ovp/changeHandler/UnhideControl.js"/>
+      <module name="sap/ovp/flexibility/DashboardLayout.flexibility.js"/>
+      <module name="sap/ovp/flexibility/EasyScanLayout.flexibility.js"/>
+      <module name="sap/ovp/library.js"/>
+      <module name="sap/ovp/manifest.json"/>
+      <module name="sap/ovp/ui/Card.js"/>
+      <module name="sap/ovp/ui/CardContentContainer.js"/>
+      <module name="sap/ovp/ui/ComponentContainerDesigntimeMetadata.js"/>
+      <module name="sap/ovp/ui/CustomData.js"/>
+      <module name="sap/ovp/ui/DashboardLayout.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutModel.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutRearrange.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutUtil.js"/>
+      <module name="sap/ovp/ui/EasyScanLayout.js"/>
+      <module name="sap/ovp/ui/OVPNumericContent.js"/>
+      <module name="sap/ovp/ui/OVPWrapper.js"/>
+      <module name="sap/ovp/ui/ObjectStream.js"/>
+      <module name="sap/ovp/ui/ObjectStreamRenderer.js"/>
+      <module name="sap/ovp/ui/SmartphoneHeaderToggle.js"/>
+      <module name="sap/ovp/ui/UIActions.js"/>
+    </includes>
+  </module>
+  <module name="sap/ovp/library.js" size="1241" compressedSize="795">
+    <description>Initialization Code and shared classes of library sap.ovp (1.56.5)</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/manifest.json" size="1787">
+  </module>
+  <module name="sap/ovp/messagebundle.properties" size="11837">
+  </module>
+  <module name="sap/ovp/messagebundle_ar.properties" size="23310">
+  </module>
+  <module name="sap/ovp/messagebundle_bg.properties" size="27269">
+  </module>
+  <module name="sap/ovp/messagebundle_ca.properties" size="12904">
+  </module>
+  <module name="sap/ovp/messagebundle_cs.properties" size="13160">
+  </module>
+  <module name="sap/ovp/messagebundle_da.properties" size="11962">
+  </module>
+  <module name="sap/ovp/messagebundle_de.properties" size="12566">
+  </module>
+  <module name="sap/ovp/messagebundle_el.properties" size="25939">
+  </module>
+  <module name="sap/ovp/messagebundle_en.properties" size="11615">
+  </module>
+  <module name="sap/ovp/messagebundle_en_US_sappsd.properties" size="29502">
+  </module>
+  <module name="sap/ovp/messagebundle_en_US_saptrc.properties" size="15982">
+  </module>
+  <module name="sap/ovp/messagebundle_es.properties" size="12854">
+  </module>
+  <module name="sap/ovp/messagebundle_et.properties" size="12147">
+  </module>
+  <module name="sap/ovp/messagebundle_fi.properties" size="12914">
+  </module>
+  <module name="sap/ovp/messagebundle_fr.properties" size="12851">
+  </module>
+  <module name="sap/ovp/messagebundle_hi.properties" size="23991">
+  </module>
+  <module name="sap/ovp/messagebundle_hr.properties" size="12451">
+  </module>
+  <module name="sap/ovp/messagebundle_hu.properties" size="14128">
+  </module>
+  <module name="sap/ovp/messagebundle_it.properties" size="12301">
+  </module>
+  <module name="sap/ovp/messagebundle_iw.properties" size="20739">
+  </module>
+  <module name="sap/ovp/messagebundle_ja.properties" size="17319">
+  </module>
+  <module name="sap/ovp/messagebundle_kk.properties" size="26211">
+  </module>
+  <module name="sap/ovp/messagebundle_ko.properties" size="15530">
+  </module>
+  <module name="sap/ovp/messagebundle_lt.properties" size="13645">
+  </module>
+  <module name="sap/ovp/messagebundle_lv.properties" size="13521">
+  </module>
+  <module name="sap/ovp/messagebundle_ms.properties" size="12013">
+  </module>
+  <module name="sap/ovp/messagebundle_nl.properties" size="12125">
+  </module>
+  <module name="sap/ovp/messagebundle_no.properties" size="11886">
+  </module>
+  <module name="sap/ovp/messagebundle_pl.properties" size="13232">
+  </module>
+  <module name="sap/ovp/messagebundle_pt.properties" size="13181">
+  </module>
+  <module name="sap/ovp/messagebundle_ro.properties" size="13045">
+  </module>
+  <module name="sap/ovp/messagebundle_ru.properties" size="26002">
+  </module>
+  <module name="sap/ovp/messagebundle_sh.properties" size="12538">
+  </module>
+  <module name="sap/ovp/messagebundle_sk.properties" size="13456">
+  </module>
+  <module name="sap/ovp/messagebundle_sl.properties" size="12411">
+  </module>
+  <module name="sap/ovp/messagebundle_sv.properties" size="12178">
+  </module>
+  <module name="sap/ovp/messagebundle_th.properties" size="23971">
+  </module>
+  <module name="sap/ovp/messagebundle_tr.properties" size="13699">
+  </module>
+  <module name="sap/ovp/messagebundle_uk.properties" size="26192">
+  </module>
+  <module name="sap/ovp/messagebundle_vi.properties" size="16920">
+  </module>
+  <module name="sap/ovp/messagebundle_zh_CN.properties" size="13998">
+  </module>
+  <module name="sap/ovp/messagebundle_zh_TW.properties" size="13965">
+  </module>
+  <module name="sap/ovp/ui/Card.js" size="682" compressedSize="462">
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/CardContentContainer.js" size="897" compressedSize="404">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/ComponentContainerDesigntimeMetadata.js" size="20623" compressedSize="6131">
+    <description>! Copyright (c) 2009-2014 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/cards/SettingsUtils.js"/>
+      <module name="sap/ui/dt/MetadataPropagationUtil.js"/>
+      <module name="sap/ui/dt/OverlayRegistry.js"/>
+      <module name="sap/ui/dt/OverlayUtil.js"/>
+      <module name="sap/ui/dt/plugin/ElementMover.js"/>
+      <module name="sap/ui/rta/Utils.js"/>
+      <module name="sap/ui/rta/plugin/Plugin.js"/>
+      <module name="sap/ui/rta/util/BindingsExtractor.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/CustomData.js" size="1859" compressedSize="1090">
+    <description>! Copyright (c) 2009-2014 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ushell/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/DashboardLayout.designtime.js" size="1424" compressedSize="490">
+    <requires>
+      <module name="sap/ovp/ui/ComponentContainerDesigntimeMetadata.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/DashboardLayout.js" size="22214" compressedSize="8691">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/DashboardLayoutModel.js" size="48184" compressedSize="15119">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/DashboardLayoutRearrange.js" size="31986" compressedSize="15207">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/ui/UIActions.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/DashboardLayoutUtil.js" size="26307" compressedSize="11736">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutModel.js"/>
+      <module name="sap/ovp/ui/DashboardLayoutRearrange.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/EasyScanLayout.designtime.js" size="1610" compressedSize="676">
+    <description>! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</description>
+    <requires>
+      <module name="sap/ovp/ui/ComponentContainerDesigntimeMetadata.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/EasyScanLayout.js" size="70563" compressedSize="26124">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/CommonUtils.js"/>
+      <module name="sap/ovp/ui/UIActions.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/OVPNumericContent.js" size="1998" compressedSize="747">
+    <requires>
+      <module name="sap/m/NumericContent.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/OVPWrapper.designtime.js" size="2134" compressedSize="732">
+    <description>! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ovp/cards/AppSettingsUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/OVPWrapper.js" size="902" compressedSize="525">
+    <description>global sap window</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/ObjectStream.js" size="26647" compressedSize="11251">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5/OpenUI5) (c) Copyright 2009-2014 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/ObjectStreamRenderer.js" size="4522" compressedSize="2163">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/SmartphoneHeaderToggle.js" size="4373" compressedSize="2210">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ovp/ui/UIActions.js" size="40341" compressedSize="14532">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+</library>

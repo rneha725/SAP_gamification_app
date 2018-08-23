@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Element"],function(E){"use strict";var N=E.extend("sap.suite.ui.commons.networkgraph.NodeImage",{metadata:{library:"sap.suite.ui.commons",properties:{src:{type:"sap.ui.core.URI",group:"Appearance",defaultValue:null},width:{type:"int",group:"Appearance",defaultValue:null},height:{type:"int",group:"Appearance",defaultValue:null}}}});return N;});

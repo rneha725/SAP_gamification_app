@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/suite/ui/generic/template/library-h2-preload.js",
+"sourceroot":".",
+"sources":["library-dbg.js","manifest.json"],
+"names":["jQuery","library1"],
+"mappings":";;;;;;AAgBA,gBAAa,yCAAC,CACb,oBAAqB,qBACtB,EAAG,SAASA,CAAM,CAAEC,CAAQ,CAAE,CAC7B,aAYA,8BACC,KAAM,gCACN,aAAc,CACb,aACD,EACA,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,QAAS,SACT,WAAY,CAEX,iBAAkB,CACjB,YAAa,KACb,cAAe,MACf,kBAAmB,CAClB,uEACD,CACD,CACD,CACD,GAEA,OAAO,8BAER,EAAiB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[0,622,694,1877]
+}

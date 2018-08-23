@@ -1,0 +1,38 @@
+<core:FragmentDefinition 
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:core="sap.ui.core"
+	xmlns:fe="sap.fe"
+	xmlns:feexp="sap.fe.experimental">
+	<template:alias name=".ViewSwitchContainer" value="sap.fe.ViewSwitchContainer._helper">
+		<template:if test="{=${vscItem>$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.LineItem') > -1}">
+			<template:then>
+				<template:if test="{vscItem>$AnnotationPath@@sap.ui.model.odata.v4.AnnotationHelper.isMultiple}">
+					<template:then>
+						<feexp:ViewSwitchContainerItem iconurl="sap-icon://table-view">
+							<feexp:content>
+								<template:with path="vscItem>$AnnotationPath" var="collection" helper="sap.fe.core.AnnotationHelper.getNavigationCollection">
+									<mdc:Table metadataContexts="{ model: 'collection', path:'',  name: 'entitySet'}" tableBindingPath="{parts : [{path:'variant>SortOrder'},{path:'variant>GroupBy'},{path: 'collection>'}, {path: 'vscItem>$AnnotationPath'}], formatter : '.ViewSwitchContainer.getPVNavigationPath'}" type="ResponsiveTable" growingScrollToLoad="false" growingThreshold="10" />
+								</template:with>
+							</feexp:content>
+						</feexp:ViewSwitchContainerItem>
+					</template:then>
+				</template:if>
+			</template:then>
+			<template:elseif test="{= (${vscItem>$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.FieldGroup') > -1 || ${vscItem>$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.Identification') > -1) }">
+				<feexp:ViewSwitchContainerItem iconurl="sap-icon://form">
+					<feexp:content>
+						<template:if test="{= ${vscItem>$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.FieldGroup') > -1}">
+							<template:then>
+								<fe:Form id="{path: 'vscItem>', formatter: 'sap.fe.templates.ObjectPage.AnnotationHelper.getStableIdPartFromFacet'}::Form" metadataContexts="{ model: 'vscItem', path:'$AnnotationPath/Data', name: 'dataFieldCollection'}" formTitle="{vscItem>@@.MODEL.label}" />
+							</template:then>
+							<template:elseif test="{= ${vscItem>$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.Identification') > -1}">
+								<fe:Form id="{path: 'vscItem>', formatter: 'sap.fe.templates.ObjectPage.AnnotationHelper.getStableIdPartFromFacet'}::Form" metadataContexts="{ model: 'vscItem', path:'$AnnotationPath/', name: 'dataFieldCollection'}" formTitle="{vscItem>@@.MODEL.label}" />
+							</template:elseif>
+						</template:if>
+					</feexp:content>
+				</feexp:ViewSwitchContainerItem>
+			</template:elseif>
+		</template:if>
+	</template:alias>
+</core:FragmentDefinition>

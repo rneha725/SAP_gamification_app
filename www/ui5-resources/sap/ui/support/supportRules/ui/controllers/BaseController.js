@@ -1,0 +1,6 @@
+/*!
+ * UI development toolkit for HTML5 (OpenUI5)
+ * (c) Copyright 2009-2018 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/support/supportRules/Storage","sap/ui/support/supportRules/Constants","sap/ui/support/supportRules/ui/models/SelectionUtils"],function(C,s,c,S){"use strict";return C.extend("sap.ui.support.supportRules.ui.controllers.BaseController",{onPersistedSettingSelect:function(){var m=this.getView().getModel();if(m.getProperty("/persistingSettings")){s.createPersistenceCookie(c.COOKIE_NAME,true);m.getProperty("/libraries").forEach(function(l){if(l.title==c.TEMP_RULESETS_NAME){s.setRules(l.rules);}});this.persistExecutionScope();S.persistSelection();}else{s.deletePersistenceCookie(c.COOKIE_NAME);this.deletePersistedData();}},persistExecutionScope:function(){var a={analyzeContext:this.model.getProperty("/analyzeContext"),subtreeExecutionContextId:this.model.getProperty("/subtreeExecutionContextId")},b=this.model.getProperty("/executionScopeComponents");s.setSelectedScopeComponents(b);s.setSelectedContext(a);},deletePersistedData:function(){s.deletePersistenceCookie(c.COOKIE_NAME);this.getView().getModel().setProperty("/persistingSettings",false);s.removeAllData();}});});

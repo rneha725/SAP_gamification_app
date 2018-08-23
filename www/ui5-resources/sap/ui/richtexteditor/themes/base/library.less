@@ -1,0 +1,111 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * ${copyright}
+ */
+
+@import "../../../../../../Base/baseLib/baseTheme/base.less"; /* ORIGINAL IMPORT PATH: "../../../../../sap/ui/core/themes/base/base.less" */
+
+@import "../../../../../sap/ui/core/themes/base/global.less";
+
+/* START "RichTextEditor.less" */
+.defaultSkin {
+	color: @sapUiText;
+	background-color:  @sapUiExtraLightBG;
+	font-family: @sapUiFontFamily;
+	font-size:  @sapUiFontSize;
+}
+
+.sapUiRTE {
+	display: inline-block;
+	min-height: 200px;
+}
+
+html[dir=rtl] .sapUiRTE .defaultSkin table {
+	direction: rtl;
+}
+
+/* Styling TinyMCE */
+.sapUiRTE .defaultSkin table.mceToolbar {
+	margin-left: 5px;
+}
+
+.sapUiRTE.sapUiRTELegacyTheme .defaultSkin .mceIcon,
+.sapUiRTE.sapUiRTELegacyTheme .defaultSkin .mceSplitButton span.mceAction {
+	background-image: url("icons.gif");
+}
+
+/* bugfix for IE8 with certain zoom factors */
+html[data-sap-ui-browser="ie8"] .sapUiRTE .defaultSkin .mceIcon.mce_undo {
+	width: 19px;
+	margin-right: 1px;
+}
+
+.sapUiRTE .defaultSkin table.mceLayout tr.mceFirst > td.mceFirst {
+	background-color: @sapUiExtraLightBG;
+	border-top: 1px solid @sapUiMediumBorder;
+}
+
+.sapUiRTE .defaultSkin td.mceIframeContainer {
+	border-top: 1px solid @sapUiMediumBorder;
+}
+
+.sapUiRTE .defaultSkin.mceEditor table.mceLayout {
+	border-color: @sapUiMediumBorder;
+}
+
+.sapUiRTE .defaultSkin table.mceLayout tr.mceLast td.mceLast {
+	border-bottom: 1px solid @sapUiMediumBorder;
+}
+
+
+.sapUiRTE .defaultSkin table.mceLayout tr.mceFirst td,
+.sapUiRTE .defaultSkin table {
+	background-color: transparent;
+}
+
+
+/*RichTextEditor with Custom toolbar*/
+.sapUiRTE.sapUiRTEWithCustomToolbar .sapUiRTECustomToolbar {
+
+	.sapMToggleBtn,
+	.sapMBtn:not(:first-child),
+	.sapMMenuBtn,
+	.sapMSlt,
+	.sapMTBSeparator {
+		margin-right: 0.25rem;
+		margin-left: 0;
+	}
+
+	.sapMSB {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.sapMSB:focus .sapMSBInner::after {
+		right: 0.3125rem;
+	}
+
+	.sapMBtnBase.sapMSBText .sapMBtnInner {
+		margin-right: 2.25rem;
+	}
+}
+
+.sapUiSizeCozy {
+	.sapUiRTE.sapUiRTEWithCustomToolbar .sapUiRTECustomToolbar .sapMBtnBase.sapMSBText .sapMBtnInner {
+		margin-right: 2.75rem;
+	}
+}
+
+.sapUiRTECustomToolbar {
+	border: 1px solid @sapUiContentForegroundBorderColor;
+}
+
+.sapUiRTEWithCustomToolbar .mce-edit-area.mce-panel,
+.sapUiRTEWithCustomToolbar .mce-tinymce.mce-panel {
+	border-top: 0;
+	border-color: @sapUiContentForegroundBorderColor
+}
+
+/* END "RichTextEditor.less" */
+

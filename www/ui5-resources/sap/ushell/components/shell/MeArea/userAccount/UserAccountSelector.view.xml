@@ -1,0 +1,45 @@
+<View
+        controllerName="sap.ushell.components.shell.MeArea.userAccount.UserAccountSelector"
+        height="100%"
+        width="100%"
+        xmlns="sap.uxap"
+        xmlns:m="sap.m"
+        xmlns:core="sap.ui.core">
+
+    <ObjectPageLayout id="UserAccountObjectPageLayout" enableLazyLoading="false">
+        <sections>
+            <ObjectPageSection title="{i18n>UserAccountFld}">
+                <subSections>
+                    <ObjectPageSubSection title="{i18n>UserAccountFld}">
+                        <blocks>
+                            <core:Fragment fragmentName="sap.ushell.components.shell.MeArea.userAccount.UserAccountSetting"
+                                           type="XML"></core:Fragment>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection title="{i18n>UserAccountOnlineStatusTitle}"
+                               class="sapUshellUserAccountSection">
+                <subSections>
+                    <ObjectPageSubSection visible = "{config>/userStatusEnabled}" title="{i18n>UserAccountOnlineStatusTitle}">
+                        <blocks>
+                            <core:Fragment fragmentName="sap.ushell.components.shell.MeArea.userAccount.UserAccountStatusSelector"
+                                           type="XML"></core:Fragment>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection title="{i18n>ProfileImgId}">
+                <subSections>
+                    <ObjectPageSubSection visible = "{config>/imgConsentEnabled}">
+                        <blocks>
+                            <core:Fragment fragmentName="sap.ushell.components.shell.MeArea.userAccount.UserAccountImgConsentSelector"
+                                           type="XML"></core:Fragment>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
+
+    </ObjectPageLayout>
+</View>

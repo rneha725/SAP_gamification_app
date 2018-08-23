@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+	<name>sap.ui.mdc</name>
+	<vendor>SAP SE</vendor>
+	<copyright>SAP UI development toolkit for HTML5 (SAPUI5)
+
+(c) Copyright 2009-2018 SAP SE. All rights reserved</copyright>
+	<version>1.56.5</version>
+
+	<documentation>UI5 library: sap.ui.mdc</documentation>
+
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+		<dependency>
+			<libraryName>sap.m</libraryName>
+		</dependency>
+	</dependencies>
+
+	<appData>
+		<!-- excludes for the JSDoc -->
+		<jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc">
+			<exclude name="sap.ui.mdc.js." />
+		</jsdoc>
+		<manifest>
+
+		</manifest>
+		<!-- excludes for the JSCoverage -->
+		<jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage">
+			<exclude name="sap.ui.mdc.js." />
+		</jscoverage>
+		<documentation xmlns="http://www.sap.com/ui5/buildext/documentation" indexUrl="../../../../test-resources/sap/ui/mdc/demokit/docuindex.json" resolve="lib" />
+		<releasenotes xmlns="http://www.sap.com/ui5/buildext/releasenotes" url="../../../../test-resources/sap/ui/mdc/relnotes/changes-{major}.{minor}.json" resolve="lib" />
+		<ownership xmlns="http://www.sap.com/ui5/buildext/ownership">
+			<component>CA-UI5-CMP</component>
+		</ownership>
+	</appData>
+</library>

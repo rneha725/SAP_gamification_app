@@ -1,0 +1,28 @@
+<core:FragmentDefinition
+                         height="100%"
+                         width="100%"
+                         xmlns="sap.uxap"
+                         xmlns:m="sap.m"
+                         xmlns:core="sap.ui.core">
+    <m:VBox>
+        <m:FlexBox alignItems="{config>/flexAlignItems}" direction="{config>/textDirection}"
+                   id="userStatusEnableFlexBox">
+            <m:Label text="{i18n>enableStatusMessageBoxFld}:"
+                     class="sapUshellUserAccountLabel" id="sapUshellEnableStatusLabel"/>
+        </m:FlexBox>
+        <m:FlexBox direction="{config>/textDirection}" id="userStatusLegalMessageFlexBox1"
+                   class="ushellUserStatusLegalMessageFlexBox">
+            <m:Text text="{i18n>userStatusMessageBoxInfoTextLine1}"/>
+        </m:FlexBox>
+        <m:FlexBox alignItems="{config>/flexAlignItems}" direction="{config>/textDirection}"
+                   id="userStatusDropDownFlexBox" class="ushellUserStatusDropDownFlexBox">
+            <m:Label text="{i18n>userStatusSettingDropdownLabelFld}:"
+                     class="sapUshellUserAccountLabel"/>
+
+        </m:FlexBox>
+        <m:FlexBox direction="{config>/textDirection}" id="ushellDefaultStatusDescription"
+                   class="ushellUserStatusLegalMessageFlexBox">
+            <m:Text text="{i18n>userStatusDefaultStatusDescriptionLine1}"/>
+        </m:FlexBox>
+    </m:VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,37 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:core="sap.ui.core">
+	<Table itemPress=".handleItemPress"
+			items="{parts : [{path: 'entitySet>'}, {path: 'this>tableBindingPath'}, {path: 'this>listBindingName'}], formatter: '.TABLE.createAggregationBinding'}"
+			growing="true"
+			growingScrollToLoad="{this>growingScrollToLoad}"
+			growingThreshold="{this>growingThreshold}"
+			selectionChange="handleSelectionChange"
+			enableBusyIndicator="false"
+			noDataText="{$i18n>table.NO_DATA_TEXT}">
+		<headerToolbar>
+			<template:if test="{this>showToolbar}">
+				<core:Fragment fragmentName="sap.ui.mdc.internal.table.TableToolbar" type="XML"/>
+			</template:if>
+		</headerToolbar>
+		<!--This Fragment is for Column Header and Item in Responsive Tabe -->
+		<columns>
+			<template:repeat list="{this>columns}" var="column">
+				<Column id="{column>id}" hAlign="{= ${column>hAlign} || 'Begin' }">
+					<Label text="{column>label}" />
+				</Column>
+			</template:repeat>
+		</columns>
+		<items>
+			<ColumnListItem type="{this>interactionType}" highlight="{lineItem>@com.sap.vocabularies.UI.v1.Criticality@@.TABLE.getRowHighlightColor}">
+				<cells>
+					<template:repeat list="{this>columns}" var="column">
+						<mdc:Replace withChildrenOf="column>" />
+					</template:repeat>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

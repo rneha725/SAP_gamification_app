@@ -1,0 +1,501 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/shell/ShellElements/Component.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/components/LifeCycleWrapper.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload-dbg.js",
+			"module": "Component-h2-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/components/LifeCycleWrapper.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/ShellElements/Component.js",
+				"sap/ushell/components/shell/ShellElements/i18n/resources.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ar.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_bg.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ca.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_cs.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_da.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_de.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_el.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_sappsd.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_saptrc.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_es.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_et.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hu.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_it.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_iw.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ja.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_kk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ko.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ms.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_nl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_no.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ro.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ru.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sh.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_th.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_tr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_uk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_vi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_CN.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_TW.properties"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "Component-h2-preload.js",
+			"merged": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/components/LifeCycleWrapper.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/ShellElements/Component.js",
+				"sap/ushell/components/shell/ShellElements/i18n/resources.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ar.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_bg.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ca.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_cs.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_da.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_de.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_el.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_sappsd.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_saptrc.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_es.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_et.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hu.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_it.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_iw.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ja.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_kk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ko.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ms.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_nl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_no.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ro.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ru.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sh.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_th.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_tr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_uk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_vi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_CN.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_TW.properties"
+			]
+		},
+		{
+			"name": "Component-preload-dbg.js",
+			"module": "Component-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/components/LifeCycleWrapper.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/ShellElements/Component.js",
+				"sap/ushell/components/shell/ShellElements/i18n/resources.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ar.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_bg.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ca.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_cs.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_da.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_de.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_el.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_sappsd.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_saptrc.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_es.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_et.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hu.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_it.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_iw.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ja.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_kk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ko.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ms.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_nl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_no.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ro.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ru.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sh.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_th.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_tr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_uk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_vi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_CN.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_TW.properties"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "Component-preload.js",
+			"merged": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/components/LifeCycleWrapper.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/ShellElements/Component.js",
+				"sap/ushell/components/shell/ShellElements/i18n/resources.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ar.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_bg.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ca.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_cs.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_da.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_de.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_el.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_sappsd.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_en_US_saptrc.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_es.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_et.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_fr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_hu.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_it.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_iw.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ja.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_kk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ko.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_lv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ms.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_nl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_no.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_pt.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ro.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_ru.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sh.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sl.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_sv.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_th.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_tr.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_uk.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_vi.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_CN.properties",
+				"sap/ushell/components/shell/ShellElements/i18n/resources_zh_TW.properties"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/shell/ShellElements/Component.js",
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/components/LifeCycleWrapper.js"
+			]
+		},
+		{
+			"name": "i18n/resources.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources.properties",
+			"locale": "",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_ar.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_ar.properties",
+			"locale": "ar",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_bg.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_bg.properties",
+			"locale": "bg",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_ca.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_ca.properties",
+			"locale": "ca",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_cs.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_cs.properties",
+			"locale": "cs",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_da.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_da.properties",
+			"locale": "da",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_de.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_de.properties",
+			"locale": "de",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_el.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_el.properties",
+			"locale": "el",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_en.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_en.properties",
+			"locale": "en",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_en_US_sappsd.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_en_US_sappsd.properties",
+			"locale": "en_US_sappsd",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_en_US_saptrc.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_en_US_saptrc.properties",
+			"locale": "en_US_saptrc",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_es.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_es.properties",
+			"locale": "es",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_et.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_et.properties",
+			"locale": "et",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_fi.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_fi.properties",
+			"locale": "fi",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_fr.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_fr.properties",
+			"locale": "fr",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_hi.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_hi.properties",
+			"locale": "hi",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_hr.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_hr.properties",
+			"locale": "hr",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_hu.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_hu.properties",
+			"locale": "hu",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_it.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_it.properties",
+			"locale": "it",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_iw.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_iw.properties",
+			"locale": "iw",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_ja.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_ja.properties",
+			"locale": "ja",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_kk.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_kk.properties",
+			"locale": "kk",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_ko.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_ko.properties",
+			"locale": "ko",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_lt.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_lt.properties",
+			"locale": "lt",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_lv.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_lv.properties",
+			"locale": "lv",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_ms.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_ms.properties",
+			"locale": "ms",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_nl.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_nl.properties",
+			"locale": "nl",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_no.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_no.properties",
+			"locale": "no",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_pl.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_pl.properties",
+			"locale": "pl",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_pt.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_pt.properties",
+			"locale": "pt",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_ro.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_ro.properties",
+			"locale": "ro",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_ru.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_ru.properties",
+			"locale": "ru",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_sh.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_sh.properties",
+			"locale": "sh",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_sk.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_sk.properties",
+			"locale": "sk",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_sl.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_sl.properties",
+			"locale": "sl",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_sv.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_sv.properties",
+			"locale": "sv",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_th.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_th.properties",
+			"locale": "th",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_tr.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_tr.properties",
+			"locale": "tr",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_uk.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_uk.properties",
+			"locale": "uk",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_vi.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_vi.properties",
+			"locale": "vi",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_zh_CN.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_zh_CN.properties",
+			"locale": "zh_CN",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "i18n/resources_zh_TW.properties",
+			"module": "sap/ushell/components/shell/ShellElements/i18n/resources_zh_TW.properties",
+			"locale": "zh_TW",
+			"raw": "i18n/resources.properties"
+		},
+		{
+			"name": "resources.json"
+		}
+	]
+}

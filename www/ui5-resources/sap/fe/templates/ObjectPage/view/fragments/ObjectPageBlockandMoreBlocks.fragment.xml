@@ -1,0 +1,20 @@
+<core:FragmentDefinition 
+    xmlns="sap.m" 
+    xmlns:uxap="sap.uxap" 
+    xmlns:core="sap.ui.core" 
+    xmlns:layout="sap.ui.layout" 
+    xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" 
+    xmlns:block="sap.fe.templates.ObjectPage.view.fragments" template:require="sap.fe.templates.ObjectPage.AnnotationHelper">
+    <template:if test="{= ${facet>@com.sap.vocabularies.UI.v1.PartOfPreview} === undefined || ${facet>@com.sap.vocabularies.UI.v1.PartOfPreview} === true}">
+        <template:then>
+            <uxap:blocks>
+                <core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.Facet" type="XML"/>
+            </uxap:blocks>
+        </template:then>
+        <template:else>
+            <uxap:moreBlocks>
+                <core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.Facet" type="XML"/>
+            </uxap:moreBlocks>
+        </template:else>
+    </template:if>
+</core:FragmentDefinition>

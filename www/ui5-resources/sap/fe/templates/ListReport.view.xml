@@ -1,0 +1,90 @@
+<core:View xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		   xmlns="sap.m"
+		   xmlns:core="sap.ui.core"
+		   xmlns:f="sap.f"
+		   xmlns:mdc="sap.ui.mdc"
+		   xmlns:v="sap.ui.fl.variants"
+		   controllerName="sap.fe.templates.ListReport.ListReportController"
+		   template:require="sap.fe.core.AnnotationHelper">
+
+		<f:DynamicPage id="template::Page" showFooter="false">
+			<f:title>
+				<f:DynamicPageTitle>
+					<f:heading>
+						<template:if test="{= ${viewData>/noPageVariantManagement} }">
+							<template:then>
+								<template:if test="{= ${manifest>/sap.app/appSubTitle} }">
+									<template:then>
+										<Title id="template::PageTitle"
+											   text="{manifest>/sap.app/appSubTitle}"></Title>
+									</template:then>
+
+									<template:else>
+										<Title id="template::PageTitle"
+											   text="{manifest>/sap.app/title}"></Title>
+									</template:else>
+								</template:if>
+							</template:then>
+
+							<template:else>
+								<v:VariantManagement id="template::PageVariantManagement"
+													 for="template::Page"
+													 showSave="false"
+													 showSaveAs="false"
+													 showManage="false"
+													 showSetAsDefault="false"
+													 showExecuteOnSelection="false"
+													 showShare="false"/>
+							</template:else>
+						</template:if>
+
+					</f:heading>
+					<f:actions>
+						<Button id="template::Share"
+								icon="sap-icon://action"
+								press=".handlers.onShareListReportActionButtonPress"
+								type="Transparent"/>
+					</f:actions>
+					<f:snappedContent>
+						<!-- for test reasons we use the ui model for the filter summary - we should use a private one -->
+						<Text id="template::FilterSummary" text="{ui>/filterSummary}"></Text>
+					</f:snappedContent>
+				</f:DynamicPageTitle>
+			</f:title>
+			<f:header>
+				<f:DynamicPageHeader pinnable="true">
+					<f:content>
+
+						<mdc:FilterBar id="template::FilterBar"
+									  listBindingNames="sap.fe.tableBinding"
+									  metadataContexts="{ model: 'entitySet', path:'',  name: 'entitySet'}"
+									  search=".handlers.onSearch"
+									  change=".handlers.onFilterBarChange"
+									  conditionModelName="sap.fe.cm"
+									  searchOnStart="{= ${viewData>/filterOnStart} === false ? false : true }"
+									  liveUpdate="{= ${viewData>/filterLiveUpdate} === false ? false : true }"
+									  filterSummary="{ui>/filterSummary}"/>
+					</f:content>
+				</f:DynamicPageHeader>
+			</f:header>
+			<f:content>
+				<mdc:Table
+						id="template::Table"
+						listBindingName="sap.fe.tableBinding"
+						metadataContexts="{ model: 'entitySet', path:'',  name: 'entitySet'}"
+						type="{viewData>/tableType}"
+						interactionType="{= ${viewData>/navigation/detail} ? 'Navigation' : 'Inactive' }"
+						settingsDialogType="{viewData>/settingsDialogType}"
+						demandPopin="{= ${viewData>/tableType} === 'GridTable' ? false : true }"
+						itemPress=".handlers.onItemPress"
+						callAction=".handlers.callAction"
+						requestFailed=".handlers.showError"
+						height="100%"
+						width="100%"
+				/>
+			</f:content>
+			<f:footer>
+			</f:footer>
+		</f:DynamicPage>
+
+</core:View>

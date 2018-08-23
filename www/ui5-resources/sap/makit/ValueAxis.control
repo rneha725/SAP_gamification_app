@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ValueAxis</name>
+	<author>SAP SE</author>
+	<documentation>Contains the properties of the Value's Axis.</documentation>
+	<developmentState state="deprecated" since="1.38">MAKIT charts have been replaced with sap.viz and vizFrame in 1.38. This control will not be supported anymore from 1.38.</developmentState>
+	<since>1.8</since>
+
+	<baseType>Axis</baseType>
+	<properties>
+		<property group="Misc" name="min" type="sap.ui.core/string">
+			<documentation>Highest displayed value on the Value Axis (this value will be automatically adjusted to nearest major tick value depending on the value's range). Set to empty string to switch back to automatic calculation.</documentation>
+		</property>
+		<property group="Misc" name="max" type="sap.ui.core/string">
+			<documentation>Highest displayed value on the Value Axis (this value will be automatically adjusted to nearest major tick value depending on the value's range)</documentation>
+		</property>
+	</properties>
+</control>

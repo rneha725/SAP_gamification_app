@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/uiext/inbox/library-h2-preload.js",
+"sourceroot":".",
+"sources":["manifest.json","library-dbg.js"],
+"names":[],
+"mappings":";;;;;;;yCCcA,8CACA,uCAWA,0CACA,6CACA,yCAGA,8BACC,IAAK,CAAE,kBACP,YAAa,CAAE,8CACf,MAAO,GACP,WAAY,GACZ,SAAU,CACT,wBACA,iCACA,gCACA,2CACA,mDACA,gDACA,0DACA,+CACA,yCACA,8CACA,kDACA,qDACD,EACA,SAAU,GACV,QAAS,QACV;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[58,635,783,1713]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DeltaMicroChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Represents the delta of two values as a chart. This control replaces the deprecated sap.suite.ui.commons.DeltaMicroChart.</documentation>
+    <since>1.34</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="value1" type="sap.ui.core/float" group="Misc">
+            <documentation>The first value for delta calculation.</documentation>
+        </property>
+        <property name="value2" type="sap.ui.core/float" group="Misc">
+            <documentation>The second value for delta calculation.</documentation>
+        </property>
+        <property name="title1" type="sap.ui.core/string" group="Misc">
+            <documentation>The first value title.</documentation>
+        </property>
+        <property name="title2" type="sap.ui.core/string" group="Misc">
+            <documentation>The second value title.</documentation>
+        </property>
+        <property name="displayValue1" type="sap.ui.core/string" group="Misc">
+            <documentation>If this property is set, it is rendered instead of value1.</documentation>
+        </property>
+        <property name="displayValue2" type="sap.ui.core/string" group="Misc">
+            <documentation>If this property is set, it is rendered instead of value2.</documentation>
+        </property>
+        <property name="deltaDisplayValue" type="sap.ui.core/string" group="Misc">
+            <documentation>If this property is set, it is rendered instead of a calculated delta.</documentation>
+        </property>
+        <property name="color" type="sap.m/ValueColor" defaultValue="Neutral" group="Misc">
+            <documentation>The semantic color of the delta value.</documentation>
+        </property>
+        <property name="width" type="sap.ui.core/CSSSize" group="Misc">
+            <documentation>The width of the chart.</documentation>
+        </property>
+        <property name="size" type="sap.m/Size" defaultValue="Auto" group="Misc">
+            <documentation>The size of the chart. If is not set, the default size is applied based on the device type.</documentation>
+        </property>
+        <property name="isResponsive" type="sap.ui.core/boolean" defaultValue="false" group="Appearance" since="1.38.0">
+            <documentation>If this set to true, width and height of the control are determined by the width and height of the container in which the control is placed. Size and Width properties are ignored in such case.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>The event is triggered when the chart is pressed.</documentation>
+        </event>
+    </events>
+</control>

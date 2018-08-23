@@ -1,0 +1,52 @@
+<core:FragmentDefinition
+		xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		xmlns="sap.m"
+		xmlns:core="sap.ui.core">
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<template:if
+				test="{=${chartAnnotation>ChartType/$EnumMember} === 'com.sap.vocabularies.UI.v1.ChartType/Bullet'}">
+			<template:then>
+				<template:with path="chartAnnotation>"
+							   var="bulletMicroChart">
+					<core:Fragment fragmentName="sap.fe.controls._MicroChart.bulletMicroChart.BulletMicroChart"
+								   type="XML"/>
+				</template:with>
+			</template:then>
+			<template:elseif
+					test="{=${chartAnnotation>ChartType/$EnumMember} === 'com.sap.vocabularies.UI.v1.ChartType/Donut'}">
+				<template:with path="chartAnnotation>"
+							   var="radialMicroChart">
+					<core:Fragment fragmentName="sap.fe.controls._MicroChart.radialMicroChart.RadialMicroChart"
+								   type="XML"/>
+				</template:with>
+			</template:elseif>
+			<template:elseif
+					test="{=${chartAnnotation>ChartType/$EnumMember} === 'com.sap.vocabularies.UI.v1.ChartType/Pie'}">
+				<template:with path="chartAnnotation>"
+							   var="harveyBallMicroChart">
+					<core:Fragment fragmentName="sap.fe.controls._MicroChart.harveyBallMicroChart.HarveyBallMicroChart"
+								   type="XML"/>
+				</template:with>
+			</template:elseif>
+				<template:elseif
+					test="{=${chartAnnotation>ChartType/$EnumMember} === 'com.sap.vocabularies.UI.v1.ChartType/WaterFall'}">
+				<template:with path="chartAnnotation>"
+							   var="deltaMicroChart">
+					<core:Fragment fragmentName="sap.fe.controls._MicroChart.deltaMicroChart.DeltaMicroChart"
+								   type="XML"/>
+				</template:with>
+			</template:elseif>
+				<template:elseif
+					test="{=${chartAnnotation>ChartType/$EnumMember} === 'com.sap.vocabularies.UI.v1.ChartType/BarStacked'}">
+				<template:with path="chartAnnotation>"
+							   var="stackedBarMicroChart">
+					<core:Fragment fragmentName="sap.fe.controls._MicroChart.stackedBarMicroChart.stackedBarMicroChart"
+								   type="XML"/>
+				</template:with>
+			</template:elseif>
+			<template:else>
+				<Text text="Other Types yet to be implemented.."/>
+			</template:else>
+		</template:if>
+	</template:alias>
+</core:FragmentDefinition>

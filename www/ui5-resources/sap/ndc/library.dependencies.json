@@ -1,0 +1,318 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/ndc/BarcodeScanDialog.fragment.xml",
+      "size" : 549,
+      "required" : ["sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Input.js", "sap/m/Text.js", "sap/ui/core/Fragment.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/BarcodeScanner.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 9873,
+      "compressedSize" : 2816,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/BarcodeScannerButton.js",
+      "description" : "Provides control sap.ndc.BarcodeScannerButton.",
+      "size" : 4219,
+      "compressedSize" : 1582,
+      "required" : ["jquery.sap.global.js", "sap/ndc/BarcodeScanner.js", "sap/ndc/library.js", "sap/ui/core/Control.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/BarcodeScannerButtonRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 1239,
+      "compressedSize" : 419,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/library-h2-preload.js",
+      "size" : 1763,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Input.js", "sap/m/Text.js", "sap/m/library.js", "sap/ui/core/Control.js", "sap/ui/core/Fragment.js", "sap/ui/core/library.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/ndc/library.js", "sap/ndc/manifest.json", "sap/ndc/BarcodeScanDialog.fragment.xml", "sap/ndc/BarcodeScanner.js", "sap/ndc/BarcodeScannerButton.js", "sap/ndc/BarcodeScannerButtonRenderer.js"]
+    },
+    {
+      "name" : "sap/ndc/library-preload.js",
+      "size" : 6399,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Input.js", "sap/m/Text.js", "sap/m/library.js", "sap/ui/core/Control.js", "sap/ui/core/Fragment.js", "sap/ui/core/library.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/ndc/BarcodeScanDialog.fragment.xml", "sap/ndc/BarcodeScanner.js", "sap/ndc/BarcodeScannerButton.js", "sap/ndc/BarcodeScannerButtonRenderer.js", "sap/ndc/library.js", "sap/ndc/manifest.json"]
+    },
+    {
+      "name" : "sap/ndc/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/Button.js", "sap/m/Dialog.js", "sap/m/Input.js", "sap/m/Text.js", "sap/m/library-preload.json", "sap/m/library.js", "sap/ui/core/Control.js", "sap/ui/core/Fragment.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/ndc/BarcodeScanDialog.fragment.xml", "sap/ndc/BarcodeScanner.js", "sap/ndc/BarcodeScannerButton.js", "sap/ndc/BarcodeScannerButtonRenderer.js", "sap/ndc/library.js", "sap/ndc/manifest.json"]
+    },
+    {
+      "name" : "sap/ndc/library.js",
+      "description" : "Initialization Code and shared classes of library sap.ndc.",
+      "size" : 820,
+      "compressedSize" : 434,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/ui/core/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/manifest.json",
+      "size" : 946,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle.properties",
+      "size" : 555,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_ar.properties",
+      "size" : 773,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_bg.properties",
+      "size" : 763,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_ca.properties",
+      "size" : 531,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_cs.properties",
+      "size" : 552,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_da.properties",
+      "size" : 486,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_de.properties",
+      "size" : 488,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_el.properties",
+      "size" : 875,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_en.properties",
+      "size" : 479,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_en_US_sappsd.properties",
+      "size" : 924,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_en_US_saptrc.properties",
+      "size" : 594,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_es.properties",
+      "size" : 516,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_et.properties",
+      "size" : 506,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_fi.properties",
+      "size" : 517,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_fr.properties",
+      "size" : 500,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_hi.properties",
+      "size" : 763,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_hr.properties",
+      "size" : 487,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_hu.properties",
+      "size" : 526,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_it.properties",
+      "size" : 501,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_iw.properties",
+      "size" : 604,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_ja.properties",
+      "size" : 606,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_kk.properties",
+      "size" : 799,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_ko.properties",
+      "size" : 586,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_lt.properties",
+      "size" : 554,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_lv.properties",
+      "size" : 503,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_ms.properties",
+      "size" : 478,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_nl.properties",
+      "size" : 483,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_no.properties",
+      "size" : 481,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_pl.properties",
+      "size" : 514,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_pt.properties",
+      "size" : 519,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_ro.properties",
+      "size" : 497,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_ru.properties",
+      "size" : 775,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_sh.properties",
+      "size" : 477,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_sk.properties",
+      "size" : 541,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_sl.properties",
+      "size" : 514,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_sv.properties",
+      "size" : 491,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_th.properties",
+      "size" : 772,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_tr.properties",
+      "size" : 498,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_uk.properties",
+      "size" : 815,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_vi.properties",
+      "size" : 549,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_zh_CN.properties",
+      "size" : 538,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_zh_TW.properties",
+      "size" : 520,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

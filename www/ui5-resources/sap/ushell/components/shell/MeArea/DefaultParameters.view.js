@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";sap.ui.jsview("sap.ushell.components.shell.MeArea.DefaultParameters",{createContent:function(c){},getControllerName:function(){return"sap.ushell.components.shell.MeArea.DefaultParameters";}});},false);

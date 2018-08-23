@@ -1,0 +1,49 @@
+<core:FragmentDefinition 
+	xmlns="sap.m" 
+	xmlns:uxap="sap.uxap" 
+	xmlns:core="sap.ui.core" 
+	xmlns:layout="sap.ui.layout" 
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" 
+	xmlns:block="sap.fe.templates.ObjectPage.view.fragments" template:require="sap.fe.templates.ObjectPage.AnnotationHelper">
+	<template:repeat list="{entityType>@com.sap.vocabularies.UI.v1.Facets}" var="firstLevelFacet">
+		<uxap:ObjectPageSection title="{firstLevelFacet>@@.MODEL.label}">
+			<uxap:subSections>
+				<template:if test="{= ${firstLevelFacet>$Type} === 'com.sap.vocabularies.UI.v1.CollectionFacet'}">
+					<template:then>
+						<template:repeat list="{firstLevelFacet>Facets}" var="secondLevelFacet">
+							<uxap:ObjectPageSubSection binding="{path : ''}">
+								<uxap:customData>
+									<core:CustomData key="strategyForVisibilityChange" value="lazyLoading" />
+								</uxap:customData>
+								<template:if test="{= ${secondLevelFacet>$Type} === 'com.sap.vocabularies.UI.v1.CollectionFacet'}">
+									<template:then>
+										<template:repeat list="{secondLevelFacet>Facets}" var="thirdLevelFacet">
+											<template:with path="thirdLevelFacet>" var="facet">
+												<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.ObjectPageBlockandMoreBlocks" type="XML"/>
+											</template:with>
+										</template:repeat>
+									</template:then>
+									<template:else>
+										<template:with path="secondLevelFacet>" var="facet">
+											<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.ObjectPageBlockandMoreBlocks" type="XML"/>
+										</template:with>
+									</template:else>
+								</template:if>
+							</uxap:ObjectPageSubSection>
+						</template:repeat>
+					</template:then>
+					<template:else>
+						<uxap:ObjectPageSubSection binding="{path : ''}">
+							<uxap:customData>
+								<core:CustomData key="strategyForVisibilityChange" value="lazyLoading" />
+							</uxap:customData>
+							<template:with path="firstLevelFacet>" var="facet">
+								<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.ObjectPageBlockandMoreBlocks" type="XML"/>
+							</template:with>
+						</uxap:ObjectPageSubSection>
+					</template:else>
+				</template:if>
+			</uxap:subSections>
+		</uxap:ObjectPageSection>
+	</template:repeat>
+</core:FragmentDefinition>

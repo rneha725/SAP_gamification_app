@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>RadialMicroChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Displays a ring chart highlighting a current status. The status is displayed with a semantically colored radial bar and a percentage value.</documentation>
+    <since>1.36.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="total" type="sap.ui.core/float" group="Data">
+            <documentation>The total value. This is taken as 360 degrees value on the chart.</documentation>
+        </property>
+        <property name="fraction" type="sap.ui.core/float" group="Data">
+            <documentation>The fraction of the total value that is displayed.</documentation>
+        </property>
+        <property name="percentage" type="sap.ui.core/float" group="Data">
+            <documentation>The percentage that is displayed.
+When a percentage is set, properties total and fraction are not considered.</documentation>
+        </property>
+        <property name="valueColor" type="sap.m/ValueCSSColor" defaultValue="Neutral" group="Appearance">
+            <documentation>The color shown in the completed path.</documentation>
+        </property>
+        <property name="size" type="sap.m/Size" defaultValue="Responsive" group="Misc" since="1.44.0">
+            <documentation>The size of the chart. If it is not set, the Responsive size is used.
+Size XS is not supported</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>The event is triggered when the chart is pressed.</documentation>
+        </event>
+    </events>
+</control>

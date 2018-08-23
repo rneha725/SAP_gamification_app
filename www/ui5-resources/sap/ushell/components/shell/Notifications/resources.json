@@ -1,0 +1,221 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/shell/Notifications/Component.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/shell/RightFloatingContainer.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload-dbg.js",
+			"module": "Component-h2-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/m/BusyIndicator.js",
+				"sap/m/Button.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/IconTabBar.js",
+				"sap/m/IconTabFilter.js",
+				"sap/m/List.js",
+				"sap/m/NotificationListGroup.js",
+				"sap/m/NotificationListItem.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/shell/RightFloatingContainer.js",
+				"sap/ushell/utils.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/Notifications/Component.js",
+				"sap/ushell/components/shell/Notifications/Notifications.controller.js",
+				"sap/ushell/components/shell/Notifications/Notifications.view.js",
+				"sap/ushell/components/shell/Notifications/Settings.controller.js",
+				"sap/ushell/components/shell/Notifications/Settings.view.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "Component-h2-preload.js",
+			"merged": true,
+			"required": [
+				"sap/m/BusyIndicator.js",
+				"sap/m/Button.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/IconTabBar.js",
+				"sap/m/IconTabFilter.js",
+				"sap/m/List.js",
+				"sap/m/NotificationListGroup.js",
+				"sap/m/NotificationListItem.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/shell/RightFloatingContainer.js",
+				"sap/ushell/utils.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/Notifications/Component.js",
+				"sap/ushell/components/shell/Notifications/Notifications.controller.js",
+				"sap/ushell/components/shell/Notifications/Notifications.view.js",
+				"sap/ushell/components/shell/Notifications/Settings.controller.js",
+				"sap/ushell/components/shell/Notifications/Settings.view.js"
+			]
+		},
+		{
+			"name": "Component-preload-dbg.js",
+			"module": "Component-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/m/BusyIndicator.js",
+				"sap/m/Button.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/IconTabBar.js",
+				"sap/m/IconTabFilter.js",
+				"sap/m/List.js",
+				"sap/m/NotificationListGroup.js",
+				"sap/m/NotificationListItem.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/shell/RightFloatingContainer.js",
+				"sap/ushell/utils.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/Notifications/Component.js",
+				"sap/ushell/components/shell/Notifications/Notifications.controller.js",
+				"sap/ushell/components/shell/Notifications/Notifications.view.js",
+				"sap/ushell/components/shell/Notifications/Settings.controller.js",
+				"sap/ushell/components/shell/Notifications/Settings.view.js"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "Component-preload.js",
+			"merged": true,
+			"required": [
+				"sap/m/BusyIndicator.js",
+				"sap/m/Button.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/IconTabBar.js",
+				"sap/m/IconTabFilter.js",
+				"sap/m/List.js",
+				"sap/m/NotificationListGroup.js",
+				"sap/m/NotificationListItem.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/shell/RightFloatingContainer.js",
+				"sap/ushell/utils.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/Notifications/Component.js",
+				"sap/ushell/components/shell/Notifications/Notifications.controller.js",
+				"sap/ushell/components/shell/Notifications/Notifications.view.js",
+				"sap/ushell/components/shell/Notifications/Settings.controller.js",
+				"sap/ushell/components/shell/Notifications/Settings.view.js"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/shell/Notifications/Component.js",
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/shell/RightFloatingContainer.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "Notifications-dbg.controller.js",
+			"module": "sap/ushell/components/shell/Notifications/Notifications.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "Notifications-dbg.view.js",
+			"module": "sap/ushell/components/shell/Notifications/Notifications.view.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/BusyIndicator.js",
+				"sap/m/Button.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/IconTabBar.js",
+				"sap/m/IconTabFilter.js",
+				"sap/m/List.js",
+				"sap/m/NotificationListGroup.js",
+				"sap/m/NotificationListItem.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js"
+			]
+		},
+		{
+			"name": "Notifications.controller.js",
+			"module": "sap/ushell/components/shell/Notifications/Notifications.controller.js",
+			"required": [
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "Notifications.view.js",
+			"module": "sap/ushell/components/shell/Notifications/Notifications.view.js",
+			"required": [
+				"sap/m/BusyIndicator.js",
+				"sap/m/Button.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/IconTabBar.js",
+				"sap/m/IconTabFilter.js",
+				"sap/m/List.js",
+				"sap/m/NotificationListGroup.js",
+				"sap/m/NotificationListItem.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js"
+			]
+		},
+		{
+			"name": "Settings-dbg.controller.js",
+			"module": "sap/ushell/components/shell/Notifications/Settings.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "Settings-dbg.view.js",
+			"module": "sap/ushell/components/shell/Notifications/Settings.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "Settings.controller.js",
+			"module": "sap/ushell/components/shell/Notifications/Settings.controller.js"
+		},
+		{
+			"name": "Settings.view.js",
+			"module": "sap/ushell/components/shell/Notifications/Settings.view.js"
+		},
+		{
+			"name": "resources.json"
+		}
+	]
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>Dsh</name>
+
+	<documentation>Control for embedding a Design Studio application full-screen in an S/4 HANA Fiori application</documentation>
+	<since>1.44</since>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="dshAppName" type="sap.ui.core/string" defaultValue="0ANALYSIS">
+			<documentation>Name of the Design Studio application to be opened.</documentation>
+		</property>
+		<property group="Misc" name="repoPath" type="sap.ui.core/string">
+			<documentation>Path to application specified by dshAppName</documentation>
+		</property>
+		<property group="Misc" name="width" type="sap.ui.core/CSSSize">
+			<documentation>Desired width of the Design Studio Control</documentation>
+		</property>
+		<property group="Misc" name="height" type="sap.ui.core/CSSSize">
+			<documentation>Desired height of the Design Studio Control</documentation>
+		</property>
+		<property group="Misc" name="deployment" type="sap.ui.core/string" defaultValue="bw">
+		</property>
+		<property group="Misc" name="protocol" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="client" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="language" type="sap.ui.core/string">
+		</property>
+		<property group="Misc" name="semanticMappings" type="sap.ui.core/object">
+		</property>
+		<property group="Misc" name="appComponent" type="sap.ui.core/object">
+		</property>
+		<property group="Misc" name="deferCreation" type="sap.ui.core/boolean" defaultValue="false">
+		</property>
+		<property group="Misc" name="systemAlias" type="sap.ui.core/string">
+		</property>
+	</properties>
+	<methods>
+		<method name="addParameter" type="sap.ui.core/string">
+			<parameters>
+				<parameter name="name" type="sap.ui.core/string">
+				</parameter>
+				<parameter name="value" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="executeScript" type="sap.ui.core/void">
+			<parameters>
+				<parameter name="script" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getDataSource" type="sap.ui.core/object">
+			<parameters>
+				<parameter name="name" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getComponent" type="sap.ui.core/object">
+			<parameters>
+				<parameter name="name" type="sap.ui.core/string">
+				</parameter>
+			</parameters>
+		</method>
+		<method name="getPage" type="sap.ui.core/object">
+		</method>
+				<method name="createPage" type="sap.ui.core/void">
+		</method>
+				<method name="initializeAppStateData" type="sap.ui.core/void">
+					<documentation>Initialize cross-application navigation state directly with AppStateData.  e.g., when calculated by sap.ui.generic.app.navigation.service.NavigationHandler</documentation>
+					<parameters>
+						<parameter name="oStateData" type="sap.ui.core/object">
+							<documentation>The AppStateData to apply</documentation>
+						</parameter>
+						<parameter name="oNavParams" type="sap.ui.core/object">
+							<documentation>Simple Javascript object containing name-value pairs of additional navigation state to be mixed in</documentation>
+						</parameter>
+					</parameters>
+				</method>
+				<method name="initializeAppState" type="sap.ui.core/void">
+					<documentation>Initialize cross-application navigation state with an AppState object</documentation>
+					<parameters>
+						<parameter name="oStartupAppState" type="sap.ui.core/object">
+							<documentation>The AppState object from which to retrieve and apply Application State.</documentation>
+						</parameter>
+						<parameter name="oNavParams" type="sap.ui.core/object">
+							<documentation>Simple Javascript object containing name-value pairs of additional navigation state to be mixed in</documentation>
+						</parameter>
+					</parameters>
+				</method>
+		
+	</methods>
+</control>

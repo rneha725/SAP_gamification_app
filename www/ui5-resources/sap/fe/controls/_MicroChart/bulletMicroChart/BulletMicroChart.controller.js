@@ -1,0 +1,1 @@
+sap.ui.define(["../MicroChart.controller"],function(M){"use strict";var B=M.extend("sap.fe.controls._MicroChart.BulletMicroChart.bulletMicroChart.controller",{constructor:function(m){M.apply(this,arguments);this.oMicroChart=m;}});return B;});

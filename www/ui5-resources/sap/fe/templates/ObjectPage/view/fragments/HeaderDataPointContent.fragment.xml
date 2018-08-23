@@ -1,0 +1,18 @@
+<core:FragmentDefinition template:require="sap.suite.ui.generic.template.js.AnnotationHelper"
+						 xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m" xmlns:core="sap.ui.core"
+						 xmlns:mdcBase="sap.ui.mdc.base">
+
+
+	<Title id="header::{path: 'headerFacet>', formatter: '.AH.getStableIdPartFromFacet'}::{path: 'dataPoint>', formatter: '.AH.getStableIdPartFromDataPoint'}::Title"
+		   level="H3" text="{dataPoint>Title@@.MODEL.value}"
+		   visible="{= !!${dataPoint>Title}}"/>
+	<template:with path="dataPoint>Value" var="property">
+		<mdcBase:Field value="{property>@@.MODEL.value}"
+				   valueState="{path: 'dataPoint>', formatter: '.AH.buildExpressionForCriticality'}"
+				   valueStateText="{= ${property>$Path@com.sap.vocabularies.Common.v1.Text} ? ${property>$Path@com.sap.vocabularies.Common.v1.Text@@.MODEL.value} : ${property>@@.MODEL.value} }"
+				   editMode="Display">
+		</mdcBase:Field>
+	</template:with>
+
+</core:FragmentDefinition>

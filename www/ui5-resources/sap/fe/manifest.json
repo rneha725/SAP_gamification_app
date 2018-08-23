@@ -1,0 +1,55 @@
+{
+  "_version": "1.9.0",
+  "sap.app": {
+    "id": "sap.fe",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.56.1"
+    },
+    "title": "UI5 library: sap.fe",
+    "description": "UI5 library: sap.fe",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "supportedThemes": [
+      "base"
+    ]
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.56",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.56.1"
+        },
+        "sap.ushell": {
+          "minVersion": "1.56.1"
+        },
+        "sap.f": {
+          "minVersion": "1.56.1",
+          "lazy": true
+        },
+        "sap.m": {
+          "minVersion": "1.56.1",
+          "lazy": true
+        },
+        "sap.ui.mdc": {
+          "minVersion": "1.56.1",
+          "lazy": true
+        }
+      }
+    },
+    "library": {
+      "i18n": "messagebundle.properties",
+      "content": {
+        "controls": [],
+        "elements": [],
+        "types": [],
+        "interfaces": []
+      }
+    }
+  }
+}

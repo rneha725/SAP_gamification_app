@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns:m="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<l:VerticalLayout width="100%" class="linkInfoPanel">
+
+		<m:VBox fitContainer="false" class="linkInfoPanelTitleH1 linkInfoPanelHeader"
+				items="{
+					path:'$this>/items',
+					factory:'.mainItemFactory',
+					filters: [{path:'isMain', operator:'EQ', value1:true}]
+				}"
+				visible="{path:'$this>/items', formatter:'.formatterIsMain'}"/>
+
+		<m:VBox id="IDExtraContent" fitContainer="false"/>
+
+		<m:VBox fitContainer="false" class="linkInfoPanelSeparator"
+				visible="{= ${$this>items}.length > 0}"/>
+		<!--visible="{= ${$this>items}.length > 0 &amp;&amp; ${$this>mainItem/text} ? true:false}"/>-->
+
+
+		<m:VBox fitContainer="false" class="linkInfoPanelAvailableLinks"
+				items="{
+					path:'$this>/items',
+					factory:'.itemsFactory',
+					filters: [{path:'isMain', operator:'NE', value1:true}],
+					templateShareable:false
+				}"/>
+
+		<m:HBox justifyContent="End" class="linkInfoPanelAvailableLinks"
+				visible="{= ${$this>items}.length > 0 &amp;&amp; ${$this>enablePersonalization} ? true:false}">
+			<m:Button type="Transparent" text="{i18n>linkinfo.POPOVER_DEFINE_LINKS}"/>
+		</m:HBox>
+
+	</l:VerticalLayout>
+</core:FragmentDefinition>

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/apf/library-h2-preload.js",
+"sourceroot":".",
+"sources":["manifest.json","library-dbg.js"],
+"names":[],
+"mappings":";;iCCYA,sCACA,uCAWA,0CACA,mDACA,oCACA,4CACA,yCACA,sCACA,0CACA,4CACA,2CACA,wCAGA,8BACC,IAAK,CAAE,UACP,YAAa,CAAE,+IACf,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,aAAc,KACd,QAAS,QACV;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[50,845,869,1665]
+}

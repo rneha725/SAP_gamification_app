@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+    <name>sap.fe</name>
+    <vendor>SAP SE</vendor>
+    <copyright>SAP UI development toolkit for HTML5 (SAPUI5)
+        (c) Copyright 2009-2017 SAP SE. All rights reserved
+    </copyright>
+    <version>1.56.1</version>
+
+    <documentation>UI5 library: sap.fe</documentation>
+
+    <dependencies>
+        <dependency>
+            <libraryName>sap.ui.core</libraryName>
+        </dependency>
+        <dependency>
+            <libraryName>sap.ushell</libraryName>
+        </dependency>
+        <dependency>
+            <libraryName>sap.f</libraryName>
+            <lazy>true</lazy>
+        </dependency>
+        <dependency>
+            <libraryName>sap.m</libraryName>
+            <lazy>true</lazy>
+        </dependency>
+         <dependency>
+            <libraryName>sap.ui.mdc</libraryName>
+            <lazy>true</lazy>
+        </dependency>
+    </dependencies>
+
+    <appData>
+        <!-- excludes for the JSDoc -->
+        <jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc">
+        	<exclude name="sap.fe.js."/>
+        </jsdoc>
+        <!-- excludes for the JSCoverage -->
+		<jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage">
+			<exclude name="sap.fe.js."/>
+			<exclude name="jquery.sap.xml."/>
+			<exclude name="sap.chart." />
+			<exclude name="sap.m." />
+			<exclude name="sap.suite.ui.commons." />
+			<exclude name="sap.suite.ui.microchart." />
+			<exclude name="sap.ui." />
+			<exclude name="sap.ushell." />
+			<exclude name="sap.uxap." />
+			<exclude name="sap.viz." />
+			<exclude name="*" /> <!-- exclude files within current folder -->
+		</jscoverage>
+    </appData>
+
+</library>

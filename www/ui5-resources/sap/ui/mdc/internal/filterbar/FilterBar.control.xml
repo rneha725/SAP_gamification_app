@@ -1,0 +1,74 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:mdc="sap.ui.mdc"
+						 xmlns:core="sap.ui.core"
+						 xmlns:l="sap.ui.layout">
+
+	<template:alias name=".FILTERBAR" value="sap.ui.mdc.FilterBar._helper">
+		<template:alias name=".COMMON" value="sap.ui.mdc.internal.common.Helper">
+			<l:AlignedFlowLayout id="template::Filterbar::Layout">
+				<l:content>
+					<template:if test="{= !(${this>hideBasicSearch}) &amp;&amp; !(${entitySet>@Org.OData.Capabilities.V1.SearchRestrictions/Searchable/Bool} === 'false') }">
+						<!-- Base Search -->
+						<VBox class="sapUiTinyMargin" id="template::Search">
+							<!-- TODO: other filterFields have two dashes instead of one - shall we do the same here? -->
+							<Label labelFor="template::Search-__searchField"
+								   text="{$i18n>filterbar.SEARCH}:"/>
+							<SearchField id="template::Search-__searchField"
+										 search="handleSearch"
+										 liveChange="handleSearchChange"/>
+						</VBox>
+					</template:if>
+
+					<template:if test="{= ${entitySet>@com.sap.vocabularies.Common.v1.DraftRoot} || ${entitySet>@com.sap.vocabularies.Common.v1.DraftNode} }">
+						<!-- Draft Edit State in case of Draft enabled entities -->
+						<VBox class="sapUiTinyMargin" id="template::DraftEditingStatus">
+							<!-- TODO: other filterFields have two dashes instead of one - shall we do the same here? -->
+							<Label labelFor="template::DraftEditingStatus-__comboBox"
+								   text="{$i18n>filterbar.EDITING_STATUS}:"/>
+							<ComboBox id="template::DraftEditingStatus-__comboBox"
+									  selectedKey="{= '{$draft>/entitySets/' + ${entitySet>@sapui.name} + '/editState}' }"
+									  items="{path: '$draft>/editStates'}"
+									  selectionChange="handleChange"
+									  width="100%">
+								<core:Item key="{$draft>id}" text="{$draft>name}"/>
+							</ComboBox>
+						</VBox>
+					</template:if>
+
+					<template:repeat list="{selectionFields>}" var="selectionField">
+						<!-- All Selection Fields -->
+						<!-- as selectionFields can be also an entitySet which does not have a $PropertyPath we need to call a resolver which at the end points to a property -->
+						<template:with path="selectionField>" var="property" helper=".FILTERBAR.resolveSelectionField">
+							<template:if test="{property>@@.COMMON.isPropertyFilterable}">
+								<mdc:FilterField
+										id="template::FilterField::{property>@@.FILTERBAR.replaceSpecialCharsInId}"
+										conditionModelName="{this>conditionModelName}"
+										metadataContexts="{ model: 'entitySet', path:'',  name: 'entitySet'}, { model: 'property', path:'',  name: 'property'}"/>
+							</template:if>
+						</template:with>
+					</template:repeat>
+
+				</l:content>
+
+				<template:if test="{this>enablePersonalization}">
+					<!-- Personalization Button (Adapt Filters) -->
+					<l:endContent>
+						<Button  id="template::Filterbar::Adapt" text="{$i18n>filterbar.ADAPT}"  press="handleAdapt" type="Transparent">
+							<customData>
+								<!-- JUST A WORKAROUND - FIXME -->
+								<core:CustomData key="entitySetName" value="{entitySet>@sapui.name}"/>
+							</customData>
+						</Button>
+
+						<template:if test="{= ${this>liveUpdate} === false }">
+							<Button id="template::Filterbar::GoButton" text="{$i18n>filterbar.GO}"
+									type="Emphasized" press="handleGo"></Button>
+						</template:if>
+					</l:endContent>
+				</template:if>
+			</l:AlignedFlowLayout>
+		</template:alias>
+	</template:alias>
+
+</core:FragmentDefinition>

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/zen/crosstab/library-h2-preload.js",
+"sourceroot":".",
+"sources":["manifest.json","library-dbg.js"],
+"names":[],
+"mappings":";;;;;0CCYA,+CACA,uCAWA,0CAGA,8BACC,IAAK,CAAE,mBACP,YAAa,CAAE,gBACf,MAAO,GACP,WAAY,GACZ,SAAU,CACT,4BACA,4BACA,6BACD,EACA,SAAU,GACV,QAAS,QACV;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[59,652,756,1131]
+}

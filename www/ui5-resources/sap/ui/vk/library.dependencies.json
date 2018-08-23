@@ -1,0 +1,1365 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/ui/vk/BaseNodeProxy.js",
+      "description" : "Provides the BaseNodeProxy class.",
+      "size" : 3248,
+      "compressedSize" : 291,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Camera.js",
+      "description" : "Provides the Camera class.",
+      "size" : 1474,
+      "compressedSize" : 493,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/CheckEye.js",
+      "description" : "Provides control sap.ui.vk.CheckEye.",
+      "size" : 1472,
+      "compressedSize" : 532,
+      "required" : ["jquery.sap.global.js", "sap/ui/commons/CheckBox.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ContainerBase.js",
+      "description" : "Provides control sap.ui.vk.ContainerBase.",
+      "size" : 22406,
+      "compressedSize" : 11457,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/ui/Device.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/ui/core/Popup.js", "sap/ui/thirdparty/URI.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ContainerBaseRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2095,
+      "compressedSize" : 1001,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ContainerContent.js",
+      "description" : "Provides control sap.ui.vk.ContainerContent.",
+      "size" : 1917,
+      "compressedSize" : 670,
+      "required" : ["sap/ui/core/Control.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ContainerContentRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 862,
+      "compressedSize" : 246,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ContentConnector.js",
+      "description" : "Provides object sap.ui.vk.ContentConnector.",
+      "size" : 33213,
+      "compressedSize" : 11198,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObjectObserver.js", "sap/ui/core/Element.js", "sap/ui/vk/Core.js", "sap/ui/vk/Messages.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ContentManager.js",
+      "description" : "Provides object sap.ui.vk.ContentManager.",
+      "size" : 4720,
+      "compressedSize" : 841,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ContentResource.js",
+      "description" : "Provides class sap.ui.vk.ContentResource.",
+      "size" : 6817,
+      "compressedSize" : 1513,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Core.js",
+      "description" : "Provides the Core class.",
+      "size" : 2516,
+      "compressedSize" : 881,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/DockContainer.js",
+      "size" : 6356,
+      "compressedSize" : 4102,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/DockManager.js",
+      "size" : 23144,
+      "compressedSize" : 14657,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/DockContainer.js", "sap/ui/vk/DockPane.js", "sap/ui/vk/Loco.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/DockManagerRenderer.js",
+      "description" : "Provides default renderer for control sap.ui.vk.DockManager",
+      "size" : 1313,
+      "compressedSize" : 488,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/DockPane.js",
+      "size" : 15615,
+      "compressedSize" : 10035,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/vk/DockContainer.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/DownloadManager.js",
+      "description" : "Provides the DownloadManager class.",
+      "size" : 10224,
+      "compressedSize" : 4285,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/vk/Messages.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/DvlException.js",
+      "description" : "Provides an exception class for DVL errors.",
+      "size" : 894,
+      "compressedSize" : 314,
+      "required" : ["sap/ui/base/Exception.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/FlexibleControl.js",
+      "description" : "Provides control sap.ui.vk.FlexibleControl.",
+      "size" : 2003,
+      "compressedSize" : 784,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/EnabledPropagator.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/FlexibleControlLayoutData.js",
+      "description" : "Provides control sap.ui.vk.FlexibleControlLayoutData.",
+      "size" : 2151,
+      "compressedSize" : 644,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/LayoutData.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/FlexibleControlRenderer.js",
+      "description" : "Provides default renderer for control sap.ui.vk.FlexibleControl",
+      "size" : 2615,
+      "compressedSize" : 1213,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ImageContentManager.js",
+      "description" : "Provides object sap.ui.vk.ImageContentManager.",
+      "size" : 7286,
+      "compressedSize" : 3398,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/ContentManager.js", "sap/ui/vk/Messages.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/InputDeviceKeyboard.js",
+      "description" : "Provides control sap.ui.vk.InputDeviceKeyboard.",
+      "size" : 997,
+      "compressedSize" : 693,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/InputDeviceMouse.js",
+      "description" : "Provides control sap.ui.vk.InputDeviceMouse.",
+      "size" : 8036,
+      "compressedSize" : 4498,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/InputDevicePointer.js",
+      "description" : "Provides control sap.ui.vk.InputDevicPointer.",
+      "size" : 7932,
+      "compressedSize" : 4701,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/vk/InputDeviceMouse.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/InputDeviceTouch.js",
+      "description" : "Provides control sap.ui.vk.InputDevicTouch.",
+      "size" : 3144,
+      "compressedSize" : 2152,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/LayerProxy.js",
+      "description" : "Provides the LayerProxy class.",
+      "size" : 2485,
+      "compressedSize" : 288,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/LegendItem.js",
+      "description" : "Provides control sap.ui.vk.LegendItem.",
+      "size" : 1566,
+      "compressedSize" : 476,
+      "required" : ["sap/m/StandardListItem.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/LegendItemRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1698,
+      "compressedSize" : 1164,
+      "required" : ["sap/m/StandardListItemRenderer.js", "sap/ui/core/Renderer.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ListPanel.js",
+      "description" : "Provides control sap.ui.vk.ListPanel.",
+      "size" : 9159,
+      "compressedSize" : 3963,
+      "required" : ["sap/m/library.js", "sap/ui/core/Control.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ListPanelRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 991,
+      "compressedSize" : 354,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ListPanelStack.js",
+      "description" : "Provides control sap.ui.vk.ListPanelStack.",
+      "size" : 6944,
+      "compressedSize" : 3397,
+      "required" : ["sap/ui/core/Control.js", "sap/ui/layout/library.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ListPanelStackRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 837,
+      "compressedSize" : 292,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Loco.js",
+      "description" : "Provides control sap.ui.vk.Loco.",
+      "size" : 10611,
+      "compressedSize" : 4621,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/vk/InputDeviceKeyboard.js", "sap/ui/vk/InputDeviceMouse.js", "sap/ui/vk/InputDevicePointer.js", "sap/ui/vk/InputDeviceTouch.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/MapContainer.js",
+      "description" : "Provides control sap.ui.vk.MapContainer.",
+      "size" : 15760,
+      "compressedSize" : 8332,
+      "required" : ["jquery.sap.global.js", "sap/ui/Device.js", "sap/ui/core/IconPool.js", "sap/ui/vbm/lib/sapvbi.js", "sap/ui/vk/ContainerBase.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/MapContainerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 2115,
+      "compressedSize" : 1342,
+      "required" : ["sap/ui/Device.js", "sap/ui/core/Renderer.js", "sap/ui/vk/ContainerBaseRenderer.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Messages.js",
+      "description" : "Provides an exception class for DVL errors.",
+      "size" : 9520,
+      "compressedSize" : 8272,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/NativeViewport.js",
+      "description" : "Provides control sap.ui.vk.Viewport.",
+      "size" : 26645,
+      "compressedSize" : 13731,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/Loco.js", "sap/ui/vk/Messages.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/NativeViewportRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 940,
+      "compressedSize" : 391,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/NodeHierarchy.js",
+      "description" : "Provides the NodeHierarchy class.",
+      "size" : 26945,
+      "compressedSize" : 2900,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/vk/Messages.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/NodeProxy.js",
+      "description" : "Provides the NodeProxy class.",
+      "size" : 3226,
+      "compressedSize" : 1001,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Notifications.js",
+      "description" : "Provides control sap.ui.vk.Notifications.",
+      "size" : 5970,
+      "compressedSize" : 3359,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/vk/Messages.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/NotificationsRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 965,
+      "compressedSize" : 424,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/OrthographicCamera.js",
+      "description" : "Provides the OrthographicCamera class.",
+      "size" : 910,
+      "compressedSize" : 311,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/Camera.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Overlay.js",
+      "description" : "Provides control sap.ui.vk.Overlay.",
+      "size" : 37143,
+      "compressedSize" : 16267,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/vbm/lib/sapvbi.js", "sap/ui/vbm/library.js", "sap/ui/vk/Messages.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/OverlayArea.js",
+      "description" : "Provides control sap.ui.vk.OverlayArea.",
+      "size" : 10126,
+      "compressedSize" : 3845,
+      "required" : ["sap/ui/core/Element.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/OverlayRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1244,
+      "compressedSize" : 368,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/PerspectiveCamera.js",
+      "description" : "Provides the PerspectiveCamera class.",
+      "size" : 917,
+      "compressedSize" : 303,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/Camera.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ProgressIndicator.js",
+      "description" : "Provides control sap.ui.vk.ProgressIndicator.",
+      "size" : 2649,
+      "compressedSize" : 1126,
+      "required" : ["jquery.sap.global.js", "sap/m/ProgressIndicator.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ProgressIndicatorRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 385,
+      "compressedSize" : 238,
+      "required" : ["jquery.sap.global.js", "sap/m/ProgressIndicatorRenderer.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineDesign.js",
+      "description" : "Provides control sap.ui.vk.RedlineDesign.",
+      "size" : 6139,
+      "compressedSize" : 2616,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/vk/Loco.js", "sap/ui/vk/RedlineDesignHandler.js", "sap/ui/vk/RedlineElement.js", "sap/ui/vk/RedlineGesturesHandler.js", "sap/ui/vk/RedlineSurface.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineDesignHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 6120,
+      "compressedSize" : 2533,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineDesignRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 769,
+      "compressedSize" : 454,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Renderer.js", "sap/ui/vk/RedlineSurfaceRenderer.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineElement.js",
+      "description" : "Provides a class for the redlining elements.",
+      "size" : 4899,
+      "compressedSize" : 2273,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineElementEllipse.js",
+      "description" : "Provides a class for the redlining ellipse elements.",
+      "size" : 7149,
+      "compressedSize" : 3263,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/RedlineElement.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineElementFreehand.js",
+      "description" : "Provides a class for the redlining freehand elements.",
+      "size" : 6714,
+      "compressedSize" : 2689,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/RedlineElement.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineElementRectangle.js",
+      "description" : "Provides a class for the redlining elements.",
+      "size" : 7382,
+      "compressedSize" : 3407,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/RedlineElement.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineGesturesHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9584,
+      "compressedSize" : 3995,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineSurface.js",
+      "description" : "Provides control sap.ui.vk.RedlineSurface.",
+      "size" : 7171,
+      "compressedSize" : 2756,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/vk/Loco.js", "sap/ui/vk/RedlineGesturesHandler.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/RedlineSurfaceRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 785,
+      "compressedSize" : 502,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Scene.js",
+      "description" : "Provides the Scene class.",
+      "size" : 1704,
+      "compressedSize" : 283,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Object.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/SceneTree.js",
+      "description" : "Provides control sap.ui.vk.SceneTree.",
+      "size" : 15081,
+      "compressedSize" : 8741,
+      "required" : ["jquery.sap.global.js", "sap/m/SearchField.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarLayoutData.js", "sap/m/ToolbarSpacer.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "sap/ui/model/json/JSONModel.js", "sap/ui/table/Column.js", "sap/ui/table/TreeTable.js", "sap/ui/vk/CheckEye.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/SceneTreeRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1096,
+      "compressedSize" : 427,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Smart2DHandler.js",
+      "description" : "Provides control sap.ui.vk.Smart2DHandler.",
+      "size" : 5268,
+      "compressedSize" : 2901,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/StepNavigation.js",
+      "description" : "Provides control sap.ui.vk.StepNavigation.",
+      "size" : 49985,
+      "compressedSize" : 26109,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js", "sap/ui/core/Popup.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/Loco.js", "sap/ui/vk/Messages.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/StepNavigationRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1892,
+      "compressedSize" : 910,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Toolbar.js",
+      "description" : "Provides control sap.ui.vk.SceneTree.",
+      "size" : 7744,
+      "compressedSize" : 5059,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/model/json/JSONModel.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ToolbarRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1055,
+      "compressedSize" : 399,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/TransformationMatrix.js",
+      "description" : "Provides data type sap.ui.vk.TransformationMatrix.",
+      "size" : 2266,
+      "compressedSize" : 755,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/DataType.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/View.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1376,
+      "compressedSize" : 382,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ViewStateManager.js",
+      "description" : "Provides the ViewStateManager class.",
+      "size" : 20462,
+      "compressedSize" : 7746,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/Core.js", "sap/ui/vk/Scene.js", "sap/ui/vk/ViewStateManagerBase.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ViewStateManagerBase.js",
+      "description" : "Provides the ViewStateManagerBase class.",
+      "size" : 11155,
+      "compressedSize" : 1223,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/Scene.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Viewer.js",
+      "description" : "Provides control sap.ui.vk.Viewer.",
+      "size" : 47902,
+      "compressedSize" : 26324,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexItemData.js", "sap/m/VBox.js", "sap/ui/core/Control.js", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/ContentResource.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/FlexibleControl.js", "sap/ui/vk/Messages.js", "sap/ui/vk/Notifications.js", "sap/ui/vk/ProgressIndicator.js", "sap/ui/vk/Scene.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/dvl/ContentManager.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ViewerRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1244,
+      "compressedSize" : 538,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/Viewport.js",
+      "description" : "Provides control sap.ui.vk.Viewport.",
+      "size" : 21903,
+      "compressedSize" : 8248,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/Loco.js", "sap/ui/vk/Messages.js", "sap/ui/vk/Smart2DHandler.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/ViewportBase.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ViewportBase.js",
+      "description" : "Provides control sap.ui.vk.ViewportBase.",
+      "size" : 9553,
+      "compressedSize" : 3151,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/Loco.js", "sap/ui/vk/Messages.js", "sap/ui/vk/Smart2DHandler.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ViewportHandler.js",
+      "description" : "Provides control sap.ui.vk.ViewportHandler.",
+      "size" : 7176,
+      "compressedSize" : 4224,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/core/ResizeHandler.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/ViewportRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1462,
+      "compressedSize" : 596,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/BaseNodeProxy.js",
+      "description" : "Provides the BaseNodeProxy class.",
+      "size" : 4751,
+      "compressedSize" : 1349,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/BaseNodeProxy.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/ContentManager.js",
+      "description" : "Provides object sap.ui.vk.dvl.ContentManager.",
+      "size" : 9907,
+      "compressedSize" : 3168,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/ContentManager.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/Messages.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/GraphicsCore.js",
+      "description" : "Provides the GraphicsCore class.",
+      "size" : 79975,
+      "compressedSize" : 25716,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/thirdparty/URI.js", "sap/ui/vk/ContentResource.js", "sap/ui/vk/DownloadManager.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/Messages.js", "sap/ui/vk/dvl/NodeHierarchy.js", "sap/ui/vk/dvl/Scene.js", "sap/ui/vk/dvl/ViewStateManager.js", "sap/ui/vk/library.js", "sap/ui/vk/ve/dvl.js", "sap/ui/vk/ve/thirdparty/html2canvas.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/LayerProxy.js",
+      "description" : "Provides the LayerProxy class.",
+      "size" : 3630,
+      "compressedSize" : 1359,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/LayerProxy.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/NodeHierarchy.js",
+      "description" : "Provides the NodeHierarchy class.",
+      "size" : 22224,
+      "compressedSize" : 6279,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ObjectPool.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/Messages.js", "sap/ui/vk/NodeHierarchy.js", "sap/ui/vk/dvl/BaseNodeProxy.js", "sap/ui/vk/dvl/LayerProxy.js", "sap/ui/vk/dvl/NodeProxy.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/NodeProxy.js",
+      "description" : "Provides the NodeProxy class.",
+      "size" : 5159,
+      "compressedSize" : 3558,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/NodeProxy.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/Scene.js",
+      "description" : "Provides the Scene class.",
+      "size" : 2608,
+      "compressedSize" : 975,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/Scene.js", "sap/ui/vk/dvl/NodeHierarchy.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/ViewStateManager.js",
+      "description" : "Provides the ViewStateManager class.",
+      "size" : 29149,
+      "compressedSize" : 11222,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/ViewStateManagerBase.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/Viewport.js",
+      "description" : "Provides control sap.ui.vk.Viewport.",
+      "size" : 63428,
+      "compressedSize" : 26653,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/Loco.js", "sap/ui/vk/Messages.js", "sap/ui/vk/Smart2DHandler.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/ViewportBase.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/dvl/GraphicsCore.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/dvl/ViewportRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1743,
+      "compressedSize" : 694,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/helpers/CameraControllerThree.js",
+      "description" : "Provides control sap.ui.vk.helpers.CameraControllerThree.",
+      "size" : 8242,
+      "compressedSize" : 4141,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/ui/vk/threejs/thirdparty/three.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/helpers/RotateOrbitHelperDvl.js",
+      "description" : "Provides control sap.ui.vk.helpers.RotateOrbitHelper.",
+      "size" : 2129,
+      "compressedSize" : 1075,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/helpers/RotateOrbitHelperThree.js",
+      "description" : "Provides control sap.ui.vk.helpers.RotateOrbitHelper.",
+      "size" : 1816,
+      "compressedSize" : 854,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/vk/helpers/CameraControllerThree.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/helpers/RotateTurntableHelperDvl.js",
+      "description" : "Provides control sap.ui.vk.helpers.RotateTurntableHelperDvl.",
+      "size" : 1873,
+      "compressedSize" : 1087,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/helpers/RotateTurntableHelperThree.js",
+      "description" : "Provides control sap.ui.vk.helpers.RotateTurntableHelper.",
+      "size" : 2046,
+      "compressedSize" : 900,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/vk/helpers/CameraControllerThree.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/helpers/library.js",
+      "description" : "Initialization Code and shared classes of library sap.suite.ui.generic.template.",
+      "size" : 997,
+      "compressedSize" : 554,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle.properties",
+      "size" : 18834,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_ar.properties",
+      "size" : 37473,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_bg.properties",
+      "size" : 47291,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_ca.properties",
+      "size" : 19659,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_cs.properties",
+      "size" : 21029,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_da.properties",
+      "size" : 19126,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_de.properties",
+      "size" : 20166,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_el.properties",
+      "size" : 47740,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_en.properties",
+      "size" : 18417,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_en_US_sappsd.properties",
+      "size" : 57220,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_en_US_saptrc.properties",
+      "size" : 21930,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_es.properties",
+      "size" : 19924,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_et.properties",
+      "size" : 18954,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_fi.properties",
+      "size" : 19632,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_fr.properties",
+      "size" : 20808,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_hi.properties",
+      "size" : 42694,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_hr.properties",
+      "size" : 19650,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_hu.properties",
+      "size" : 22074,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_it.properties",
+      "size" : 19739,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_iw.properties",
+      "size" : 34293,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_ja.properties",
+      "size" : 31802,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_kk.properties",
+      "size" : 45007,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_ko.properties",
+      "size" : 26680,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_lt.properties",
+      "size" : 20539,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_lv.properties",
+      "size" : 21034,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_ms.properties",
+      "size" : 18513,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_nl.properties",
+      "size" : 19033,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_no.properties",
+      "size" : 18775,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_pl.properties",
+      "size" : 21523,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_pt.properties",
+      "size" : 20441,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_ro.properties",
+      "size" : 21088,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_ru.properties",
+      "size" : 45174,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_sh.properties",
+      "size" : 19412,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_sk.properties",
+      "size" : 21535,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_sl.properties",
+      "size" : 18856,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_sv.properties",
+      "size" : 19205,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_th.properties",
+      "size" : 44172,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_tr.properties",
+      "size" : 21296,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_uk.properties",
+      "size" : 46052,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_vi.properties",
+      "size" : 29282,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_zh_CN.properties",
+      "size" : 22272,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/i18n/messagebundle_zh_TW.properties",
+      "size" : 22051,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/library-h2-preload.js",
+      "size" : 26706,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexItemData.js", "sap/m/ProgressIndicator.js", "sap/m/ProgressIndicatorRenderer.js", "sap/m/SearchField.js", "sap/m/StandardListItem.js", "sap/m/StandardListItemRenderer.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarLayoutData.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/library.js", "sap/ui/Device.js", "sap/ui/base/DataType.js", "sap/ui/base/EventProvider.js", "sap/ui/base/Exception.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/ManagedObjectObserver.js", "sap/ui/base/Object.js", "sap/ui/base/ObjectPool.js", "sap/ui/commons/CheckBox.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/EnabledPropagator.js", "sap/ui/core/IconPool.js", "sap/ui/core/LayoutData.js", "sap/ui/core/Popup.js", "sap/ui/core/Renderer.js", "sap/ui/core/ResizeHandler.js", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js", "sap/ui/layout/library.js", "sap/ui/model/json/JSONModel.js", "sap/ui/table/Column.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/URI.js", "sap/ui/unified/Menu.js", "sap/ui/unified/MenuItem.js", "sap/ui/vbm/lib/sapvbi.js", "sap/ui/vbm/library.js", "sap/ui/vk/threejs/thirdparty/three.js", "sap/ui/vk/threejs/thirdparty/totara.js", "sap/ui/vk/ve/dvl.js", "sap/ui/vk/ve/thirdparty/html2canvas.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/ui/vk/library.js", "sap/ui/vk/manifest.json", "sap/ui/vk/BaseNodeProxy.js", "sap/ui/vk/Camera.js", "sap/ui/vk/CheckEye.js", "sap/ui/vk/ContainerBase.js", "sap/ui/vk/ContainerBaseRenderer.js", "sap/ui/vk/ContainerContent.js", "sap/ui/vk/ContainerContentRenderer.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/ContentManager.js", "sap/ui/vk/ContentResource.js", "sap/ui/vk/Core.js", "sap/ui/vk/DockContainer.js", "sap/ui/vk/DockManager.js", "sap/ui/vk/DockManagerRenderer.js", "sap/ui/vk/DockPane.js", "sap/ui/vk/DownloadManager.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/FlexibleControl.js", "sap/ui/vk/FlexibleControlLayoutData.js", "sap/ui/vk/FlexibleControlRenderer.js", "sap/ui/vk/ImageContentManager.js", "sap/ui/vk/InputDeviceKeyboard.js", "sap/ui/vk/InputDeviceMouse.js", "sap/ui/vk/InputDevicePointer.js", "sap/ui/vk/InputDeviceTouch.js", "sap/ui/vk/LayerProxy.js", "sap/ui/vk/LegendItem.js", "sap/ui/vk/LegendItemRenderer.js", "sap/ui/vk/ListPanel.js", "sap/ui/vk/ListPanelRenderer.js", "sap/ui/vk/ListPanelStack.js", "sap/ui/vk/ListPanelStackRenderer.js", "sap/ui/vk/Loco.js", "sap/ui/vk/MapContainer.js", "sap/ui/vk/MapContainerRenderer.js", "sap/ui/vk/Messages.js", "sap/ui/vk/NativeViewport.js", "sap/ui/vk/NativeViewportRenderer.js", "sap/ui/vk/NodeHierarchy.js", "sap/ui/vk/NodeProxy.js", "sap/ui/vk/Notifications.js", "sap/ui/vk/NotificationsRenderer.js", "sap/ui/vk/OrthographicCamera.js", "sap/ui/vk/Overlay.js", "sap/ui/vk/OverlayArea.js", "sap/ui/vk/OverlayRenderer.js", "sap/ui/vk/PerspectiveCamera.js", "sap/ui/vk/ProgressIndicator.js", "sap/ui/vk/ProgressIndicatorRenderer.js", "sap/ui/vk/RedlineDesign.js", "sap/ui/vk/RedlineDesignHandler.js", "sap/ui/vk/RedlineDesignRenderer.js", "sap/ui/vk/RedlineElement.js", "sap/ui/vk/RedlineElementEllipse.js", "sap/ui/vk/RedlineElementFreehand.js", "sap/ui/vk/RedlineElementRectangle.js", "sap/ui/vk/RedlineGesturesHandler.js", "sap/ui/vk/RedlineSurface.js", "sap/ui/vk/RedlineSurfaceRenderer.js", "sap/ui/vk/Scene.js", "sap/ui/vk/SceneTree.js", "sap/ui/vk/SceneTreeRenderer.js", "sap/ui/vk/Smart2DHandler.js", "sap/ui/vk/StepNavigation.js", "sap/ui/vk/StepNavigationRenderer.js", "sap/ui/vk/Toolbar.js", "sap/ui/vk/ToolbarRenderer.js", "sap/ui/vk/TransformationMatrix.js", "sap/ui/vk/View.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/ViewStateManagerBase.js", "sap/ui/vk/Viewer.js", "sap/ui/vk/ViewerRenderer.js", "sap/ui/vk/Viewport.js", "sap/ui/vk/ViewportBase.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/ViewportRenderer.js", "sap/ui/vk/dvl/BaseNodeProxy.js", "sap/ui/vk/dvl/ContentManager.js", "sap/ui/vk/dvl/GraphicsCore.js", "sap/ui/vk/dvl/LayerProxy.js", "sap/ui/vk/dvl/NodeHierarchy.js", "sap/ui/vk/dvl/NodeProxy.js", "sap/ui/vk/dvl/Scene.js", "sap/ui/vk/dvl/ViewStateManager.js", "sap/ui/vk/dvl/Viewport.js", "sap/ui/vk/dvl/ViewportRenderer.js", "sap/ui/vk/helpers/CameraControllerThree.js", "sap/ui/vk/helpers/RotateOrbitHelperDvl.js", "sap/ui/vk/helpers/RotateOrbitHelperThree.js", "sap/ui/vk/helpers/RotateTurntableHelperDvl.js", "sap/ui/vk/helpers/RotateTurntableHelperThree.js", "sap/ui/vk/helpers/library.js", "sap/ui/vk/threejs/BaseNodeProxy.js", "sap/ui/vk/threejs/ContentDeliveryService.js", "sap/ui/vk/threejs/ContentManager.js", "sap/ui/vk/threejs/NodeHierarchy.js", "sap/ui/vk/threejs/NodeProxy.js", "sap/ui/vk/threejs/NodesTransitionHelper.js", "sap/ui/vk/threejs/OrthographicCamera.js", "sap/ui/vk/threejs/PerspectiveCamera.js", "sap/ui/vk/threejs/Scene.js", "sap/ui/vk/threejs/ViewStateManager.js", "sap/ui/vk/threejs/Viewport.js", "sap/ui/vk/threejs/ViewportGestureHandler.js", "sap/ui/vk/threejs/ViewportRenderer.js", "sap/ui/vk/tools/CrossSectionTool.js", "sap/ui/vk/tools/CrossSectionToolGizmo.js", "sap/ui/vk/tools/CrossSectionToolHandler.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/HitTestTool.js", "sap/ui/vk/tools/HitTestToolHandler.js", "sap/ui/vk/tools/MoveTool.js", "sap/ui/vk/tools/MoveToolGizmo.js", "sap/ui/vk/tools/MoveToolHandler.js", "sap/ui/vk/tools/RectSelectTool.js", "sap/ui/vk/tools/RectSelectToolHandler.js", "sap/ui/vk/tools/RotateOrbitTool.js", "sap/ui/vk/tools/RotateTool.js", "sap/ui/vk/tools/RotateToolGizmo.js", "sap/ui/vk/tools/RotateToolHandler.js", "sap/ui/vk/tools/RotateTurntableTool.js", "sap/ui/vk/tools/ScaleTool.js", "sap/ui/vk/tools/ScaleToolGizmo.js", "sap/ui/vk/tools/ScaleToolHandler.js", "sap/ui/vk/tools/SceneOrientationTool.js", "sap/ui/vk/tools/SceneOrientationToolGizmo.js", "sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js", "sap/ui/vk/tools/SceneOrientationToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/TooltipTool.js", "sap/ui/vk/tools/TooltipToolGizmo.js", "sap/ui/vk/tools/TooltipToolGizmoRenderer.js", "sap/ui/vk/tools/TooltipToolHandler.js", "sap/ui/vk/tools/library.js"]
+    },
+    {
+      "name" : "sap/ui/vk/library-preload.js",
+      "size" : 541426,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexItemData.js", "sap/m/ProgressIndicator.js", "sap/m/ProgressIndicatorRenderer.js", "sap/m/SearchField.js", "sap/m/StandardListItem.js", "sap/m/StandardListItemRenderer.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarLayoutData.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/library.js", "sap/ui/Device.js", "sap/ui/base/DataType.js", "sap/ui/base/EventProvider.js", "sap/ui/base/Exception.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/ManagedObjectObserver.js", "sap/ui/base/Object.js", "sap/ui/base/ObjectPool.js", "sap/ui/commons/CheckBox.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/EnabledPropagator.js", "sap/ui/core/IconPool.js", "sap/ui/core/LayoutData.js", "sap/ui/core/Popup.js", "sap/ui/core/Renderer.js", "sap/ui/core/ResizeHandler.js", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js", "sap/ui/layout/library.js", "sap/ui/model/json/JSONModel.js", "sap/ui/table/Column.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/URI.js", "sap/ui/unified/Menu.js", "sap/ui/unified/MenuItem.js", "sap/ui/vbm/lib/sapvbi.js", "sap/ui/vbm/library.js", "sap/ui/vk/threejs/thirdparty/three.js", "sap/ui/vk/threejs/thirdparty/totara.js", "sap/ui/vk/ve/dvl.js", "sap/ui/vk/ve/thirdparty/html2canvas.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/ui/vk/BaseNodeProxy.js", "sap/ui/vk/Camera.js", "sap/ui/vk/CheckEye.js", "sap/ui/vk/ContainerBase.js", "sap/ui/vk/ContainerBaseRenderer.js", "sap/ui/vk/ContainerContent.js", "sap/ui/vk/ContainerContentRenderer.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/ContentManager.js", "sap/ui/vk/ContentResource.js", "sap/ui/vk/Core.js", "sap/ui/vk/DockContainer.js", "sap/ui/vk/DockManager.js", "sap/ui/vk/DockManagerRenderer.js", "sap/ui/vk/DockPane.js", "sap/ui/vk/DownloadManager.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/FlexibleControl.js", "sap/ui/vk/FlexibleControlLayoutData.js", "sap/ui/vk/FlexibleControlRenderer.js", "sap/ui/vk/ImageContentManager.js", "sap/ui/vk/InputDeviceKeyboard.js", "sap/ui/vk/InputDeviceMouse.js", "sap/ui/vk/InputDevicePointer.js", "sap/ui/vk/InputDeviceTouch.js", "sap/ui/vk/LayerProxy.js", "sap/ui/vk/LegendItem.js", "sap/ui/vk/LegendItemRenderer.js", "sap/ui/vk/ListPanel.js", "sap/ui/vk/ListPanelRenderer.js", "sap/ui/vk/ListPanelStack.js", "sap/ui/vk/ListPanelStackRenderer.js", "sap/ui/vk/Loco.js", "sap/ui/vk/MapContainer.js", "sap/ui/vk/MapContainerRenderer.js", "sap/ui/vk/Messages.js", "sap/ui/vk/NativeViewport.js", "sap/ui/vk/NativeViewportRenderer.js", "sap/ui/vk/NodeHierarchy.js", "sap/ui/vk/NodeProxy.js", "sap/ui/vk/Notifications.js", "sap/ui/vk/NotificationsRenderer.js", "sap/ui/vk/OrthographicCamera.js", "sap/ui/vk/Overlay.js", "sap/ui/vk/OverlayArea.js", "sap/ui/vk/OverlayRenderer.js", "sap/ui/vk/PerspectiveCamera.js", "sap/ui/vk/ProgressIndicator.js", "sap/ui/vk/ProgressIndicatorRenderer.js", "sap/ui/vk/RedlineDesign.js", "sap/ui/vk/RedlineDesignHandler.js", "sap/ui/vk/RedlineDesignRenderer.js", "sap/ui/vk/RedlineElement.js", "sap/ui/vk/RedlineElementEllipse.js", "sap/ui/vk/RedlineElementFreehand.js", "sap/ui/vk/RedlineElementRectangle.js", "sap/ui/vk/RedlineGesturesHandler.js", "sap/ui/vk/RedlineSurface.js", "sap/ui/vk/RedlineSurfaceRenderer.js", "sap/ui/vk/Scene.js", "sap/ui/vk/SceneTree.js", "sap/ui/vk/SceneTreeRenderer.js", "sap/ui/vk/Smart2DHandler.js", "sap/ui/vk/StepNavigation.js", "sap/ui/vk/StepNavigationRenderer.js", "sap/ui/vk/Toolbar.js", "sap/ui/vk/ToolbarRenderer.js", "sap/ui/vk/TransformationMatrix.js", "sap/ui/vk/View.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/ViewStateManagerBase.js", "sap/ui/vk/Viewer.js", "sap/ui/vk/ViewerRenderer.js", "sap/ui/vk/Viewport.js", "sap/ui/vk/ViewportBase.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/ViewportRenderer.js", "sap/ui/vk/dvl/BaseNodeProxy.js", "sap/ui/vk/dvl/ContentManager.js", "sap/ui/vk/dvl/GraphicsCore.js", "sap/ui/vk/dvl/LayerProxy.js", "sap/ui/vk/dvl/NodeHierarchy.js", "sap/ui/vk/dvl/NodeProxy.js", "sap/ui/vk/dvl/Scene.js", "sap/ui/vk/dvl/ViewStateManager.js", "sap/ui/vk/dvl/Viewport.js", "sap/ui/vk/dvl/ViewportRenderer.js", "sap/ui/vk/helpers/CameraControllerThree.js", "sap/ui/vk/helpers/RotateOrbitHelperDvl.js", "sap/ui/vk/helpers/RotateOrbitHelperThree.js", "sap/ui/vk/helpers/RotateTurntableHelperDvl.js", "sap/ui/vk/helpers/RotateTurntableHelperThree.js", "sap/ui/vk/helpers/library.js", "sap/ui/vk/library.js", "sap/ui/vk/manifest.json", "sap/ui/vk/threejs/BaseNodeProxy.js", "sap/ui/vk/threejs/ContentDeliveryService.js", "sap/ui/vk/threejs/ContentManager.js", "sap/ui/vk/threejs/NodeHierarchy.js", "sap/ui/vk/threejs/NodeProxy.js", "sap/ui/vk/threejs/NodesTransitionHelper.js", "sap/ui/vk/threejs/OrthographicCamera.js", "sap/ui/vk/threejs/PerspectiveCamera.js", "sap/ui/vk/threejs/Scene.js", "sap/ui/vk/threejs/ViewStateManager.js", "sap/ui/vk/threejs/Viewport.js", "sap/ui/vk/threejs/ViewportGestureHandler.js", "sap/ui/vk/threejs/ViewportRenderer.js", "sap/ui/vk/tools/CrossSectionTool.js", "sap/ui/vk/tools/CrossSectionToolGizmo.js", "sap/ui/vk/tools/CrossSectionToolHandler.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/HitTestTool.js", "sap/ui/vk/tools/HitTestToolHandler.js", "sap/ui/vk/tools/MoveTool.js", "sap/ui/vk/tools/MoveToolGizmo.js", "sap/ui/vk/tools/MoveToolHandler.js", "sap/ui/vk/tools/RectSelectTool.js", "sap/ui/vk/tools/RectSelectToolHandler.js", "sap/ui/vk/tools/RotateOrbitTool.js", "sap/ui/vk/tools/RotateTool.js", "sap/ui/vk/tools/RotateToolGizmo.js", "sap/ui/vk/tools/RotateToolHandler.js", "sap/ui/vk/tools/RotateTurntableTool.js", "sap/ui/vk/tools/ScaleTool.js", "sap/ui/vk/tools/ScaleToolGizmo.js", "sap/ui/vk/tools/ScaleToolHandler.js", "sap/ui/vk/tools/SceneOrientationTool.js", "sap/ui/vk/tools/SceneOrientationToolGizmo.js", "sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js", "sap/ui/vk/tools/SceneOrientationToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/TooltipTool.js", "sap/ui/vk/tools/TooltipToolGizmo.js", "sap/ui/vk/tools/TooltipToolGizmoRenderer.js", "sap/ui/vk/tools/TooltipToolHandler.js", "sap/ui/vk/tools/library.js"]
+    },
+    {
+      "name" : "sap/ui/vk/library-preload.json",
+      "size" : 0,
+      "required" : ["jquery.sap.global.js", "sap/m/FlexItemData.js", "sap/m/ProgressIndicator.js", "sap/m/ProgressIndicatorRenderer.js", "sap/m/SearchField.js", "sap/m/StandardListItem.js", "sap/m/StandardListItemRenderer.js", "sap/m/Title.js", "sap/m/Toolbar.js", "sap/m/ToolbarLayoutData.js", "sap/m/ToolbarSpacer.js", "sap/m/VBox.js", "sap/m/library.js", "sap/ui/Device.js", "sap/ui/base/DataType.js", "sap/ui/base/EventProvider.js", "sap/ui/base/Exception.js", "sap/ui/base/ManagedObject.js", "sap/ui/base/ManagedObjectObserver.js", "sap/ui/base/Object.js", "sap/ui/base/ObjectPool.js", "sap/ui/commons/CheckBox.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/EnabledPropagator.js", "sap/ui/core/IconPool.js", "sap/ui/core/LayoutData.js", "sap/ui/core/Popup.js", "sap/ui/core/Renderer.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/library-preload.json", "sap/ui/layout/Splitter.js", "sap/ui/layout/SplitterLayoutData.js", "sap/ui/layout/library.js", "sap/ui/model/json/JSONModel.js", "sap/ui/table/Column.js", "sap/ui/table/TreeTable.js", "sap/ui/thirdparty/URI.js", "sap/ui/unified/Menu.js", "sap/ui/unified/MenuItem.js", "sap/ui/vbm/lib/sapvbi.js", "sap/ui/vbm/library.js", "sap/ui/vk/threejs/thirdparty/three.js", "sap/ui/vk/threejs/thirdparty/totara.js", "sap/ui/vk/ve/dvl.js", "sap/ui/vk/ve/thirdparty/html2canvas.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/ui/vk/BaseNodeProxy.js", "sap/ui/vk/Camera.js", "sap/ui/vk/CheckEye.js", "sap/ui/vk/ContainerBase.js", "sap/ui/vk/ContainerBaseRenderer.js", "sap/ui/vk/ContainerContent.js", "sap/ui/vk/ContainerContentRenderer.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/ContentManager.js", "sap/ui/vk/ContentResource.js", "sap/ui/vk/Core.js", "sap/ui/vk/DockContainer.js", "sap/ui/vk/DockManager.js", "sap/ui/vk/DockManagerRenderer.js", "sap/ui/vk/DockPane.js", "sap/ui/vk/DownloadManager.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/FlexibleControl.js", "sap/ui/vk/FlexibleControlLayoutData.js", "sap/ui/vk/FlexibleControlRenderer.js", "sap/ui/vk/ImageContentManager.js", "sap/ui/vk/InputDeviceKeyboard.js", "sap/ui/vk/InputDeviceMouse.js", "sap/ui/vk/InputDevicePointer.js", "sap/ui/vk/InputDeviceTouch.js", "sap/ui/vk/LayerProxy.js", "sap/ui/vk/LegendItem.js", "sap/ui/vk/LegendItemRenderer.js", "sap/ui/vk/ListPanel.js", "sap/ui/vk/ListPanelRenderer.js", "sap/ui/vk/ListPanelStack.js", "sap/ui/vk/ListPanelStackRenderer.js", "sap/ui/vk/Loco.js", "sap/ui/vk/MapContainer.js", "sap/ui/vk/MapContainerRenderer.js", "sap/ui/vk/Messages.js", "sap/ui/vk/NativeViewport.js", "sap/ui/vk/NativeViewportRenderer.js", "sap/ui/vk/NodeHierarchy.js", "sap/ui/vk/NodeProxy.js", "sap/ui/vk/Notifications.js", "sap/ui/vk/NotificationsRenderer.js", "sap/ui/vk/OrthographicCamera.js", "sap/ui/vk/Overlay.js", "sap/ui/vk/OverlayArea.js", "sap/ui/vk/OverlayRenderer.js", "sap/ui/vk/PerspectiveCamera.js", "sap/ui/vk/ProgressIndicator.js", "sap/ui/vk/ProgressIndicatorRenderer.js", "sap/ui/vk/RedlineDesign.js", "sap/ui/vk/RedlineDesignHandler.js", "sap/ui/vk/RedlineDesignRenderer.js", "sap/ui/vk/RedlineElement.js", "sap/ui/vk/RedlineElementEllipse.js", "sap/ui/vk/RedlineElementFreehand.js", "sap/ui/vk/RedlineElementRectangle.js", "sap/ui/vk/RedlineGesturesHandler.js", "sap/ui/vk/RedlineSurface.js", "sap/ui/vk/RedlineSurfaceRenderer.js", "sap/ui/vk/Scene.js", "sap/ui/vk/SceneTree.js", "sap/ui/vk/SceneTreeRenderer.js", "sap/ui/vk/Smart2DHandler.js", "sap/ui/vk/StepNavigation.js", "sap/ui/vk/StepNavigationRenderer.js", "sap/ui/vk/Toolbar.js", "sap/ui/vk/ToolbarRenderer.js", "sap/ui/vk/TransformationMatrix.js", "sap/ui/vk/View.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/ViewStateManagerBase.js", "sap/ui/vk/Viewer.js", "sap/ui/vk/ViewerRenderer.js", "sap/ui/vk/Viewport.js", "sap/ui/vk/ViewportBase.js", "sap/ui/vk/ViewportHandler.js", "sap/ui/vk/ViewportRenderer.js", "sap/ui/vk/dvl/BaseNodeProxy.js", "sap/ui/vk/dvl/ContentManager.js", "sap/ui/vk/dvl/GraphicsCore.js", "sap/ui/vk/dvl/LayerProxy.js", "sap/ui/vk/dvl/NodeHierarchy.js", "sap/ui/vk/dvl/NodeProxy.js", "sap/ui/vk/dvl/Scene.js", "sap/ui/vk/dvl/ViewStateManager.js", "sap/ui/vk/dvl/Viewport.js", "sap/ui/vk/dvl/ViewportRenderer.js", "sap/ui/vk/helpers/CameraControllerThree.js", "sap/ui/vk/helpers/RotateOrbitHelperDvl.js", "sap/ui/vk/helpers/RotateOrbitHelperThree.js", "sap/ui/vk/helpers/RotateTurntableHelperDvl.js", "sap/ui/vk/helpers/RotateTurntableHelperThree.js", "sap/ui/vk/helpers/library.js", "sap/ui/vk/library.js", "sap/ui/vk/manifest.json", "sap/ui/vk/threejs/BaseNodeProxy.js", "sap/ui/vk/threejs/ContentDeliveryService.js", "sap/ui/vk/threejs/ContentManager.js", "sap/ui/vk/threejs/NodeHierarchy.js", "sap/ui/vk/threejs/NodeProxy.js", "sap/ui/vk/threejs/NodesTransitionHelper.js", "sap/ui/vk/threejs/OrthographicCamera.js", "sap/ui/vk/threejs/PerspectiveCamera.js", "sap/ui/vk/threejs/Scene.js", "sap/ui/vk/threejs/ViewStateManager.js", "sap/ui/vk/threejs/Viewport.js", "sap/ui/vk/threejs/ViewportGestureHandler.js", "sap/ui/vk/threejs/ViewportRenderer.js", "sap/ui/vk/tools/CrossSectionTool.js", "sap/ui/vk/tools/CrossSectionToolGizmo.js", "sap/ui/vk/tools/CrossSectionToolHandler.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/HitTestTool.js", "sap/ui/vk/tools/HitTestToolHandler.js", "sap/ui/vk/tools/MoveTool.js", "sap/ui/vk/tools/MoveToolGizmo.js", "sap/ui/vk/tools/MoveToolHandler.js", "sap/ui/vk/tools/RectSelectTool.js", "sap/ui/vk/tools/RectSelectToolHandler.js", "sap/ui/vk/tools/RotateOrbitTool.js", "sap/ui/vk/tools/RotateTool.js", "sap/ui/vk/tools/RotateToolGizmo.js", "sap/ui/vk/tools/RotateToolHandler.js", "sap/ui/vk/tools/RotateTurntableTool.js", "sap/ui/vk/tools/ScaleTool.js", "sap/ui/vk/tools/ScaleToolGizmo.js", "sap/ui/vk/tools/ScaleToolHandler.js", "sap/ui/vk/tools/SceneOrientationTool.js", "sap/ui/vk/tools/SceneOrientationToolGizmo.js", "sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js", "sap/ui/vk/tools/SceneOrientationToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/TooltipTool.js", "sap/ui/vk/tools/TooltipToolGizmo.js", "sap/ui/vk/tools/TooltipToolGizmoRenderer.js", "sap/ui/vk/tools/TooltipToolHandler.js", "sap/ui/vk/tools/library.js"]
+    },
+    {
+      "name" : "sap/ui/vk/library.js",
+      "description" : "Initialization Code and shared classes of library sap.ui.vk",
+      "size" : 15020,
+      "compressedSize" : 6407,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/Core.js", "sap/ui/vk/DvlException.js", "sap/ui/vk/TransformationMatrix.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/manifest.json",
+      "size" : 2765,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/BaseNodeProxy.js",
+      "description" : "Provides the BaseNodeProxy class.",
+      "size" : 4118,
+      "compressedSize" : 824,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/BaseNodeProxy.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/ContentDeliveryService.js",
+      "description" : "Provides control sap.ui.vk.threejs.ContentDeliveryService.",
+      "size" : 17312,
+      "compressedSize" : 7362,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/vk/View.js", "sap/ui/vk/threejs/OrthographicCamera.js", "sap/ui/vk/threejs/PerspectiveCamera.js", "sap/ui/vk/threejs/thirdparty/three.js", "sap/ui/vk/threejs/thirdparty/totara.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/ContentManager.js",
+      "description" : "Provides object sap.ui.vk.threejs.ContentManager.",
+      "size" : 12129,
+      "compressedSize" : 4433,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/ContentManager.js", "sap/ui/vk/TransformationMatrix.js", "sap/ui/vk/threejs/ContentDeliveryService.js", "sap/ui/vk/threejs/OrthographicCamera.js", "sap/ui/vk/threejs/PerspectiveCamera.js", "sap/ui/vk/threejs/Scene.js", "sap/ui/vk/threejs/thirdparty/three.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/NodeHierarchy.js",
+      "description" : "Provides the NodeHierarchy class.",
+      "size" : 20122,
+      "compressedSize" : 4927,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ObjectPool.js", "sap/ui/vk/Messages.js", "sap/ui/vk/NodeHierarchy.js", "sap/ui/vk/threejs/BaseNodeProxy.js", "sap/ui/vk/threejs/NodeProxy.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/NodeProxy.js",
+      "description" : "Provides the NodeProxy class.",
+      "size" : 5279,
+      "compressedSize" : 3548,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/NodeProxy.js", "sap/ui/vk/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/NodesTransitionHelper.js",
+      "description" : "Provides class sap.ui.vk.threejs.NodesTransitionHelper",
+      "size" : 6638,
+      "compressedSize" : 3460,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/OrthographicCamera.js",
+      "description" : "Provides the OrthographicCamera class.",
+      "size" : 7666,
+      "compressedSize" : 3810,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/OrthographicCamera.js", "sap/ui/vk/threejs/thirdparty/three.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/PerspectiveCamera.js",
+      "description" : "Provides the PerspectiveCamera class.",
+      "size" : 5559,
+      "compressedSize" : 2725,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/PerspectiveCamera.js", "sap/ui/vk/threejs/thirdparty/three.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/Scene.js",
+      "description" : "Provides the Scene class.",
+      "size" : 5640,
+      "compressedSize" : 2414,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/Scene.js", "sap/ui/vk/threejs/NodeHierarchy.js", "sap/ui/vk/threejs/thirdparty/totara.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/ViewStateManager.js",
+      "description" : "Provides the ViewStateManager class.",
+      "size" : 29379,
+      "compressedSize" : 11238,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/ViewStateManagerBase.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/Viewport.js",
+      "description" : "Provides control sap.ui.vk.threejs.Viewport.",
+      "size" : 48626,
+      "compressedSize" : 23264,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/ContentConnector.js", "sap/ui/vk/Loco.js", "sap/ui/vk/Messages.js", "sap/ui/vk/ViewStateManager.js", "sap/ui/vk/ViewportBase.js", "sap/ui/vk/library.js", "sap/ui/vk/threejs/NodesTransitionHelper.js", "sap/ui/vk/threejs/OrthographicCamera.js", "sap/ui/vk/threejs/PerspectiveCamera.js", "sap/ui/vk/threejs/ViewportGestureHandler.js", "sap/ui/vk/threejs/thirdparty/three.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/ViewportGestureHandler.js",
+      "description" : "Provides control sap.ui.vk.threejs.ViewportGestureHandler.",
+      "size" : 23783,
+      "compressedSize" : 13627,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "sap/ui/core/ResizeHandler.js", "sap/ui/vk/threejs/thirdparty/three.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/threejs/ViewportRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1090,
+      "compressedSize" : 628,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/CrossSectionTool.js",
+      "description" : "Provides control sap.ui.vk.tools.CrossSectionTool",
+      "size" : 5316,
+      "compressedSize" : 1999,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/CrossSectionToolGizmo.js", "sap/ui/vk/tools/CrossSectionToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/CrossSectionToolGizmo.js",
+      "description" : "Provides control sap.ui.vk.tools.CrossSectionToolGizmo",
+      "size" : 8396,
+      "compressedSize" : 5194,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/CrossSectionToolHandler.js",
+      "description" : "Provides control sap.ui.vk.tools.CrossSectionToolHandler",
+      "size" : 4376,
+      "compressedSize" : 2923,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/Gizmo.js",
+      "description" : "Provides base for all gizmo controls sap.ui.vk.tools namespace.",
+      "size" : 7473,
+      "compressedSize" : 4037,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/HitTestTool.js",
+      "description" : "Provides class sap.ui.vk.tools.HitTestTool control.",
+      "size" : 7496,
+      "compressedSize" : 2852,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/Loco.js", "sap/ui/vk/tools/HitTestToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/HitTestToolHandler.js",
+      "description" : "Provides control sap.ve.js.LocoEventHandler.",
+      "size" : 4653,
+      "compressedSize" : 1824,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/MoveTool.js",
+      "description" : "Provides control sap.ui.vk.tools.MoveTool",
+      "size" : 5640,
+      "compressedSize" : 2174,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/MoveToolGizmo.js", "sap/ui/vk/tools/MoveToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/MoveToolGizmo.js",
+      "description" : "Provides control sap.ui.vk.tools.MoveToolGizmo",
+      "size" : 14804,
+      "compressedSize" : 9280,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/MoveToolHandler.js",
+      "description" : "Provides control sap.ui.vk.tools.MoveToolHandler",
+      "size" : 5662,
+      "compressedSize" : 3967,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/RectSelectTool.js",
+      "description" : "Provides class sap.ui.vk.tools.HitTestTool control.",
+      "size" : 8226,
+      "compressedSize" : 3172,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/Loco.js", "sap/ui/vk/tools/RectSelectToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/RectSelectToolHandler.js",
+      "description" : "Provides control sap.ve.js.LocoEventHandler.",
+      "size" : 4468,
+      "compressedSize" : 2851,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/RotateOrbitTool.js",
+      "description" : "Provides class sap.ui.vk.tools.RotateObitTool control.",
+      "size" : 4607,
+      "compressedSize" : 1915,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/helpers/RotateOrbitHelperDvl.js", "sap/ui/vk/helpers/RotateOrbitHelperThree.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/RotateTool.js",
+      "description" : "Provides control sap.ui.vk.tools.RotateTool",
+      "size" : 5709,
+      "compressedSize" : 2188,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/RotateToolGizmo.js", "sap/ui/vk/tools/RotateToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/RotateToolGizmo.js",
+      "description" : "Provides control sap.ui.vk.tools.RotateToolGizmo",
+      "size" : 11063,
+      "compressedSize" : 6736,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/RotateToolHandler.js",
+      "description" : "Provides control sap.ui.vk.tools.RotateToolHandler",
+      "size" : 5708,
+      "compressedSize" : 3914,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/RotateTurntableTool.js",
+      "description" : "Provides class sap.ui.vk.tools.move.",
+      "size" : 4836,
+      "compressedSize" : 1979,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/helpers/RotateTurntableHelperDvl.js", "sap/ui/vk/helpers/RotateTurntableHelperThree.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/ScaleTool.js",
+      "description" : "Provides control sap.ui.vk.tools.ScaleTool",
+      "size" : 6433,
+      "compressedSize" : 2450,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/ScaleToolGizmo.js", "sap/ui/vk/tools/ScaleToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/ScaleToolGizmo.js",
+      "description" : "Provides control sap.ui.vk.tools.ScaleToolGizmo",
+      "size" : 12791,
+      "compressedSize" : 7422,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/ScaleToolHandler.js",
+      "description" : "Provides control sap.ui.vk.tools.ScaleToolHandler",
+      "size" : 6534,
+      "compressedSize" : 4345,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/SceneOrientationTool.js",
+      "description" : "Provides control sap.ui.vk.tools.SceneOrientationTool",
+      "size" : 5062,
+      "compressedSize" : 1877,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/SceneOrientationToolGizmo.js", "sap/ui/vk/tools/SceneOrientationToolHandler.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/SceneOrientationToolGizmo.js",
+      "description" : "Provides control sap.ui.vk.tools.SceneOrientationToolGizmo",
+      "size" : 9446,
+      "compressedSize" : 6015,
+      "required" : ["jquery.sap.global.js", "sap/ui/unified/Menu.js", "sap/ui/unified/MenuItem.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1137,
+      "compressedSize" : 442,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/SceneOrientationToolHandler.js",
+      "description" : "Provides control sap.ui.vk.tools.SceneOrientationToolHandler",
+      "size" : 3343,
+      "compressedSize" : 1717,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/Tool.js",
+      "description" : "Provides class sap.ui.vk.tools.Tool",
+      "size" : 6326,
+      "compressedSize" : 1808,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Element.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/TooltipTool.js",
+      "description" : "Provides control sap.ui.vk.tools.TooltipTool",
+      "size" : 4795,
+      "compressedSize" : 1847,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/Tool.js", "sap/ui/vk/tools/TooltipToolGizmo.js", "sap/ui/vk/tools/TooltipToolHandler.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/TooltipToolGizmo.js",
+      "description" : "Provides control sap.ui.vk.tools.TooltipToolGizmo",
+      "size" : 3137,
+      "compressedSize" : 1368,
+      "required" : ["jquery.sap.global.js", "sap/ui/vk/tools/Gizmo.js", "sap/ui/vk/tools/library.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/TooltipToolGizmoRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1043,
+      "compressedSize" : 355,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/TooltipToolHandler.js",
+      "description" : "Provides control sap.ui.vk.tools.TooltipToolHandler",
+      "size" : 3170,
+      "compressedSize" : 1805,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/EventProvider.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vk/tools/library.js",
+      "description" : "Initialization Code and shared classes of library sap.suite.ui.generic.template.",
+      "size" : 3172,
+      "compressedSize" : 1249,
+      "required" : ["jquery.sap.global.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    }
+  ]
+}

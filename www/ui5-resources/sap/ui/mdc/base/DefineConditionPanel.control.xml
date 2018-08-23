@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:mdcbase="sap.ui.mdc.base"
+	xmlns:core="sap.ui.core">
+	<ScrollContainer height="100%" horizontal="false" vertical="true">
+		<l:VerticalLayout id="defineCondition" content="{ path:'cm>/conditions', filters:[{path: 'operator', operator:'NE', value1:'EEQ'}], templateShareable:false}" width="100%"> <!-- class="sapUiSmallMarginBottom sapUiSmallMarginTop"> -->
+			<l:Grid id="conditionRow" width="100%" hSpacing="0" vSpacing="0" containerQuery="true" class="sapUiTinyMargin">
+				<Select items="{ path:'om>/', templateShareable:false}" selectedKey="{cm>operator}" showSecondaryValues="true" change="onChange" width="100%">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S3" />
+					</layoutData>
+					<core:ListItem key="{om>key}" text="{om>additionalText}" additionalText="{om>key}"/>
+				</Select>
+
+				<HBox items="{ path: 'cm>values', factory: '.valueCtrlFactory'}">
+					<layoutData>
+						<l:GridData span="XL7 L7 M7 S7" />
+					</layoutData>
+					<!--
+					<Input value="{cm>values/0}" change="onChange"/>
+					<Input value="{cm>values/1}" change="onChange" visible="{= ${cm>operator} === 'BT'}"/>
+					-->
+				</HBox>
+
+				<HBox id="btnContainer" class="sapUiSmallPaddingBegin">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+					<Button id="removeBtn" press="removeCondition" type="Transparent" icon="sap-icon://sys-cancel" tooltip="{$i18n>valuehelp.DEFINECONDITIONS_REMOVECONDITION}"/>
+					<Button id="addBtn" press="addCondition" type="Transparent" icon="sap-icon://add" visible="{= ${cm>/conditions}.indexOf(${cm>}) > ${cm>/conditions}.length-2}" tooltip="{$i18n>valuehelp.DEFINECONDITIONS_ADDCONDITION}"/>
+				</HBox>
+			</l:Grid>
+		</l:VerticalLayout>
+	</ScrollContainer>
+</core:FragmentDefinition>

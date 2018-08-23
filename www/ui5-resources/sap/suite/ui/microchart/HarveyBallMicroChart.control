@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>HarveyBallMicroChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Displays a pie chart with highlighted sectors.</documentation>
+    <since>1.34</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="total" type="sap.ui.core/float" group="Misc">
+            <documentation>The total value. This is taken as 360 degrees value on the chart.</documentation>
+        </property>
+        <property name="totalLabel" type="sap.ui.core/string" group="Misc">
+            <documentation>The total label. If specified, it is displayed instead of the total value.</documentation>
+        </property>
+        <property name="totalScale" type="sap.ui.core/string" group="Misc">
+            <documentation>The scaling factor that is displayed next to the total value.</documentation>
+        </property>
+        <property name="formattedLabel" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>If set to true, the totalLabel parameter is considered as the combination of the total value and its scaling factor. The default value is false. It means that the total value and the scaling factor are defined separately by the total and the totalScale properties accordingly.</documentation>
+        </property>
+        <property name="showTotal" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>If it is set to true, the total value is displayed next to the chart. The default setting is true.</documentation>
+        </property>
+        <property name="showFractions" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>If it is set to true, the fraction values are displayed next to the chart. The default setting is true.</documentation>
+        </property>
+        <property name="size" type="sap.m/Size" defaultValue="Auto" group="Misc">
+            <documentation>The size of the chart. If it is not set, the default size is applied based on the device type.</documentation>
+        </property>
+        <property name="colorPalette" type="sap.ui.core/string[]" defaultValue="[]" group="Appearance">
+            <documentation>The color palette for the chart. Currently only a single color (first color of the array) is supported.
+				 If this property is set, the semantic color defined in HarveyBallMicroChartItem is ignored.</documentation>
+        </property>
+        <property name="width" type="sap.ui.core/CSSSize" group="Misc">
+            <documentation>The width of the chart. If it is not set, the size of the control is defined by the size property.</documentation>
+        </property>
+        <property name="isResponsive" type="sap.ui.core/boolean" defaultValue="false" group="Appearance" since="1.38.0">
+            <documentation>If this set to true, width and height of the control are determined by the width and height of the container in which the control is placed. Size and Width properties are ignored in such case.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>The event is triggered when the chart is pressed.</documentation>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.suite.ui.microchart/HarveyBallMicroChartItem" cardinality="0..n" bindable="bindable">
+            <documentation>The set of items. Currently only a single item is supported.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

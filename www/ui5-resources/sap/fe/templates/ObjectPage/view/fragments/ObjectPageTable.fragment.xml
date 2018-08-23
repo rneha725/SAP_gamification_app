@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+		xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		xmlns="sap.m"
+		xmlns:mdc="sap.ui.mdc"
+		xmlns:core="sap.ui.core">
+		<template:with path="facet>Target/$AnnotationPath" var="collection" helper="sap.fe.core.AnnotationHelper.getNavigationCollection">
+			<mdc:Table metadataContexts="{ model: 'collection', path:'',  name: 'entitySet'}"
+					   tableBindingPath="{ model: 'facet', path : 'Target/$AnnotationPath', formatter : 'sap.ui.model.odata.v4.AnnotationHelper.getNavigationPath' }"
+					   type="ResponsiveTable"
+					   growingScrollToLoad="false"
+					   interactionType="{= Object.keys(${viewData>/navigation}).indexOf(${facet>Target/$AnnotationPath}.split('/')[0]) > -1 ? 'Navigation' : 'Inactive'}"
+					   itemPress=".handlers.onItemPress"
+					   growingThreshold="10"
+					/>
+		</template:with>
+</core:FragmentDefinition>

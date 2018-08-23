@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stat</title>
+    <style>
+        [tooltip]:before {
+            /* needed - do not touch */
+            content: attr(tooltip);
+            position: absolute;
+            opacity: 0;
+
+            /* customizable */
+            transition: all 0.15s ease;
+            padding: 10px;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 2px 2px 1px silver;
+        }
+
+        [tooltip]:hover:before {
+            /* needed - do not touch */
+            opacity: 1;
+
+            /* customizable */
+            background: lightgrey;
+            margin-top: -50px;
+            margin-left: 20px;
+        }
+
+        [tooltip]:not([tooltip-persistent]):before {
+            pointer-events: none;
+        }
+
+        hr.style4 {
+            border-top: 1px dotted grey;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        // Closure
+        (function() {
+            /**
+             * Decimal adjustment of a number.
+             *
+             * @param {String}  type  The type of adjustment.
+             * @param {Number}  value The number.
+             * @param {Integer} exp   The exponent (the 10 logarithm of the adjustment base).
+             * @returns {Number} The adjusted value.
+             */
+            function decimalAdjust(type, value, exp) {
+                // If the exp is undefined or zero...
+                if (typeof exp === 'undefined' || +exp === 0) {
+                    return Math[type](value);
+                }
+                value = +value;
+                exp = +exp;
+                // If the value is not a number or the exp is not an integer...
+                if (value === null || isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+                    return NaN;
+                }
+                // If the value is negative...
+                if (value < 0) {
+                    return -decimalAdjust(type, -value, exp);
+                }
+                // Shift
+                value = value.toString().split('e');
+                value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
+                // Shift back
+                value = value.toString().split('e');
+                return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
+            }
+
+            // Decimal round
+            if (!Math.round10) {
+                Math.round10 = function(value, exp) {
+                    return decimalAdjust('round', value, exp);
+                };
+            }
+            // Decimal floor
+            if (!Math.floor10) {
+                Math.floor10 = function(value, exp) {
+                    return decimalAdjust('floor', value, exp);
+                };
+            }
+            // Decimal ceil
+            if (!Math.ceil10) {
+                Math.ceil10 = function(value, exp) {
+                    return decimalAdjust('ceil', value, exp);
+                };
+            }
+        })();
+
+
+
+
+
+        $(function() {
+            var calc = window.opener.calc;
+            var totalTime = 0;
+
+            var sortedBlock = null;
+            var infoOffset = 300;
+            var windowWidth = window.innerWidth - 100;
+            var tileCount = 0;
+
+            $("#scenario").change(function() {
+                var opt = $("#scenario option:selected").text();
+                if(opt!="...")
+                    justdoit($("#scenario option:selected").text());
+            });
+            $("#funcLink").click(function() {
+                //alert(this.id);
+
+            });
+            $("body").on("click", "a.funcLink", function() {
+                // alert(this.id);
+                for(var block in sortedBlock){
+                    if(String(sortedBlock[block].value.hash) === this.id){
+                        return buildFuncGantt(sortedBlock[block]);
+                    }
+                }
+            });
+
+            function justdoit(scenario){
+
+                tileCount = 0;
+                var blocks = JSON.parse(calc);
+                var block = blocks[scenario];//0 scenario
+
+                var blockAr = [];
+
+
+                var startTime;
+                var endTime;
+
+                for (var key in block) {
+                    //console.log(block[key].duration);
+                    if (!startTime) {
+                        startTime = block[key].start;
+                    }
+                    if (!endTime) {
+                        endTime = block[key].end;
+                    }
+
+                    //save the minimal start time
+                    if (startTime > block[key].start) {
+                        startTime = block[key].start;
+                    }
+
+                    //save the maximal time
+                    //save the minimal start time
+                    if (endTime < block[key].end) {
+                        endTime = block[key].end;
+                    }
+
+                    blockAr.push({
+                        name: key,
+                        value: block[key]
+                    });
+                }
+                totalTime = endTime - startTime;
+
+                sortedBlock = blockAr.sort(function(a, b) {
+                    return a.value.sequence > b.value.sequence;
+                });
+
+                for(var block in sortedBlock){
+                    sortedBlock[block].value.percent = Math.round(sortedBlock[block].value.duration * 100/totalTime);
+                    if(Object.keys(sortedBlock[block].value.funcs).length > 0){
+                        var funcAr = [];
+                        for(key in sortedBlock[block].value.funcs){
+                            tileCount++;
+                            funcAr.push({
+                                key: key,
+                                func: sortedBlock[block].value.funcs[key]
+                            });
+                        }
+
+                        var sortedFuncs = funcAr.sort(function(a, b) {
+                            //var bool = a.func.seq > b.func.seq;
+                            //console.log("a:" + a.func.seq + " b:" + b.func.seq + "; a > b " + bool.toString());
+                            return a.func.start - b.func.start;
+                        });
+                        sortedBlock[block].value.funcs = sortedFuncs;
+                    }
+                }
+
+                $("#tileCount").text(tileCount);
+                $("#totalTime").text(totalTime + " ms");
+
+                buildTable();
+                buildGantt();
+                buildFuncGantt(null);
+            }
+
+
+            function buildTable(){
+                $('#divTable').empty();
+                if(sortedBlock === null || sortedBlock.length === 0) return;
+                var html = "<table style='margin:10px;padding:20px;border: 1px solid lightgrey;'><thead style='background-color:lightgrey;'><tr><td>Step</td><td>Duration</td><td>%</td><td>Comment</td></tr></thead><tbody>";
+
+                for(var block in sortedBlock){
+                    var blk = sortedBlock[block];
+                    html += '<tr style=\'height:30px;\'>';
+
+
+
+
+                    if(Object.keys(blk.value.funcs).length > 0){
+                        html += "<td><a id='" + blk.value.hash + "' class='funcLink' href='#'>" + blk.value.name + "</a></td>";
+                    }else{
+                        html += '<td>' + blk.value.name + '</td>';
+                    }
+
+
+                    html += '<td>' + blk.value.duration + '</td>';
+                    html += '<td>' + blk.value.percent + '</td>';
+                    html += '<td>--</td>';
+
+                    html += "</tr>";
+                }
+
+
+                html += '</tbody></table>';
+                $(html).appendTo('#divTable');
+            }
+
+            function buildGantt(){
+                $('#divBlockGantt').empty();
+                if(sortedBlock === null || sortedBlock.length === 0) return;
+
+                //var msperPix = Math.ceil(totalTime/(windowWidth-infoOffset))*1.1;
+
+                var pxpms =  Math.floor10((windowWidth-infoOffset)/totalTime, -1);//  Math.round10((windowWidth-infoOffset)/totalTime, -1);
+
+                var startOffset = sortedBlock[0].value.start;
+                var html = "<table style='margin:10px;padding:20px;border: 1px solid lightgrey;table-layout: fixed;  width:" + (windowWidth-20) + "px;'>";// width:'+ (w) +'px;\'border-collapse: collapse;
+
+                for(var block in sortedBlock){
+                    var blk = sortedBlock[block];
+                    html += "<tr style='height:30px;'>";
+
+                    if(blk.value.start!=0 && blk.value.end!=0) {
+                        html += "<td style='padding: 0px;white-space: nowrap'>";
+
+                        if(Object.keys(blk.value.funcs).length > 0){
+                            html += "<a id='" + blk.value.hash + "' class='funcLink' href='#'>" + blk.value.name + "</a>";
+                        }else{
+                            html +=  blk.value.name;
+                        }
+                        html += "</td>";
+                        html += "<td style='padding: 0px; max-width:" + (windowWidth - infoOffset) + "px;width:" + (windowWidth - infoOffset) + "px;'>";
+                        html += "<div id='wrap' style='position:relative;'>";
+                        html += "<div id='left' tooltip='" + blk.value.name + " : " + blk.value.duration + "ms.' style='background-color:#32CD32;height:30px;";
+                        html += "margin-left:" + Math.round((blk.value.start - startOffset) * pxpms) + "px;";
+                        html += "width:" + (Math.round((blk.value.end - blk.value.start) * pxpms));
+                        html += "px;border:0px solid #0aa1d3;'>"+ "</div>";
+                        html += "</div>";
+                        html += "</td>";
+                    }
+
+                    html += "</tr>";
+                }
+                html += '</table>';
+                $(html).appendTo('#divBlockGantt');
+            }
+
+            function buildFuncGantt(block){
+                //alert(funcList);
+                var funcList = null;
+                if(block != null)
+                    funcList = block.value.funcs;
+
+                $('#divFuncGantt').empty();
+                if(funcList === null || funcList.length === 0) return;
+
+                // var msperPix = Math.ceil((block.value.duration/(windowWidth-infoOffset))/1.4);//Math.round10(totalTime/(windowWidth-infoOffset), -1);//*1.1
+
+                // var pxpms = Math.round10((windowWidth-infoOffset)/block.value.duration, -1);//Math.round10(totalTime/(windowWidth-infoOffset), -1);//*1.1
+
+                var pxpms = Math.floor10((windowWidth-infoOffset)/block.value.duration, -1);
+
+                var startOffset = funcList[0].func.start;
+                var html = "<table style='margin:10px;padding:20px;border: 1px solid lightgrey;font-size:11px;table-layout: fixed;  width:" + (windowWidth-20) + "px;'>";// width:'+ (w) +'px;\'border-collapse: collapse;
+
+                for(var key in funcList){
+                    var f = funcList[key];
+                    html += "<tr style='height:10px;'>";
+
+                    if(f.func.start!=0 && f.func.end!=0) {
+                        html += "<td style='padding: 0px;white-space: nowrap'>";
+                        var title = key;
+                        if(title != null) {
+                            title = title.replace(new RegExp('<', 'g'), '&lt;');
+                            title = title.replace(new RegExp('>', 'g'), '&gt;');
+                        }
+                        html +=  title + ":" +  f.func.duration;
+                        html += "</td>";
+                        html += "<td style='padding: 0px; max-width:" + (windowWidth - infoOffset) + "px;width:" + (windowWidth - infoOffset) + "px;'>";
+                        html += "<div id='wrap' style='position:relative;'>";
+                        html += "<div id='left' tooltip='" + title + " : " +  " (" + f.func.duration + "ms)' style='background-color:#32CD32;height:10px;";//func.func.info.properties.subtitle +
+                        html += "margin-left:" + Math.round((f.func.start - startOffset) * pxpms) + "px;";
+                        html += "width:" + (Math.round((f.func.end - f.func.start) * pxpms));
+                        html += "px;border:0px solid #0aa1d3;'>"+ "</div>";
+                        html += "</div>";
+                        html += "</td>";
+                    }
+
+                    html += "</tr>";
+                }
+                html += '</table>';
+                $('#divFuncGantt').html(html);
+
+            }
+        });
+
+
+
+
+    </script>
+
+</head>
+<body style="border: 1px solid grey;padding: 25px;margin: 25px;font-family: Arial;font-size: 12px;">
+<div id="header" style="font-size: 16px;">
+    <table cellpadding="5">
+        <tr>
+            <td>
+                Scenario
+                <select id="scenario">
+                    <option value="..." selected="selected">...</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="all">all</option>
+                </select>
+            </td>
+            <td>
+                Tiles count: <span id="tileCount" style="font-weight: bold;white-space: nowrap;"></span>
+            </td>
+            <td>
+                Total time: <span id="totalTime" style="font-weight: bold;white-space: nowrap;"></span>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+
+    </div>
+</div>
+<hr class="style4">
+<div id="divTable"></div>
+<hr class="style4">
+<div id="divBlockGantt"></div>
+<hr class="style4">
+<div id="divFuncGantt"></div>
+</body>
+</html>

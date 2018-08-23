@@ -1,0 +1,630 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ushell_abap">
+  <module name="sap/ui/Device.js" size="15581" compressedSize="15581" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/ODataService.js" size="10116" compressedSize="2086">
+    <description>global jQuery, sap</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/ODataWrapper.js" size="53236" compressedSize="10036">
+    <description>global jQuery, OData, sap, window</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/PageBuildingService.js" size="67106" compressedSize="12577">
+    <description>global jQuery, OData, sap</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/ODataService.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+      <module name="sap/ui2/srvc/utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/RemoteCatalogService.js" size="1935" compressedSize="349">
+    <description>global jQuery, sap</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/PageBuildingService.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/allcatalogs.js" size="7140" compressedSize="1528" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/bag.js" size="28829" compressedSize="5170" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/catalog.js" size="37397" compressedSize="6467" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/chip.js" size="35015" compressedSize="8169" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/chipdefinition.js" size="7259" compressedSize="2032" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/chipinstance.js" size="33900" compressedSize="5820" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/contracts/actions.js" size="8602" compressedSize="1298">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/bag.js" size="5837" compressedSize="823">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+      <module name="sap/ui2/srvc/utils.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/configuration.js" size="7682" compressedSize="894">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/configurationUi.js" size="12461" compressedSize="1192">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/fullscreen.js" size="2132" compressedSize="451">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/navigation.js" size="1656" compressedSize="552">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/preview.js" size="7183" compressedSize="794">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/refresh.js" size="1375" compressedSize="330">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/search.js" size="3826" compressedSize="646">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/searchProvider.js" size="1601" compressedSize="562">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/types.js" size="226" compressedSize="86" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/contracts/url.js" size="4838" compressedSize="529">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/contracts/visible.js" size="4062" compressedSize="687">
+    <requires>
+      <module name="sap/ui2/srvc/chip.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/error.js" size="1984" compressedSize="447">
+    <requires>
+      <module name="sap/ui2/srvc/utils.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/es5.js" size="242" compressedSize="55" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/factory.js" size="28987" compressedSize="5041" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/page.js" size="34211" compressedSize="6196" raw="true">
+  </module>
+  <module name="sap/ui2/srvc/pageset.js" size="15916" compressedSize="3535">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/page.js" conditional="true"/>
+      <module name="sap/ui2/srvc/utils.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ui2/srvc/utils.js" size="34036" compressedSize="7957">
+    <requires>
+      <module name="sap/ui/thirdparty/URI.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/AppStateAdapter.js" size="5061" compressedSize="1646">
+    <description>global jQuery, sap, setTimeout</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+      <module name="sap/ushell/services/Personalization.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/ClientSideTargetResolutionAdapter.js" size="60228" compressedSize="18946">
+    <description>global jQuery, sap, setTimeout</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+      <module name="sap/ui2/srvc/utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/ContainerAdapter.js" size="20277" compressedSize="5010">
+    <description>jslint nomen:true</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/thirdparty/URI.js" conditional="true"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js" conditional="true"/>
+      <module name="sap/ushell/System.js"/>
+      <module name="sap/ushell/User.js"/>
+      <module name="sap/ushell/utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/EndUserFeedbackAdapter.js" size="4732" compressedSize="1592">
+    <description>global jQuery, sap, setTimeout</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/ODataService.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/LaunchPageAdapter.js" size="136644" compressedSize="27844">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/thirdparty/URI.js" conditional="true"/>
+      <module name="sap/ushell/EventHub.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/NavTargetResolutionAdapter.js" size="779" compressedSize="236">
+    <description>global jQuery, sap, window</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/PageBuildingAdapter.js" size="5781" compressedSize="1216">
+    <description>global jQuery, sap</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/factory.js"/>
+      <module name="sap/ushell/System.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/PersonalizationAdapter.js" size="20783" compressedSize="8190">
+    <description>@fileOverview The Unified Shell's personalization adapter for the ABAP platform. The internal data structure of the AdapterContainer corresponds to the ABAP EDM. Container header properties transported via pseudo-items are mapped to the respective header properties in setItem/getItem/delItem  @version 1.56.5</description>
+    <requires>
+      <module name="sap/ui2/srvc/ODataService.js" conditional="true"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js" conditional="true"/>
+      <module name="sap/ushell/services/Personalization.js"/>
+      <module name="sap/ushell/services/_Personalization/constants.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/SearchAdapter.js" size="605" compressedSize="244">
+    <description>@fileOverview The Search adapter for the ABAP platform.  @version 1.56.5</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/SupportTicketAdapter.js" size="3690" compressedSize="1407">
+    <description>global jQuery, sap</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/ODataService.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/abap/UserInfoAdapter.js" size="5162" compressedSize="1503">
+    <description>jslint nomen: true</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/ODataService.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/adapters/hana/ContainerAdapter.js" size="4578" compressedSize="1225">
+    <description>global document, jQuery, sap</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui2/srvc/utils.js"/>
+      <module name="sap/ushell/System.js"/>
+      <module name="sap/ushell/User.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/library-h2-preload.js" size="2970">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/core/Component.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/support/Plugin.js"/>
+      <module name="sap/ui/core/support/Support.js"/>
+      <module name="sap/ui/fl/transport/TransportDialog.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/thirdparty/URI.js" conditional="true"/>
+      <module name="sap/ushell/EventHub.js" conditional="true"/>
+      <module name="sap/ushell/System.js"/>
+      <module name="sap/ushell/User.js"/>
+      <module name="sap/ushell/services/Personalization.js"/>
+      <module name="sap/ushell/services/_Personalization/constants.js"/>
+      <module name="sap/ushell/utils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ushell_abap/library.js"/>
+      <module name="sap/ushell_abap/manifest.json"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui2/srvc/ODataService.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+      <module name="sap/ui2/srvc/PageBuildingService.js"/>
+      <module name="sap/ui2/srvc/RemoteCatalogService.js"/>
+      <module name="sap/ui2/srvc/allcatalogs.js"/>
+      <module name="sap/ui2/srvc/bag.js"/>
+      <module name="sap/ui2/srvc/catalog.js"/>
+      <module name="sap/ui2/srvc/chip.js"/>
+      <module name="sap/ui2/srvc/chipdefinition.js"/>
+      <module name="sap/ui2/srvc/chipinstance.js"/>
+      <module name="sap/ui2/srvc/contracts/actions.js"/>
+      <module name="sap/ui2/srvc/contracts/bag.js"/>
+      <module name="sap/ui2/srvc/contracts/configuration.js"/>
+      <module name="sap/ui2/srvc/contracts/configurationUi.js"/>
+      <module name="sap/ui2/srvc/contracts/fullscreen.js"/>
+      <module name="sap/ui2/srvc/contracts/navigation.js"/>
+      <module name="sap/ui2/srvc/contracts/preview.js"/>
+      <module name="sap/ui2/srvc/contracts/refresh.js"/>
+      <module name="sap/ui2/srvc/contracts/search.js"/>
+      <module name="sap/ui2/srvc/contracts/searchProvider.js"/>
+      <module name="sap/ui2/srvc/contracts/types.js"/>
+      <module name="sap/ui2/srvc/contracts/url.js"/>
+      <module name="sap/ui2/srvc/contracts/visible.js"/>
+      <module name="sap/ui2/srvc/error.js"/>
+      <module name="sap/ui2/srvc/es5.js"/>
+      <module name="sap/ui2/srvc/factory.js"/>
+      <module name="sap/ui2/srvc/page.js"/>
+      <module name="sap/ui2/srvc/pageset.js"/>
+      <module name="sap/ui2/srvc/utils.js"/>
+      <module name="sap/ushell_abap/adapters/abap/AppStateAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/ClientSideTargetResolutionAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/ContainerAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/EndUserFeedbackAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/LaunchPageAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/NavTargetResolutionAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/PageBuildingAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/PersonalizationAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/SearchAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/SupportTicketAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/UserInfoAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/hana/ContainerAdapter.js"/>
+      <module name="sap/ushell_abap/plugins/fcc-transport-ui/Component-h2-preload.js"/>
+      <module name="sap/ushell_abap/plugins/fcc-transport-ui/Component-preload.js"/>
+      <module name="sap/ushell_abap/plugins/fcc-transport-ui/Component.js"/>
+      <module name="sap/ushell_abap/plugins/fcc-transport-ui/manifest.json"/>
+      <module name="sap/ushell_abap/plugins/fcc-transport-ui/model/models.js"/>
+      <module name="sap/ushell_abap/support/plugins/app-infra/AppInfraOnSapNetWeaverSupportPlugin.js"/>
+    </includes>
+  </module>
+  <module name="sap/ushell_abap/library-preload.js" size="172335">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/thirdparty/URI.js" conditional="true"/>
+      <module name="sap/ushell/EventHub.js" conditional="true"/>
+      <module name="sap/ushell/System.js"/>
+      <module name="sap/ushell/User.js"/>
+      <module name="sap/ushell/services/Personalization.js"/>
+      <module name="sap/ushell/services/_Personalization/constants.js"/>
+      <module name="sap/ushell/utils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui2/srvc/ODataService.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+      <module name="sap/ui2/srvc/PageBuildingService.js"/>
+      <module name="sap/ui2/srvc/RemoteCatalogService.js"/>
+      <module name="sap/ui2/srvc/allcatalogs.js"/>
+      <module name="sap/ui2/srvc/bag.js"/>
+      <module name="sap/ui2/srvc/catalog.js"/>
+      <module name="sap/ui2/srvc/chip.js"/>
+      <module name="sap/ui2/srvc/chipdefinition.js"/>
+      <module name="sap/ui2/srvc/chipinstance.js"/>
+      <module name="sap/ui2/srvc/contracts/actions.js"/>
+      <module name="sap/ui2/srvc/contracts/bag.js"/>
+      <module name="sap/ui2/srvc/contracts/configuration.js"/>
+      <module name="sap/ui2/srvc/contracts/configurationUi.js"/>
+      <module name="sap/ui2/srvc/contracts/fullscreen.js"/>
+      <module name="sap/ui2/srvc/contracts/navigation.js"/>
+      <module name="sap/ui2/srvc/contracts/preview.js"/>
+      <module name="sap/ui2/srvc/contracts/refresh.js"/>
+      <module name="sap/ui2/srvc/contracts/search.js"/>
+      <module name="sap/ui2/srvc/contracts/searchProvider.js"/>
+      <module name="sap/ui2/srvc/contracts/types.js"/>
+      <module name="sap/ui2/srvc/contracts/url.js"/>
+      <module name="sap/ui2/srvc/contracts/visible.js"/>
+      <module name="sap/ui2/srvc/error.js"/>
+      <module name="sap/ui2/srvc/es5.js"/>
+      <module name="sap/ui2/srvc/factory.js"/>
+      <module name="sap/ui2/srvc/page.js"/>
+      <module name="sap/ui2/srvc/pageset.js"/>
+      <module name="sap/ui2/srvc/utils.js"/>
+      <module name="sap/ushell_abap/adapters/abap/AppStateAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/ClientSideTargetResolutionAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/ContainerAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/EndUserFeedbackAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/LaunchPageAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/NavTargetResolutionAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/PageBuildingAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/PersonalizationAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/SearchAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/SupportTicketAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/UserInfoAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/hana/ContainerAdapter.js"/>
+      <module name="sap/ushell_abap/library.js"/>
+      <module name="sap/ushell_abap/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/ushell_abap/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/thirdparty/URI.js" conditional="true"/>
+      <module name="sap/ushell/EventHub.js" conditional="true"/>
+      <module name="sap/ushell/System.js"/>
+      <module name="sap/ushell/User.js"/>
+      <module name="sap/ushell/services/Personalization.js"/>
+      <module name="sap/ushell/services/_Personalization/constants.js"/>
+      <module name="sap/ushell/utils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui2/srvc/ODataService.js"/>
+      <module name="sap/ui2/srvc/ODataWrapper.js"/>
+      <module name="sap/ui2/srvc/PageBuildingService.js"/>
+      <module name="sap/ui2/srvc/RemoteCatalogService.js"/>
+      <module name="sap/ui2/srvc/allcatalogs.js"/>
+      <module name="sap/ui2/srvc/bag.js"/>
+      <module name="sap/ui2/srvc/catalog.js"/>
+      <module name="sap/ui2/srvc/chip.js"/>
+      <module name="sap/ui2/srvc/chipdefinition.js"/>
+      <module name="sap/ui2/srvc/chipinstance.js"/>
+      <module name="sap/ui2/srvc/contracts/actions.js"/>
+      <module name="sap/ui2/srvc/contracts/bag.js"/>
+      <module name="sap/ui2/srvc/contracts/configuration.js"/>
+      <module name="sap/ui2/srvc/contracts/configurationUi.js"/>
+      <module name="sap/ui2/srvc/contracts/fullscreen.js"/>
+      <module name="sap/ui2/srvc/contracts/navigation.js"/>
+      <module name="sap/ui2/srvc/contracts/preview.js"/>
+      <module name="sap/ui2/srvc/contracts/refresh.js"/>
+      <module name="sap/ui2/srvc/contracts/search.js"/>
+      <module name="sap/ui2/srvc/contracts/searchProvider.js"/>
+      <module name="sap/ui2/srvc/contracts/types.js"/>
+      <module name="sap/ui2/srvc/contracts/url.js"/>
+      <module name="sap/ui2/srvc/contracts/visible.js"/>
+      <module name="sap/ui2/srvc/error.js"/>
+      <module name="sap/ui2/srvc/es5.js"/>
+      <module name="sap/ui2/srvc/factory.js"/>
+      <module name="sap/ui2/srvc/page.js"/>
+      <module name="sap/ui2/srvc/pageset.js"/>
+      <module name="sap/ui2/srvc/utils.js"/>
+      <module name="sap/ushell_abap/adapters/abap/AppStateAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/ClientSideTargetResolutionAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/ContainerAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/EndUserFeedbackAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/LaunchPageAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/NavTargetResolutionAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/PageBuildingAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/PersonalizationAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/SearchAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/SupportTicketAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/abap/UserInfoAdapter.js"/>
+      <module name="sap/ushell_abap/adapters/hana/ContainerAdapter.js"/>
+      <module name="sap/ushell_abap/library.js"/>
+      <module name="sap/ushell_abap/manifest.json"/>
+    </includes>
+  </module>
+  <module name="sap/ushell_abap/library.js" size="716" compressedSize="395">
+    <description>! Copyright (c) 2009-2017 SAP SE, All Rights Reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/manifest.json" size="670">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/Component-h2-preload.js" size="359" compressedSize="356" excludeFromAllInOne="true" raw="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/Component-preload.js" size="131263" compressedSize="112192" excludeFromAllInOne="true" raw="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/Component.js" size="25848" compressedSize="6954" excludeFromAllInOne="true">
+    <requires>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Component.js"/>
+      <module name="sap/ui/fl/transport/TransportDialog.js"/>
+      <module name="sap/ushell_abap/plugins/fcc-transport-ui/model/models.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n.properties" size="1659" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ar.properties" size="3183" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_bg.properties" size="3669" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ca.properties" size="1723" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_cs.properties" size="1736" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_da.properties" size="1552" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_de.properties" size="1631" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_el.properties" size="4031" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en.properties" size="1571" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_sappsd.properties" size="4586" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_saptrc.properties" size="1984" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_es.properties" size="1725" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_et.properties" size="1587" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fi.properties" size="1624" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fr.properties" size="1756" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hi.properties" size="3447" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hr.properties" size="1634" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hu.properties" size="1755" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_it.properties" size="1635" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_iw.properties" size="3113" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ja.properties" size="2437" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_kk.properties" size="3524" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ko.properties" size="2230" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lt.properties" size="1705" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lv.properties" size="1851" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ms.properties" size="1594" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_nl.properties" size="1554" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_no.properties" size="1590" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pl.properties" size="1766" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pt.properties" size="1727" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ro.properties" size="1698" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ru.properties" size="3516" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sh.properties" size="1611" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sk.properties" size="1754" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sl.properties" size="1618" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sv.properties" size="1581" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_th.properties" size="3751" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_tr.properties" size="1780" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_uk.properties" size="3636" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_vi.properties" size="2401" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_CN.properties" size="1892" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_TW.properties" size="1908" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/manifest.json" size="1157" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/plugins/fcc-transport-ui/model/models.js" size="273" compressedSize="190" excludeFromAllInOne="true">
+    <requires>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/AppInfraOnSapNetWeaverSupportPlugin.js" size="10791" compressedSize="4586" excludeFromAllInOne="true">
+    <description>via module sap.ushell_abap.support.plugins.app-infra.AppInfraOnSapNetWeaverSupportPlugin</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/support/Plugin.js"/>
+      <module name="sap/ui/core/support/Support.js"/>
+      <module name="sap/ui/layout/VerticalLayout.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin.properties" size="1135" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_ar.properties" size="2123" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_bg.properties" size="2221" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_ca.properties" size="1115" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_cs.properties" size="1147" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_da.properties" size="1046" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_de.properties" size="1080" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_el.properties" size="2212" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_en.properties" size="1083" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_en_US_sappsd.properties" size="3103" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_en_US_saptrc.properties" size="1306" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_es.properties" size="1100" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_et.properties" size="1105" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_fi.properties" size="1073" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_fr.properties" size="1123" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_hi.properties" size="2179" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_hr.properties" size="1126" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_hu.properties" size="1099" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_it.properties" size="1076" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_iw.properties" size="1679" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_ja.properties" size="1555" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_kk.properties" size="2373" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_ko.properties" size="1485" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_lt.properties" size="1192" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_lv.properties" size="1255" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_ms.properties" size="1089" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_nl.properties" size="1050" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_no.properties" size="1041" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_pl.properties" size="1115" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_pt.properties" size="1110" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_ro.properties" size="1135" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_ru.properties" size="2055" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_sh.properties" size="1107" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_sk.properties" size="1133" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_sl.properties" size="1087" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_sv.properties" size="1096" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_th.properties" size="2084" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_tr.properties" size="1187" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_uk.properties" size="2399" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_vi.properties" size="1507" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_zh_CN.properties" size="1229" excludeFromAllInOne="true">
+  </module>
+  <module name="sap/ushell_abap/support/plugins/app-infra/i18n/AppInfraOnSapNetWeaverSupportPlugin_zh_TW.properties" size="1262" excludeFromAllInOne="true">
+  </module>
+</library>

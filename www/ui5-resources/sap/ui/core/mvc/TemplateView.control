@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>mvc/TemplateView</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A view defined in a template.</documentation>
+    <deprecation since="1.56.0">use XMLView or JSView instead.</deprecation>
+    <baseType>sap.ui.core/mvc/View</baseType>
+</control>

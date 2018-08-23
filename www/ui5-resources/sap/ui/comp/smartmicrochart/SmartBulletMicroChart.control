@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartmicrochart/SmartBulletMicroChart</name>
+    <derived/>
+    <documentation>The SmartBulletMicroChart control creates a &lt;code&gt;sap.suite.ui.microchart.BulletMicroChart&lt;/code&gt;
+based on OData metadata and the configuration specified by &lt;code&gt;mSettings&lt;/code&gt;.
+The entitySet attribute must be specified to use the control. This attribute is used to fetch metadata and
+annotation information from the given default OData model. Based on this, the BulletMicroChart UI
+is created.
+&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Note:&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
+Most of the attributes/properties are not dynamic and cannot be changed once the control has been
+initialized.</documentation>
+    <since>1.38</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="entitySet" type="sap.ui.core/string" group="Misc">
+            <documentation>The entity set name from where the data is fetched and the internal BulletMicroChart representation is created.
+Note that this is not a dynamic UI5 property.</documentation>
+        </property>
+        <property name="showLabel" type="sap.ui.core/boolean" defaultValue="true" group="Appearance">
+            <documentation>Determines if any label is shown or not</documentation>
+        </property>
+        <property name="chartType" type="sap.ui.core/string" defaultValue="Bullet" group="Misc">
+            <documentation>Specifies the chart type. Note that this property is read-only.</documentation>
+        </property>
+        <property name="enableAutoBinding" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>If set to &lt;code&gt;true&lt;/code&gt;, this enables automatic binding of the chart using the chartBindingPath (if it exists)
+property.</documentation>
+        </property>
+        <property name="chartBindingPath" type="sap.ui.core/string" group="Misc">
+            <documentation>This attribute can be used to specify the relative path ( without '/') to an entity ( not an entitySet) that
+is used during the binding of the chart. It can be e.g. a navigation property which will be added to the context path</documentation>
+        </property>
+        <property name="width" type="sap.ui.core/CSSSize" defaultValue="164px" group="Misc">
+            <documentation>Defines the width.</documentation>
+        </property>
+        <property name="isResponsive" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>If this is set to true, width and height of the control are determined by the width and height of the container in which the control is placed.
+&lt;code&gt;width&lt;/code&gt; property is ignored.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="initialize" allowPreventDefault="false">
+            <documentation>Event fired once the control has been initialized.</documentation>
+        </event>
+    </events>
+    <aggregations default="_chart">
+        <aggregation name="_criticalityThresholds" type="sap.ui.core/CustomData" cardinality="0..n" visibility="hidden">
+            <documentation>This private aggregation is used for the internal binding of the DataPoint/CriticalityCalculation values used for calculation of the bar color</documentation>
+        </aggregation>
+        <aggregation name="_chart" type="sap.suite.ui.microchart/BulletMicroChart" cardinality="0..1" visibility="hidden">
+            <documentation>This private aggregation is used for the internal binding of the sap.suite.ui.microchart.BulletMicroChart</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association name="chartTitle" type="sap.m/Label" cardinality="0..1" since="1.38.0">
+            <documentation>If the associated control is provided, its &lt;code&gt;text&lt;/code&gt; property is set to the Title property of the Chart annotation.
+Title property of the DataPoint annotation is ignored.</documentation>
+        </association>
+        <association name="chartDescription" type="sap.m/Label" cardinality="0..1" since="1.38.0">
+            <documentation>If the associated control is provided, its &lt;code&gt;text&lt;/code&gt; property is set to the Description property of the Chart annotation.
+Description property of the DataPoint annotation is ignored.</documentation>
+        </association>
+        <association name="unitOfMeasure" type="sap.m/Label" cardinality="0..1" since="1.38.0">
+            <documentation>If the associated control is provided, its &lt;code&gt;text&lt;/code&gt; property is set to the Unit of Measure. The Value property of the DataPoint annotation should be annotated with this Unit of Measure. It can be either ISOCurrency or Unit from the OData Measures annotations.</documentation>
+        </association>
+    </associations>
+</control>

@@ -1,0 +1,5 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:build="sap.build">
+	<QuickView class="sapSmartTemplatesObjectPageContactsQuickView" placement="Auto" visible="{= ${path: 'dataField>com.sap.vocabularies.UI.v1.Hidden'} ? ${path: 'dataField>', formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getBindingForHiddenPath'} : true}">
+		<core:Fragment fragmentName="sap.suite.ui.generic.template.fragments.ContactDetailsQuickViewGroup" type="XML"/>
+	</QuickView>
+</core:FragmentDefinition>

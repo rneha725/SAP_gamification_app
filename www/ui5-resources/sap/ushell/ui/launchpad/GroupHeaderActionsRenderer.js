@@ -1,0 +1,2 @@
+// Copyright (c) 2009-2017 SAP SE, All Rights Reserved
+sap.ui.define(['jquery.sap.global'],function(q){"use strict";var G={};G.render=function(r,c){var i=c.getIsOverflow(),a=c.getTileActionModeActive();r.write("<div");r.writeControlData(c);r.writeClasses();r.write(">");var C=c.getContent();if(a){if(i){q.each(c._getActionOverflowControll(),function(){r.renderControl(this);});}else{q.each(C,function(){r.renderControl(this);});}}r.write("</div>");};return G;},true);

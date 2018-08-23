@@ -1,0 +1,1 @@
+sap.ui.define(["../MicroChart.controller"],function(M){"use strict";var R=M.extend("sap.fe.controls._MicroChart.radialMicroChart.RadialMicroChart.controller",{constructor:function(m){M.apply(this,arguments);this.oMicroChart=m;}});return R;});

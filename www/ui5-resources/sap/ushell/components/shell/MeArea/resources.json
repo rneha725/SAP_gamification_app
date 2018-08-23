@@ -1,0 +1,707 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/shell/MeArea/Component.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/footerbar/EndUserFeedback.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload-dbg.js",
+			"module": "Component-h2-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/ButtonType.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/Dialog.js",
+				"sap/m/FlexBox.js",
+				"sap/m/FlexItemData.js",
+				"sap/m/HBox.js",
+				"sap/m/Image.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/m/Link.js",
+				"sap/m/List.js",
+				"sap/m/ListSeparators.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/Page.js",
+				"sap/m/Popover.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/Select.js",
+				"sap/m/SplitApp.js",
+				"sap/m/Switch.js",
+				"sap/m/Table.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/comp/smartfield/SmartField.js",
+				"sap/ui/comp/smartform/SmartForm.js",
+				"sap/ui/comp/valuehelpdialog/ValueHelpDialog.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ui/model/odata/ODataModel.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/services/AppType.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/footerbar/EndUserFeedback.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/UserStatusItem.js",
+				"sap/ushell/ui5service/UserStatus.js",
+				"sap/uxap/ObjectPageLayout.js",
+				"sap/uxap/ObjectPageSection.js",
+				"sap/uxap/ObjectPageSubSection.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/MeArea/Component.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.controller.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.view.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.view.js",
+				"sap/ushell/components/shell/MeArea/MeArea.controller.js",
+				"sap/ushell/components/shell/MeArea/MeArea.view.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.view.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.controller.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.view.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.controller.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountImgConsentSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountStatusSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.controller.js",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.view.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "Component-h2-preload.js",
+			"merged": true,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/ButtonType.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/Dialog.js",
+				"sap/m/FlexBox.js",
+				"sap/m/FlexItemData.js",
+				"sap/m/HBox.js",
+				"sap/m/Image.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/m/Link.js",
+				"sap/m/List.js",
+				"sap/m/ListSeparators.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/Page.js",
+				"sap/m/Popover.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/Select.js",
+				"sap/m/SplitApp.js",
+				"sap/m/Switch.js",
+				"sap/m/Table.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/comp/smartfield/SmartField.js",
+				"sap/ui/comp/smartform/SmartForm.js",
+				"sap/ui/comp/valuehelpdialog/ValueHelpDialog.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ui/model/odata/ODataModel.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/services/AppType.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/footerbar/EndUserFeedback.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/UserStatusItem.js",
+				"sap/ushell/ui5service/UserStatus.js",
+				"sap/uxap/ObjectPageLayout.js",
+				"sap/uxap/ObjectPageSection.js",
+				"sap/uxap/ObjectPageSubSection.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/MeArea/Component.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.controller.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.view.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.view.js",
+				"sap/ushell/components/shell/MeArea/MeArea.controller.js",
+				"sap/ushell/components/shell/MeArea/MeArea.view.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.view.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.controller.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.view.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.controller.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountImgConsentSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountStatusSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.controller.js",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.view.js"
+			]
+		},
+		{
+			"name": "Component-preload-dbg.js",
+			"module": "Component-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/ButtonType.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/Dialog.js",
+				"sap/m/FlexBox.js",
+				"sap/m/FlexItemData.js",
+				"sap/m/HBox.js",
+				"sap/m/Image.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/m/Link.js",
+				"sap/m/List.js",
+				"sap/m/ListSeparators.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/Page.js",
+				"sap/m/Popover.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/Select.js",
+				"sap/m/SplitApp.js",
+				"sap/m/Switch.js",
+				"sap/m/Table.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/comp/smartfield/SmartField.js",
+				"sap/ui/comp/smartform/SmartForm.js",
+				"sap/ui/comp/valuehelpdialog/ValueHelpDialog.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ui/model/odata/ODataModel.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/services/AppType.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/footerbar/EndUserFeedback.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/UserStatusItem.js",
+				"sap/ushell/ui5service/UserStatus.js",
+				"sap/uxap/ObjectPageLayout.js",
+				"sap/uxap/ObjectPageSection.js",
+				"sap/uxap/ObjectPageSubSection.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/MeArea/Component.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.controller.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.view.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.view.js",
+				"sap/ushell/components/shell/MeArea/MeArea.controller.js",
+				"sap/ushell/components/shell/MeArea/MeArea.view.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.view.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.controller.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.view.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.controller.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountImgConsentSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountStatusSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.controller.js",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.view.js"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "Component-preload.js",
+			"merged": true,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/ButtonType.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/Dialog.js",
+				"sap/m/FlexBox.js",
+				"sap/m/FlexItemData.js",
+				"sap/m/HBox.js",
+				"sap/m/Image.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/m/Link.js",
+				"sap/m/List.js",
+				"sap/m/ListSeparators.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/Page.js",
+				"sap/m/Popover.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/Select.js",
+				"sap/m/SplitApp.js",
+				"sap/m/Switch.js",
+				"sap/m/Table.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/comp/smartfield/SmartField.js",
+				"sap/ui/comp/smartform/SmartForm.js",
+				"sap/ui/comp/valuehelpdialog/ValueHelpDialog.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ui/model/odata/ODataModel.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/services/AppType.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/footerbar/EndUserFeedback.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/UserStatusItem.js",
+				"sap/ushell/ui5service/UserStatus.js",
+				"sap/uxap/ObjectPageLayout.js",
+				"sap/uxap/ObjectPageSection.js",
+				"sap/uxap/ObjectPageSubSection.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/MeArea/Component.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.controller.js",
+				"sap/ushell/components/shell/MeArea/DefaultParameters.view.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/LanguageRegionSelector.view.js",
+				"sap/ushell/components/shell/MeArea/MeArea.controller.js",
+				"sap/ushell/components/shell/MeArea/MeArea.view.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.view.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.controller.js",
+				"sap/ushell/components/shell/MeArea/UserProfiling.view.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.controller.js",
+				"sap/ushell/components/shell/MeArea/UserSettings.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountImgConsentSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.view.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountStatusSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.controller.js",
+				"sap/ushell/components/shell/MeArea/userActivitiesHandler.view.js"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/shell/MeArea/Component.js",
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/flp/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/footerbar/EndUserFeedback.js"
+			]
+		},
+		{
+			"name": "DefaultParameters-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/DefaultParameters.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/comp/smartfield/SmartField.js",
+				"sap/ui/comp/smartform/SmartForm.js",
+				"sap/ui/comp/valuehelpdialog/ValueHelpDialog.js",
+				"sap/ui/model/odata/ODataModel.js"
+			]
+		},
+		{
+			"name": "DefaultParameters-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/DefaultParameters.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "DefaultParameters.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/DefaultParameters.controller.js",
+			"required": [
+				"sap/ui/comp/smartfield/SmartField.js",
+				"sap/ui/comp/smartform/SmartForm.js",
+				"sap/ui/comp/valuehelpdialog/ValueHelpDialog.js",
+				"sap/ui/model/odata/ODataModel.js"
+			]
+		},
+		{
+			"name": "DefaultParameters.view.js",
+			"module": "sap/ushell/components/shell/MeArea/DefaultParameters.view.js"
+		},
+		{
+			"name": "LanguageRegionSelector-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/LanguageRegionSelector.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "LanguageRegionSelector-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/LanguageRegionSelector.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "LanguageRegionSelector.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/LanguageRegionSelector.controller.js"
+		},
+		{
+			"name": "LanguageRegionSelector.view.js",
+			"module": "sap/ushell/components/shell/MeArea/LanguageRegionSelector.view.js"
+		},
+		{
+			"name": "MeArea-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/MeArea.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/ButtonType.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "MeArea-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/MeArea.view.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/HBox.js",
+				"sap/m/Image.js",
+				"sap/m/List.js",
+				"sap/m/ListSeparators.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/Popover.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/services/AppType.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/UserStatusItem.js"
+			]
+		},
+		{
+			"name": "MeArea.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/MeArea.controller.js",
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/ButtonType.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "MeArea.view.js",
+			"module": "sap/ushell/components/shell/MeArea/MeArea.view.js",
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/HBox.js",
+				"sap/m/Image.js",
+				"sap/m/List.js",
+				"sap/m/ListSeparators.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/Popover.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/services/AppType.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/UserStatusItem.js"
+			]
+		},
+		{
+			"name": "ThemeSelector-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/ThemeSelector.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "ThemeSelector.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/ThemeSelector.controller.js"
+		},
+		{
+			"name": "ThemeSelector.view.xml",
+			"module": "sap/ushell/components/shell/MeArea/ThemeSelector.view.xml",
+			"required": [
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/FlexItemData.js",
+				"sap/m/HBox.js",
+				"sap/m/Label.js",
+				"sap/m/List.js",
+				"sap/m/Select.js",
+				"sap/m/Switch.js",
+				"sap/m/Table.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ushell/components/shell/MeArea/ThemeSelector.controller.js",
+				"sap/uxap/ObjectPageLayout.js",
+				"sap/uxap/ObjectPageSection.js",
+				"sap/uxap/ObjectPageSubSection.js"
+			]
+		},
+		{
+			"name": "UsageAnalyticsSelector-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "UsageAnalyticsSelector-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.view.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/Label.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "UsageAnalyticsSelector.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.controller.js"
+		},
+		{
+			"name": "UsageAnalyticsSelector.view.js",
+			"module": "sap/ushell/components/shell/MeArea/UsageAnalyticsSelector.view.js",
+			"required": [
+				"sap/m/Label.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "UserProfiling-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/UserProfiling.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "UserProfiling-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/UserProfiling.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "UserProfiling.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/UserProfiling.controller.js"
+		},
+		{
+			"name": "UserProfiling.view.js",
+			"module": "sap/ushell/components/shell/MeArea/UserProfiling.view.js"
+		},
+		{
+			"name": "UserSettings-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/UserSettings.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js"
+			]
+		},
+		{
+			"name": "UserSettings-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/UserSettings.view.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Page.js",
+				"sap/m/SplitApp.js",
+				"sap/m/Text.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "UserSettings.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/UserSettings.controller.js",
+			"required": [
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js"
+			]
+		},
+		{
+			"name": "UserSettings.view.js",
+			"module": "sap/ushell/components/shell/MeArea/UserSettings.view.js",
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Page.js",
+				"sap/m/SplitApp.js",
+				"sap/m/Text.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "resources.json"
+		},
+		{
+			"name": "userAccount/UserAccountImgConsentSelector.fragment.xml",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountImgConsentSelector.fragment.xml",
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/Label.js",
+				"sap/m/Link.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Fragment.js"
+			]
+		},
+		{
+			"name": "userAccount/UserAccountSelector-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui5service/UserStatus.js"
+			]
+		},
+		{
+			"name": "userAccount/UserAccountSelector-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "userAccount/UserAccountSelector.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+			"required": [
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui5service/UserStatus.js"
+			]
+		},
+		{
+			"name": "userAccount/UserAccountSelector.view.js",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.js"
+		},
+		{
+			"name": "userAccount/UserAccountSelector.view.xml",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.view.xml",
+			"required": [
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountImgConsentSelector.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.fragment.xml",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountStatusSelector.fragment.xml",
+				"sap/uxap/ObjectPageLayout.js",
+				"sap/uxap/ObjectPageSection.js",
+				"sap/uxap/ObjectPageSubSection.js"
+			]
+		},
+		{
+			"name": "userAccount/UserAccountSetting.fragment.xml",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.fragment.xml",
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Fragment.js"
+			]
+		},
+		{
+			"name": "userAccount/UserAccountSetting.view.xml",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.view.xml",
+			"required": [
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSelector.controller.js",
+				"sap/ushell/components/shell/MeArea/userAccount/UserAccountSetting.fragment.xml"
+			]
+		},
+		{
+			"name": "userAccount/UserAccountStatusSelector.fragment.xml",
+			"module": "sap/ushell/components/shell/MeArea/userAccount/UserAccountStatusSelector.fragment.xml",
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/Label.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Fragment.js"
+			]
+		},
+		{
+			"name": "userActivitiesHandler-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/userActivitiesHandler.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js"
+			]
+		},
+		{
+			"name": "userActivitiesHandler-dbg.view.js",
+			"module": "sap/ushell/components/shell/MeArea/userActivitiesHandler.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "userActivitiesHandler.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/userActivitiesHandler.controller.js",
+			"required": [
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js"
+			]
+		},
+		{
+			"name": "userActivitiesHandler.view.js",
+			"module": "sap/ushell/components/shell/MeArea/userActivitiesHandler.view.js"
+		}
+	]
+}

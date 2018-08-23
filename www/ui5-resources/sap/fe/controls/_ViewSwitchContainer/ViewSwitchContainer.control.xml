@@ -1,0 +1,15 @@
+<core:FragmentDefinition 
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	template:require="sap.ui.model.odata.v4.AnnotationHelper"
+	xmlns:feexp="sap.fe.experimental">
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<feexp:ViewSwitchContainer>
+			<feexp:items>
+				<template:repeat list="{variant>Visualizations}" var="vscItem">
+					<core:Fragment fragmentName="sap.fe.controls._ViewSwitchContainer.Visualizations" type="XML" />
+				</template:repeat>
+			</feexp:items>
+		</feexp:ViewSwitchContainer>
+	</template:alias>
+</core:FragmentDefinition>

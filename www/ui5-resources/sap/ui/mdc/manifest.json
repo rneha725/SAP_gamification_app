@@ -1,0 +1,60 @@
+{
+  "_version": "1.9.0",
+  "sap.app": {
+    "id": "sap.ui.mdc",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.56.5"
+    },
+    "title": "UI5 library: sap.ui.mdc",
+    "description": "UI5 library: sap.ui.mdc",
+    "ach": "CA-UI5-CMP",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_plus",
+      "sap_bluecrystal"
+    ]
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.56",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.56.5"
+        },
+        "sap.m": {
+          "minVersion": "1.56.5"
+        }
+      }
+    },
+    "library": {
+      "i18n": "messagebundle.properties",
+      "content": {
+        "controls": [
+          "sap.ui.mdc.Table",
+          "sap.ui.mdc.FilterBar",
+          "sap.ui.mdc.base.Field",
+          "sap.ui.mdc.base.FilterField"
+        ],
+        "elements": [
+          "sap.ui.mdc.base.FieldHelpBase",
+          "sap.ui.mdc.base.CustomFieldHelp",
+          "sap.ui.mdc.base.ListFieldHelp",
+          "sap.ui.mdc.base.TableFieldHelp"
+        ],
+        "types": [
+          "sap.ui.mdc.FieldDisplay",
+          "sap.ui.mdc.EditMode"
+        ],
+        "interfaces": []
+      }
+    }
+  }
+}

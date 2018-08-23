@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/ovp/library-h2-preload.js",
+"sourceroot":".",
+"sources":["library-dbg.js","manifest.json"],
+"names":["jQuery","Device","Core","thisLibrary"],
+"mappings":";;;AAOA,gBAAa,mBAAC,qBAAsB,gBAAiB,oBACjD,SAASA,CAAM,CAAEC,CAAM,CAAEC,CAAI,CAAE,CASlC,IAAIC,CAAY,CAAE,8BACjB,IAAK,CAAE,UACP,aAAc,oDACb,QAAS,QAAS,cAAe,cAClC,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,QAAS,SACT,WAAY,CACX,iBAAkB,CACjB,2BAA4B,CAAE,qCAC9B,4BAA6B,CAAE,qCAChC,CACD,CACD,GAGA,EAAG,CAACF,CAAM,iBAAkB,CAC3BD,CAAM,0HACN,wCACA,wDACD,CAEA,OAAOG,CAAW,CAEnB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[0,816,866,2012]
+}

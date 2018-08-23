@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ConnectionLine</name>
+	<author></author>
+	<documentation>type file for ps, ts and mob soln</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="Line">
+			<documentation>Plain line</documentation>
+		</value>
+		<value name="Arrow">
+			<documentation>Line with arrow at end</documentation>
+		</value>
+	</enumeration>
+</simple-type>
