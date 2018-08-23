@@ -1,0 +1,5 @@
+.bithoundrc
+node_modules/*
+plugins/*
+platforms/*
+hooks/*
