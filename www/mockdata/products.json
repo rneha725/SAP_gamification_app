@@ -1,0 +1,43 @@
+{
+	"ProductCollection": [{
+		"ProductId": "HT-9992",
+		"Category": "Smartphones and Tablets",
+		"MainCategory": "Smartphones & Tablets",
+		"TaxTarifCode": "1",
+		"SupplierName": "Ultrasonic United",
+		"WeightMeasure": 0.75,
+		"WeightUnit": "KG",
+		"Description": "7 inch 1280x800 HD display (216 ppi), Quad-core processor, 16 GB internal storage (actual formatted capacity will be less), 4325 mAh battery (Up to 8 hours of active use), white or black",
+		"Name": "Dashboard",
+		"ProductPicUrl": "test-resources/sap/ui/demokit/explored/img/HT-9992.jpg",
+		"Status": "Available",
+		"Quantity": 13,
+		"UoM": "PC",
+		"CurrencyCode": "EUR",
+		"Price": 599,
+		"Width": 48,
+		"Depth": 31,
+		"Height": 4.5,
+		"DimUnit": "cm"
+	}, {
+		"ProductId": "HT-9991",
+		"Category": "Accessories",
+		"MainCategory": "Smartphones & Tablets",
+		"TaxTarifCode": "1",
+		"SupplierName": "Ultrasonic United",
+		"WeightMeasure": 0.02,
+		"WeightUnit": "KG",
+		"Description": "Button Clasp, Quality Material, 100% Leather, compatible with many smartphone models",
+		"Name": "Trainings",
+		"ProductPicUrl": "test-resources/sap/ui/demokit/explored/img/HT-9991.jpg",
+		"Status": "Available",
+		"Quantity": 12,
+		"UoM": "PC",
+		"CurrencyCode": "EUR",
+		"Price": 25,
+		"Width": 48,
+		"Depth": 31,
+		"Height": 4.5,
+		"DimUnit": "cm"
+	}]
+}

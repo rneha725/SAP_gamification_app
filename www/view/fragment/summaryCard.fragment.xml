@@ -1,0 +1,46 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+    xmlns:ch="sap.suite.ui.microchart"
+	xmlns:core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:html="http://www.w3.org/1999/xhtml">
+    <Panel id="cardPanel" headerText="Dashboard">
+    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Github"
+		subheader="Points" press="onPress" frameType="TwoByOne" footer="hi">
+		<TileContent >
+			<ImageContent src="../../res/github-icon.png" />
+		</TileContent>
+	</GenericTile>
+    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Github"
+		subheader="Points" press="press" frameType="TwoByOne" footer="hi">
+		<TileContent unit="EUR" footer="Current Quarter" >
+			<ImageContent src="../../res/jira-icon.svg" />
+		</TileContent>
+	</GenericTile>
+    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Github"
+		subheader="Points" press="press" frameType="TwoByOne" footer="hi">
+		<TileContent unit="EUR" footer="Current Quarter" >
+			<ImageContent src="../../res/fitbit-icon.png" />
+		</TileContent>
+	</GenericTile>
+
+    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Github"
+		subheader="Points" press="press" frameType="TwoByOne">
+        <tileContent>
+            <TileContent >
+			    <ImageContent src="../../res/google-icon.png" />
+		    </TileContent>
+            <TileContent>
+                <content>
+                    <NumericContent value="1.96" valueColor="Critical" indicator="up"/>
+                </content>
+            </TileContent>
+            <TileContent>
+                <content>
+                    <ch:RadialMicroChart percentage="100" valueColor="Good"/>
+                </content>
+            </TileContent>
+    </tileContent> 
+	</GenericTile>
+    </Panel>
+</core:FragmentDefinition>

@@ -39,7 +39,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "SAP_game.view.View1",
+			"viewName": "SAP_game.view.Root",
 			"type": "XML"
 		},
 		"dependencies": {
